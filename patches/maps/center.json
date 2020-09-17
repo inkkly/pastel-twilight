@@ -1,0 +1,19 @@
+{
+    "type": "TeleportField",
+    "x": 436,
+    "y": 700,
+    "level": 1,
+    "settings": {
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 0
+        },
+        "name": "BasinKeepNorth",
+        "map": "jungle-city.north",
+        "marker": "bottom",
+        "teleportLabel": "Basin City - North",
+        "gfxType": "SOLID",
+        "dir": "NORTH"
+    }
+}

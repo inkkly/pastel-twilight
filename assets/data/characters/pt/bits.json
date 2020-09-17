@@ -1,0 +1,83 @@
+{
+    "name": {
+        "en_US": "Bits",
+        "langUid": 1,
+        "de_DE": "Bits"
+ 
+    },
+    "animSheet": {
+        "DOCTYPE": "MULTI_DIR_ANIMATION",
+        "namedSheets": {
+            "move": {
+                "src": "media\/entity\/npc\/bits.png",
+                "width": 32,
+                "height": 40,
+                "xCount": 3,
+                "offX": 0,
+                "offY": 0
+            }
+        },
+        "shapeType": "Y_FLAT",
+        "offset": {
+            "x": 0,
+            "y": -2,
+            "z": 0
+        },
+        "SUB": [{
+            "sheet": "move",
+            "dirs": 4,
+            "flipX": [0, 0, 0, 1],
+            "tileOffsets": [0, 3, 6, 3],
+            "SUB": [{
+                "name": "idle",
+                "time": 1,
+                "repeat": false,
+                "frames": [1]
+            }, {
+                "name": "walk",
+                "time": 0.133,
+                "repeat": true,
+                "frames": [0, 1, 2, 1]
+            }]
+        }]
+    },
+    "walkAnimSet": {
+        "normal": {
+            "idle": "idle",
+            "move": "walk"
+        }
+    },
+    "walkAnims": "normal",
+    "configs": {
+        "normal": {
+            "relativeVel": 0.5
+        }
+    },
+    "face": {
+        "width": 104,
+        "height": 160,
+        "centerX": 46,
+        "centerY": 56,
+        "src": "bits.png",
+        "parts": [{
+            "default": {
+                "srcX": 0,
+                "srcY": 0,
+                "width": 104,
+                "height": 160,
+                "destX": 0,
+                "destY": 0,
+                "subX": 0,
+                "subY": 0,
+                "img": ""
+            }
+        }],
+        "expressions": {
+            "DEFAULT": {
+                "faces": [
+                    ["default"]
+                ]
+            }
+        }
+    }
+}

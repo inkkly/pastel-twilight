@@ -1,0 +1,9 @@
+[{
+    "type": "ENTER",
+    "index": ["entities",0]
+},{
+    "type": "IMPORT",
+    "src": "mod:patches/maps/center.json"
+},{
+    "type": "EXIT"
+}]

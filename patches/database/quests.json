@@ -1,0 +1,74 @@
+{
+    "lydibits-1": {
+        "hubSettings": {
+            "character": "pt.lydia",
+            "location": {
+                "en_US": "Could you help me gather some things to give to someone special? \\c[3]- Basin Keep - North\\c[0]"
+
+            },
+            "condition": "plot.line >= 19200"
+        },
+        "name": {
+            "en_US": "Pal Time's Day Surprise"
+
+        },
+        "person": {
+            "en_US": "Lydia"
+
+        },
+        "level": 60,
+        "order": 111000,
+        "description": {
+            "en_US": "Lydia has asked you to \\c[3]collect materials\\c[0] for her gift to \\c[3]a special friend\\c[0]."
+
+        },
+        "briefing": {
+            "en_US": "Lydia is grateful, and so is \\c[3]Bits\\c[0]! "
+
+        },
+        "hideRewards": false,
+        "tasks": [{
+                "task": {
+                    "en_US": "Collect the materials Lydia needs for her gift."
+
+                },
+                "subtasks": [{
+                        "item": "457",
+                        "amount": 1,
+                        "keepItems": false,
+                        "type": "COLLECT"
+                    },
+                    {
+                        "item": "384",
+                        "amount": 8,
+                        "keepItems": false,
+                        "type": "COLLECT"
+                    },
+                    {
+                        "item": "190",
+                        "amount": 5,
+                        "keepItems": false,
+                        "type": "COLLECT"
+                    }
+                ]
+            },
+            {
+                "task": {
+                    "en_US": "Give Lydia the materials in \\c[3]Basin Keep - North\\c[0]"
+
+                },
+                "subtasks": [{
+                    "label": "done",
+                    "type": "CONDITION"
+                }]
+            }
+        ],
+        "rewards": {
+            "exp": {
+                "exp": 666,
+                "bonus": 6969
+            }
+        },
+        "area": "jungle-city"
+    }
+}
