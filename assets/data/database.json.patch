@@ -1,0 +1,9 @@
+[{
+	"type": "ENTER",
+	"index": "quests"
+}, {
+	"type": "IMPORT",
+	"src": "mod:patches/database/quests.json"
+}, {
+	"type": "EXIT"
+}]

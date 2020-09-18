@@ -66,8 +66,9 @@
         "rewards": {
             "exp": {
                 "exp": 666,
-                "bonus": 6969
-            }
+                "bonus": 0
+            },
+            "money": 6969
         },
         "area": "jungle-city"
     }
