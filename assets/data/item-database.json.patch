@@ -1,0 +1,29 @@
+[{
+	"type": "ENTER",
+	"index": "items"
+}, {
+	"type": "ADD_ARRAY_ELEMENT",
+	"content":
+	{
+		"order": 7313000,
+		"customItem": "trade-perfectly-generic-item",
+		"name": {
+			"en_US": "Perfectly Generic Item"
+		},
+		"description": {
+			"en_US": "A perfectly square green cube."
+		},
+		"type": "TRADE",
+		"rarity": 3,
+		"cost": 0,
+		"level": 1,
+		"icon": "item-trade",
+		"effect": {
+			"sheet": "",
+			"name": null
+		},
+		"noTrack": false
+	}
+},{
+	"type": "EXIT"
+}]

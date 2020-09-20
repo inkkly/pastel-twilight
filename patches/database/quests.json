@@ -1,7 +1,7 @@
 {
     "lydibits-1": {
         "hubSettings": {
-            "character": "pt.lydia",
+            "character": "pastwi.lydia",
             "location": {
                 "en_US": "Could you help me gather some things to give to someone special? \\c[3]- Basin Keep - North\\c[0]"
 
@@ -17,7 +17,7 @@
 
         },
         "level": 60,
-        "order": 111000,
+        "order": 731300,
         "description": {
             "en_US": "Lydia has asked you to \\c[3]collect materials\\c[0] for her gift to \\c[3]a special friend\\c[0]."
 
@@ -69,6 +69,58 @@
                 "bonus": 0
             },
             "money": 6969
+        },
+        "area": "jungle-city"
+    },
+
+    "archivist-1": {
+        "name": {
+            "en_US": "The Archivist"
+
+        },
+        "person": {
+            "en_US": "The Archivist"
+
+        },
+        "level": 60,
+        "order": 731301,
+        "description": {
+            "en_US": "The Archivist has asked you to clear out the second floor of \\c[3]The Library\\c[0] for her."
+
+        },
+        "briefing": {
+            "en_US": "The Archivist is thankful for your help, and has agreed to divulge some information about \\c[3]how she became The Archivist\\c[0]."
+
+        },
+        "hideRewards": false,
+        "tasks": [{
+                "task": {
+                    "en_US": "Clear the second floor of enemies."
+
+                },
+                "subtasks": [{
+                        "label":"second-floor-clear",
+                        "type": "CONDITION"
+                    }
+                ]
+            },
+            {
+                "task": {
+                    "en_US": "Talk to The Archivist in \\c[3]The Library\\c[0]"
+
+                },
+                "subtasks": [{
+                    "label": "done",
+                    "type": "CONDITION"
+                }]
+            }
+        ],
+        "rewards": {
+            "exp": {
+                "exp": 250,
+                "bonus": 0
+            },
+            "money": 900
         },
         "area": "jungle-city"
     }
