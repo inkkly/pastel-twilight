@@ -1,0 +1,968 @@
+{
+    "DOCTYPE": "PROP_SHEET",
+    "props": [
+        {
+            "name": "infinityGem",
+            "size": {
+                "x": 16,
+                "y": 16,
+                "z": 0
+            },
+            "collType": "NONE",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 440,
+                "y": 360,
+                "w": 16,
+                "h": 16,
+                "flipX": false,
+                "shape": "Z_FLAT"
+            }
+        },
+        {
+            "name": "teleport-nw",
+            "size": {
+                "x": 32,
+                "y": 32,
+                "z": 80
+            },
+            "collType": "NONE",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 288,
+                "y": 0,
+                "w": 32,
+                "h": 112,
+                "flipX": true,
+                "wallY": 0.5
+            }
+        },
+        {
+            "name": "teleport-ne",
+            "size": {
+                "x": 32,
+                "y": 32,
+                "z": 80
+            },
+            "collType": "NONE",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 288,
+                "y": 0,
+                "w": 32,
+                "h": 112,
+                "flipX": false,
+                "wallY": 0.5
+            }
+        },
+        {
+            "name": "teleport-se",
+            "size": {
+                "x": 32,
+                "y": 32,
+                "z": 80
+            },
+            "collType": "NONE",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 320,
+                "y": 0,
+                "w": 32,
+                "h": 112,
+                "flipX": false,
+                "wallY": 0.5
+            }
+        },
+        {
+            "name": "teleport-sw",
+            "size": {
+                "x": 32,
+                "y": 32,
+                "z": 80
+            },
+            "collType": "NONE",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 320,
+                "y": 0,
+                "w": 32,
+                "h": 112,
+                "flipX": true,
+                "wallY": 0.5
+            }
+        },
+        {
+            "name": "block-ne",
+            "size": {
+                "x": 16,
+                "y": 16,
+                "z": 48
+            },
+            "collType": "NONE",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 176,
+                "y": 192,
+                "w": 16,
+                "h": 64,
+                "flipX": false,
+                "wallY": 1,
+                "renderMode": "lighter",
+                "offX": 0,
+                "offY": 1
+            },
+            "effects": {
+                "sheet": "teleport",
+                "show": "showFast",
+                "hide": "hideFast"
+            }
+        },
+        {
+            "name": "block-nw",
+            "size": {
+                "x": 16,
+                "y": 16,
+                "z": 48
+            },
+            "collType": "NONE",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 176,
+                "y": 192,
+                "w": 16,
+                "h": 64,
+                "flipX": true,
+                "wallY": 1,
+                "renderMode": "lighter",
+                "offX": 1,
+                "offY": 1
+            },
+            "effects": {
+                "sheet": "teleport",
+                "show": "showFast",
+                "hide": "hideFast"
+            }
+        },
+        {
+            "name": "block-se",
+            "size": {
+                "x": 16,
+                "y": 16,
+                "z": 64
+            },
+            "collType": "NONE",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 176,
+                "y": 176,
+                "w": 16,
+                "h": 80,
+                "flipX": true,
+                "wallY": 0,
+                "renderMode": "lighter",
+                "offX": 1,
+                "offY": 1
+            },
+            "effects": {
+                "sheet": "teleport",
+                "show": "showFast",
+                "hide": "hideFast"
+            }
+        },
+        {
+            "name": "block-sw",
+            "size": {
+                "x": 16,
+                "y": 16,
+                "z": 64
+            },
+            "collType": "NONE",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 176,
+                "y": 176,
+                "w": 16,
+                "h": 80,
+                "flipX": false,
+                "wallY": 0,
+                "renderMode": "lighter",
+                "offX": 0,
+                "offY": 1
+            },
+            "effects": {
+                "sheet": "teleport",
+                "show": "showFast",
+                "hide": "hideFast"
+            }
+        },
+        {
+            "name": "plant1",
+            "size": {
+                "x": 16,
+                "y": 16,
+                "z": 56
+            },
+            "collType": "FENCE",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 456,
+                "y": 360,
+                "w": 56,
+                "h": 72,
+                "flipX": false,
+                "shape": "Y_FLAT"
+            }
+        },
+        {
+            "name": "plant2",
+            "size": {
+                "x": 16,
+                "y": 16,
+                "z": 64
+            },
+            "collType": "FENCE",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 480,
+                "y": 432,
+                "w": 32,
+                "h": 80,
+                "flipX": false,
+                "shape": "Y_FLAT"
+            }
+        },
+        {
+            "name": "plant3",
+            "size": {
+                "x": 16,
+                "y": 16,
+                "z": 32
+            },
+            "collType": "FENCE",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 456,
+                "y": 464,
+                "w": 24,
+                "h": 48,
+                "flipX": false,
+                "shape": "Y_FLAT"
+            }
+        },
+        {
+            "name": "plant4",
+            "size": {
+                "x": 16,
+                "y": 16,
+                "z": 16
+            },
+            "collType": "BLOCK",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 432,
+                "y": 432,
+                "w": 16,
+                "h": 32,
+                "flipX": false,
+                "shape": "Y_FLAT"
+            }
+        },
+        {
+            "name": "plant5",
+            "size": {
+                "x": 16,
+                "y": 16,
+                "z": 16
+            },
+            "collType": "BLOCK",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 448,
+                "y": 432,
+                "w": 16,
+                "h": 32,
+                "flipX": false,
+                "shape": "Y_FLAT"
+            }
+        },
+        {
+            "name": "plant6",
+            "size": {
+                "x": 16,
+                "y": 16,
+                "z": 16
+            },
+            "collType": "BLOCK",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 464,
+                "y": 432,
+                "w": 16,
+                "h": 32,
+                "flipX": false,
+                "shape": "Y_FLAT"
+            }
+        },
+        {
+            "name": "plant7",
+            "size": {
+                "x": 16,
+                "y": 16,
+                "z": 40
+            },
+            "collType": "FENCE",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 432,
+                "y": 376,
+                "w": 24,
+                "h": 56,
+                "flipX": false,
+                "shape": "Y_FLAT"
+            }
+        },
+        {
+            "name": "plant8",
+            "size": {
+                "x": 16,
+                "y": 16,
+                "z": 32
+            },
+            "collType": "FENCE",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 432,
+                "y": 464,
+                "w": 24,
+                "h": 48,
+                "flipX": false,
+                "shape": "Y_FLAT"
+            }
+        },
+        {
+            "name": "plant9",
+            "size": {
+                "x": 16,
+                "y": 16,
+                "z": 24
+            },
+            "collType": "FENCE",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 416,
+                "y": 472,
+                "w": 16,
+                "h": 40,
+                "flipX": false,
+                "shape": "Y_FLAT"
+            }
+        },
+        {
+            "name": "plant10",
+            "size": {
+                "x": 16,
+                "y": 16,
+                "z": 24
+            },
+            "collType": "BLOCK",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 416,
+                "y": 432,
+                "w": 16,
+                "h": 40,
+                "flipX": false,
+                "wallY": 1
+            }
+        },
+        {
+            "name": "plant11",
+            "size": {
+                "x": 16,
+                "y": 16,
+                "z": 16
+            },
+            "collType": "BLOCK",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 400,
+                "y": 480,
+                "w": 16,
+                "h": 32,
+                "flipX": false,
+                "wallY": 1
+            }
+        },
+        {
+            "name": "terminalN",
+            "size": {
+                "x": 32,
+                "y": 12,
+                "z": 12
+            },
+            "collType": "BLOCK",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 416,
+                "y": 96,
+                "w": 32,
+                "h": 24,
+                "flipX": false
+            }
+        },
+        {
+            "name": "terminalE",
+            "size": {
+                "x": 12,
+                "y": 32,
+                "z": 12
+            },
+            "collType": "BLOCK",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 432,
+                "y": 120,
+                "w": 12,
+                "h": 40,
+                "flipX": false
+            }
+        },
+        {
+            "name": "terminalW",
+            "size": {
+                "x": 12,
+                "y": 32,
+                "z": 12
+            },
+            "collType": "BLOCK",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 432,
+                "y": 120,
+                "w": 12,
+                "h": 40,
+                "flipX": true
+            }
+        },
+        {
+            "name": "shelfE",
+            "size": {
+                "x": 12,
+                "y": 32,
+                "z": 40
+            },
+            "collType": "BLOCK",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 448,
+                "y": 88,
+                "w": 12,
+                "h": 72,
+                "flipX": true
+            }
+        },
+        {
+            "name": "shelfW",
+            "size": {
+                "x": 12,
+                "y": 32,
+                "z": 40
+            },
+            "collType": "BLOCK",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 448,
+                "y": 88,
+                "w": 12,
+                "h": 72,
+                "flipX": false
+            }
+        },
+        {
+            "name": "chair-down",
+            "size": {
+                "x": 12,
+                "y": 12,
+                "z": 20
+            },
+            "collType": "BLOCK",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 352,
+                "y": 208,
+                "w": 16,
+                "h": 32,
+                "flipX": false,
+                "wallY": 1
+            }
+        },
+        {
+            "name": "chair-right",
+            "size": {
+                "x": 12,
+                "y": 12,
+                "z": 20
+            },
+            "collType": "BLOCK",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 352,
+                "y": 176,
+                "w": 16,
+                "h": 32,
+                "flipX": false,
+                "wallY": 1
+            }
+        },
+        {
+            "name": "chair-left",
+            "size": {
+                "x": 12,
+                "y": 12,
+                "z": 20
+            },
+            "collType": "BLOCK",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 352,
+                "y": 176,
+                "w": 16,
+                "h": 32,
+                "flipX": true,
+                "wallY": 1
+            }
+        },
+        {
+            "name": "chair-up",
+            "size": {
+                "x": 12,
+                "y": 12,
+                "z": 20
+            },
+            "collType": "BLOCK",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 336,
+                "y": 176,
+                "w": 16,
+                "h": 32,
+                "flipX": false,
+                "wallY": 0
+            }
+        },
+        {
+            "name": "lamp1",
+            "size": {
+                "x": 16,
+                "y": 8,
+                "z": 16
+            },
+            "collType": "FENCE",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 368,
+                "y": 352,
+                "w": 24,
+                "h": 24,
+                "flipX": false,
+                "shape": "Y_FLAT",
+                "wallY": 0
+            }
+        },
+        {
+            "name": "lamp2",
+            "size": {
+                "x": 24,
+                "y": 8,
+                "z": 32
+            },
+            "collType": "FENCE",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 336,
+                "y": 352,
+                "w": 32,
+                "h": 40,
+                "flipX": false,
+                "shape": "Y_FLAT",
+                "wallY": 0
+            }
+        },
+        {
+            "name": "lamp3",
+            "size": {
+                "x": 16,
+                "y": 16,
+                "z": 32
+            },
+            "collType": "BLOCK",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 336,
+                "y": 392,
+                "w": 16,
+                "h": 48,
+                "flipX": false,
+                "wallY": 1
+            }
+        },
+        {
+            "name": "lamp3f",
+            "size": {
+                "x": 16,
+                "y": 16,
+                "z": 32
+            },
+            "collType": "BLOCK",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 336,
+                "y": 392,
+                "w": 16,
+                "h": 48,
+                "flipX": true,
+                "wallY": 1
+            }
+        },
+        {
+            "name": "lamp4",
+            "size": {
+                "x": 24,
+                "y": 16,
+                "z": 32
+            },
+            "collType": "BLOCK",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 392,
+                "y": 352,
+                "w": 24,
+                "h": 48,
+                "flipX": false,
+                "wallY": 1
+            }
+        },
+        {
+            "name": "lamp4f",
+            "size": {
+                "x": 24,
+                "y": 16,
+                "z": 32
+            },
+            "collType": "BLOCK",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 392,
+                "y": 352,
+                "w": 24,
+                "h": 48,
+                "flipX": true,
+                "wallY": 1
+            }
+        },
+        {
+            "name": "lamp5",
+            "size": {
+                "x": 8,
+                "y": 8,
+                "z": 32
+            },
+            "collType": "FENCE",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 336,
+                "y": 440,
+                "w": 16,
+                "h": 40,
+                "flipX": false,
+                "shape": "Y_FLAT"
+            }
+        },
+        {
+            "name": "lamp6",
+            "size": {
+                "x": 16,
+                "y": 16,
+                "z": 56
+            },
+            "collType": "FENCE",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 368,
+                "y": 376,
+                "w": 24,
+                "h": 72,
+                "flipX": false,
+                "shape": "Y_FLAT",
+                "wallY": 1,
+                "offY": 4
+            }
+        },
+        {
+            "name": "lamp7",
+            "size": {
+                "x": 16,
+                "y": 16,
+                "z": 32
+            },
+            "collType": "FENCE",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 392,
+                "y": 400,
+                "w": 24,
+                "h": 48,
+                "flipX": false,
+                "shape": "Y_FLAT",
+                "wallY": 1,
+                "offY": 4
+            }
+        },
+        {
+            "name": "pillar1",
+            "size": {
+                "x": 16,
+                "y": 16,
+                "z": 36
+            },
+            "collType": "BLOCK",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 352,
+                "y": 392,
+                "w": 16,
+                "h": 56,
+                "flipX": false,
+                "shape": "Y_FLAT",
+                "wallY": 0
+            }
+        },
+        {
+            "name": "potPlant1",
+            "size": {
+                "x": 32,
+                "y": 8,
+                "z": 8
+            },
+            "collType": "BLOCK",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 352,
+                "y": 456,
+                "w": 32,
+                "h": 32,
+                "flipX": false,
+                "shape": "Z_EXPAND",
+                "wallY": 1
+            }
+        },
+        {
+            "name": "potPlant1s",
+            "size": {
+                "x": 16,
+                "y": 8,
+                "z": 8
+            },
+            "collType": "BLOCK",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 384,
+                "y": 456,
+                "w": 16,
+                "h": 32,
+                "flipX": false,
+                "shape": "Z_EXPAND",
+                "wallY": 1
+            }
+        },
+        {
+            "name": "potPlant2",
+            "size": {
+                "x": 32,
+                "y": 8,
+                "z": 8
+            },
+            "collType": "BLOCK",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 352,
+                "y": 488,
+                "w": 32,
+                "h": 24,
+                "flipX": false,
+                "shape": "Z_EXPAND",
+                "wallY": 1
+            }
+        },
+        {
+            "name": "potPlant2s",
+            "size": {
+                "x": 16,
+                "y": 8,
+                "z": 8
+            },
+            "collType": "BLOCK",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 384,
+                "y": 488,
+                "w": 16,
+                "h": 24,
+                "flipX": false,
+                "shape": "Z_EXPAND",
+                "wallY": 1
+            }
+        },
+        {
+            "name": "potPlantV1",
+            "size": {
+                "x": 8,
+                "y": 16,
+                "z": 8
+            },
+            "collType": "BLOCK",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 336,
+                "y": 480,
+                "w": 16,
+                "h": 32,
+                "flipX": false,
+                "shape": "Z_EXPAND",
+                "wallY": 1
+            }
+        },
+        {
+            "name": "laserboard1",
+            "size": {
+                "x": 32,
+                "y": 8,
+                "z": 40
+            },
+            "collType": "VIRTUAL",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 256,
+                "y": 448,
+                "w": 40,
+                "h": 48,
+                "flipX": false,
+                "wallY": 0,
+                "shape": "Y_FLAT"
+            }
+        },
+        {
+            "name": "laserboard2",
+            "size": {
+                "x": 32,
+                "y": 8,
+                "z": 40
+            },
+            "collType": "VIRTUAL",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 224,
+                "y": 448,
+                "w": 32,
+                "h": 48,
+                "flipX": false,
+                "wallY": 0,
+                "shape": "Y_FLAT"
+            }
+        },
+        {
+            "name": "laserboard2f",
+            "size": {
+                "x": 32,
+                "y": 8,
+                "z": 40
+            },
+            "collType": "VIRTUAL",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 224,
+                "y": 448,
+                "w": 32,
+                "h": 48,
+                "flipX": true,
+                "wallY": 0,
+                "shape": "Y_FLAT"
+            }
+        },
+        {
+            "name": "laserboard3",
+            "size": {
+                "x": 16,
+                "y": 8,
+                "z": 40
+            },
+            "collType": "VIRTUAL",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 296,
+                "y": 448,
+                "w": 24,
+                "h": 48,
+                "flipX": false,
+                "wallY": 0,
+                "shape": "Y_FLAT"
+            }
+        },
+        {
+            "name": "laserboardW1",
+            "size": {
+                "x": 24,
+                "y": 4,
+                "z": 28
+            },
+            "collType": "NONE",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 224,
+                "y": 416,
+                "w": 24,
+                "h": 32,
+                "flipX": false,
+                "wallY": 1,
+                "shape": "Y_FLAT"
+            }
+        },
+        {
+            "name": "laserboardW2",
+            "size": {
+                "x": 40,
+                "y": 4,
+                "z": 28
+            },
+            "collType": "NONE",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 248,
+                "y": 416,
+                "w": 40,
+                "h": 32,
+                "flipX": false,
+                "wallY": 1,
+                "shape": "Y_FLAT"
+            }
+        },
+        {
+            "name": "groundProjector",
+            "size": {
+                "x": 24,
+                "y": 24,
+                "z": 2
+            },
+            "collType": "BLOCK",
+            "fix": {
+                "gfx": "media/map/lavender-interior.png",
+                "x": 400,
+                "y": 128,
+                "w": 32,
+                "h": 30,
+                "flipX": false,
+                "shape": "Z_FLAT"
+            }
+        }
+    ]
+}
