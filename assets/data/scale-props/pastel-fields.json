@@ -1,0 +1,557 @@
+{
+    "DOCTYPE": "SCALABLE_PROP_SHEET",
+    "entries": {
+        "waterAutumn": {
+            "baseSize": {
+                "x": 16,
+                "y": 16,
+                "z": 0
+            },
+            "renderHeight": 0,
+            "scalableX": true,
+            "scalableY": true,
+            "scalableStep": 16,
+            "collType": "NONE",
+            "gfx": "media/map/twilight-outside.png",
+            "gfxBaseX": 96,
+            "gfxBaseY": 224,
+            "patterns": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32,
+                "xCount": 3,
+                "yCount": 1
+            },
+            "animFrames": [
+                0,
+                1,
+                2,
+                1
+            ],
+            "animTime": 0.2
+        },
+        "waterfallTop": {
+            "baseSize": {
+                "x": 16,
+                "y": 32,
+                "z": 0
+            },
+            "renderHeight": 0,
+            "scalableX": true,
+            "scalableY": false,
+            "scalableStep": 16,
+            "collType": "NONE",
+            "gfx": "media/map/twilight-outside.png",
+            "gfxBaseX": 0,
+            "gfxBaseY": 256,
+            "patterns": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 32,
+                "xCount": 4,
+                "yCount": 1
+            },
+            "animFrames": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "animTime": 0.08
+        },
+        "waterfallMiddle": {
+            "baseSize": {
+                "x": 16,
+                "y": 16,
+                "z": 0
+            },
+            "renderHeight": 0,
+            "scalableX": true,
+            "scalableY": true,
+            "scalableStep": 16,
+            "collType": "NONE",
+            "gfx": "media/map/twilight-outside.png",
+            "gfxBaseX": 0,
+            "gfxBaseY": 256,
+            "patterns": {
+                "x": 0,
+                "y": 32,
+                "w": 16,
+                "h": 16,
+                "xCount": 4,
+                "yCount": 1
+            },
+            "animFrames": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "animTime": 0.08
+        },
+        "waterfallBottom": {
+            "baseSize": {
+                "x": 16,
+                "y": 16,
+                "z": 0
+            },
+            "renderHeight": 0,
+            "scalableX": true,
+            "scalableY": false,
+            "scalableStep": 16,
+            "collType": "NONE",
+            "gfx": "media/map/twilight-outside.png",
+            "gfxBaseX": 0,
+            "gfxBaseY": 256,
+            "patterns": {
+                "x": 0,
+                "y": 48,
+                "w": 16,
+                "h": 16,
+                "xCount": 4,
+                "yCount": 1
+            },
+            "animFrames": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "animTime": 0.08
+        },
+        "waterfallTopRight": {
+            "baseSize": {
+                "x": 16,
+                "y": 32,
+                "z": 0
+            },
+            "renderHeight": 0,
+            "scalableX": true,
+            "scalableY": false,
+            "scalableStep": 16,
+            "collType": "NONE",
+            "gfx": "media/map/twilight-outside.png",
+            "gfxBaseX": 64,
+            "gfxBaseY": 256,
+            "patterns": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 32,
+                "xCount": 4,
+                "yCount": 1
+            },
+            "animFrames": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "animTime": 0.08
+        },
+        "waterfallMiddleRight": {
+            "baseSize": {
+                "x": 16,
+                "y": 16,
+                "z": 0
+            },
+            "renderHeight": 0,
+            "scalableX": true,
+            "scalableY": true,
+            "scalableStep": 16,
+            "collType": "NONE",
+            "gfx": "media/map/twilight-outside.png",
+            "gfxBaseX": 64,
+            "gfxBaseY": 256,
+            "patterns": {
+                "x": 0,
+                "y": 32,
+                "w": 16,
+                "h": 16,
+                "xCount": 4,
+                "yCount": 1
+            },
+            "animFrames": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "animTime": 0.08
+        },
+        "waterfallBottomRight": {
+            "baseSize": {
+                "x": 16,
+                "y": 32,
+                "z": 0
+            },
+            "renderHeight": 0,
+            "scalableX": true,
+            "scalableY": false,
+            "scalableStep": 16,
+            "collType": "NONE",
+            "gfx": "media/map/twilight-outside.png",
+            "gfxBaseX": 64,
+            "gfxBaseY": 256,
+            "patterns": {
+                "x": 0,
+                "y": 48,
+                "w": 16,
+                "h": 32,
+                "xCount": 4,
+                "yCount": 1
+            },
+            "animFrames": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "animTime": 0.08
+        },
+        "waterfallBottomRightShort": {
+            "baseSize": {
+                "x": 16,
+                "y": 27,
+                "z": 0
+            },
+            "renderHeight": 0,
+            "scalableX": true,
+            "scalableY": false,
+            "scalableStep": 16,
+            "collType": "NONE",
+            "gfx": "media/map/twilight-outside.png",
+            "gfxBaseX": 64,
+            "gfxBaseY": 256,
+            "patterns": {
+                "x": 0,
+                "y": 48,
+                "w": 16,
+                "h": 27,
+                "xCount": 4,
+                "yCount": 1
+            },
+            "animFrames": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "animTime": 0.08
+        },
+        "waterfallTopLeft": {
+            "baseSize": {
+                "x": 16,
+                "y": 32,
+                "z": 0
+            },
+            "renderHeight": 0,
+            "scalableX": true,
+            "scalableY": false,
+            "scalableStep": 16,
+            "collType": "NONE",
+            "gfx": "media/map/twilight-outside.png",
+            "gfxBaseX": 128,
+            "gfxBaseY": 256,
+            "patterns": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 32,
+                "xCount": 4,
+                "yCount": 1
+            },
+            "animFrames": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "animTime": 0.08
+        },
+        "waterfallMiddleLeft": {
+            "baseSize": {
+                "x": 16,
+                "y": 16,
+                "z": 0
+            },
+            "renderHeight": 0,
+            "scalableX": true,
+            "scalableY": true,
+            "scalableStep": 16,
+            "collType": "NONE",
+            "gfx": "media/map/twilight-outside.png",
+            "gfxBaseX": 128,
+            "gfxBaseY": 256,
+            "patterns": {
+                "x": 0,
+                "y": 32,
+                "w": 16,
+                "h": 16,
+                "xCount": 4,
+                "yCount": 1
+            },
+            "animFrames": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "animTime": 0.08
+        },
+        "waterfallBottomLeft": {
+            "baseSize": {
+                "x": 16,
+                "y": 32,
+                "z": 0
+            },
+            "renderHeight": 0,
+            "scalableX": true,
+            "scalableY": false,
+            "scalableStep": 16,
+            "collType": "NONE",
+            "gfx": "media/map/twilight-outside.png",
+            "gfxBaseX": 128,
+            "gfxBaseY": 256,
+            "patterns": {
+                "x": 0,
+                "y": 48,
+                "w": 16,
+                "h": 32,
+                "xCount": 4,
+                "yCount": 1
+            },
+            "animFrames": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "animTime": 0.08
+        },
+        "laserBridgeH": {
+            "baseSize": {
+                "x": 16,
+                "y": 16,
+                "z": 0
+            },
+            "terrain": "LASER",
+            "scalableX": true,
+            "scalableY": true,
+            "scalableStep": 16,
+            "renderMode": "lighter",
+            "collType": "BLOCK",
+            "gfx": "media/map/twilight-outside.png",
+            "gfxBaseX": 144,
+            "gfxBaseY": 336,
+            "patterns": {
+                "x": 0,
+                "y": 8,
+                "w": 48,
+                "h": 32,
+                "xCount": 1,
+                "yCount": 1
+            },
+            "timePadding": {
+                "x": 160,
+                "y": 0
+            },
+            "effects": {
+                "sheet": "ar",
+                "show": "bridgeHAppear",
+                "hide": "bridgeHHide"
+            },
+            "pivot": {
+                "x": 0,
+                "y": 0.5
+            }
+        },
+        "laserBridgeHBottom": {
+            "baseSize": {
+                "x": 16,
+                "y": 12,
+                "z": 4
+            },
+            "terrain": "LASER",
+            "scalableX": true,
+            "scalableY": false,
+            "scalableStep": 16,
+            "renderMode": "lighter",
+            "collType": "BLOCK",
+            "gfx": "media/map/twilight-outside.png",
+            "gfxBaseX": 144,
+            "gfxBaseY": 336,
+            "patterns": {
+                "x": 0,
+                "y": 40,
+                "w": 48,
+                "h": 16,
+                "xCount": 1,
+                "yCount": 1
+            },
+            "timePadding": {
+                "x": 160,
+                "y": 0
+            },
+            "effects": {
+                "sheet": "ar",
+                "show": "bridgeHAppear",
+                "hide": "bridgeHHide"
+            },
+            "pivot": {
+                "x": 0,
+                "y": 0.5
+            }
+        },
+        "laserBridgeHTop": {
+            "baseSize": {
+                "x": 16,
+                "y": 4,
+                "z": 0
+            },
+            "terrain": "LASER",
+            "scalableX": true,
+            "scalableY": false,
+            "scalableStep": 16,
+            "renderMode": "lighter",
+            "collType": "BLOCK",
+            "gfx": "media/map/twilight-outside.png",
+            "gfxBaseX": 144,
+            "gfxBaseY": 336,
+            "patterns": {
+                "x": 0,
+                "y": 4,
+                "w": 48,
+                "h": 4,
+                "xCount": 1,
+                "yCount": 1
+            },
+            "timePadding": {
+                "x": 160,
+                "y": 0
+            },
+            "effects": {
+                "sheet": "ar",
+                "show": "bridgeHAppear",
+                "hide": "bridgeHHide"
+            },
+            "pivot": {
+                "x": 0,
+                "y": 0.5
+            }
+        },
+        "laserBridgeV": {
+            "baseSize": {
+                "x": 16,
+                "y": 16,
+                "z": 0
+            },
+            "terrain": "LASER",
+            "scalableX": true,
+            "scalableY": true,
+            "scalableStep": 16,
+            "renderMode": "lighter",
+            "collType": "BLOCK",
+            "gfx": "media/map/twilight-outside.png",
+            "gfxBaseX": 144,
+            "gfxBaseY": 400,
+            "patterns": {
+                "x": 16,
+                "y": 0,
+                "w": 16,
+                "h": 48,
+                "xCount": 1,
+                "yCount": 1
+            },
+            "timePadding": {
+                "x": 0,
+                "y": 160
+            },
+            "effects": {
+                "sheet": "ar",
+                "show": "bridgeVAppear",
+                "hide": "bridgeVHide"
+            },
+            "pivot": {
+                "x": 0.5,
+                "y": 0
+            }
+        },
+        "laserBridgeVLeft": {
+            "baseSize": {
+                "x": 16,
+                "y": 16,
+                "z": 0
+            },
+            "terrain": "LASER",
+            "scalableX": false,
+            "scalableY": true,
+            "scalableStep": 16,
+            "renderMode": "lighter",
+            "collType": "BLOCK",
+            "gfx": "media/map/twilight-outside.png",
+            "gfxBaseX": 144,
+            "gfxBaseY": 400,
+            "patterns": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 48,
+                "xCount": 1,
+                "yCount": 1
+            },
+            "timePadding": {
+                "x": 0,
+                "y": 160
+            },
+            "effects": {
+                "sheet": "ar",
+                "show": "bridgeVAppear",
+                "hide": "bridgeVHide"
+            },
+            "pivot": {
+                "x": 0.5,
+                "y": 0
+            }
+        },
+        "laserBridgeVRight": {
+            "baseSize": {
+                "x": 16,
+                "y": 16,
+                "z": 0
+            },
+            "terrain": "LASER",
+            "scalableX": false,
+            "scalableY": true,
+            "scalableStep": 16,
+            "renderMode": "lighter",
+            "collType": "BLOCK",
+            "gfx": "media/map/twilight-outside.png",
+            "gfxBaseX": 144,
+            "gfxBaseY": 400,
+            "patterns": {
+                "x": 32,
+                "y": 0,
+                "w": 16,
+                "h": 48,
+                "xCount": 1,
+                "yCount": 1
+            },
+            "timePadding": {
+                "x": 0,
+                "y": 160
+            },
+            "effects": {
+                "sheet": "ar",
+                "show": "bridgeVAppear",
+                "hide": "bridgeVHide"
+            },
+            "pivot": {
+                "x": 0.5,
+                "y": 0
+            }
+        }
+    }
+}
