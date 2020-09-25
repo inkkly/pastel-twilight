@@ -25,5 +25,46 @@
 		"noTrack": false
 	}
 },{
+	"type": "ADD_ARRAY_ELEMENT",
+	"content":
+	{
+            "name": {
+                "en_US": "High-Tech Visor"
+            },
+            "description": {
+                "en_US": "A highly advanced visor created by Bits."
+            },
+            "type": "EQUIP",
+            "cost": 0,
+            "level": 69,
+            "icon": "item-helm",
+            "equipType": "HEAD",
+            "params": {
+                "elemFactor": [
+                    1,
+                    1,
+                    1.1,
+                    1.1
+                ],
+                "hp": 0,
+                "attack": 30,
+                "defense": 8,
+                "focus": 200
+            },
+            "properties": {
+                "AIMING_MOVEMENT": 1.25,
+                "AIM_SPEED": 1.25,
+                "AIM_STABILITY": 1.25,
+                "MELEE_DMG": 0.75
+            },
+            "rarity": 4,
+            "order": 7313001,
+            "effect": {
+                "sheet": "",
+                "name": null
+            },
+            "noTrack": false
+	}
+},{
 	"type": "EXIT"
 }]

@@ -1,7 +1,12 @@
 {
     "name": "pastel-twilight",
     "displayName": "Pastel Twilight",
-    "description": "A small mod planned for Crosscode by inkkly",
-    "version": "0.0.1",
-    "module": true
+    "prestart": "prestart.js",
+    "description": "A mod with its own areas, story, dungeons, and more",
+    "version": "0.0.2",
+    "module": true,
+    "ccmodDependencies": {
+        "item-api": "^0.*",
+        "modifier-api": "^0.1.0"
+    }
 }
