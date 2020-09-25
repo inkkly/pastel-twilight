@@ -10,9 +10,9 @@
             "z": 0
         },
         "name": "BasinKeepNorth",
-        "map": "jungle-city.north",
-        "marker": "bottom",
-        "teleportLabel": "Basin City - North",
+        "map": "twilight-city.square",
+        "marker": "wp1",
+        "teleportLabel": "Twilight City",
         "gfxType": "SOLID",
         "dir": "NORTH"
     }

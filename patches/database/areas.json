@@ -1,0 +1,47 @@
+{
+    "twilight-city": {
+        "name": {
+            "en_US": "Twilight City",
+            "langUid": 7313004
+        },
+        "description": {
+            "en_US": "A Lost Zone north of Basin Keep."
+        },
+        "areaType": "TOWN",
+        "order": 2000,
+        "track": true,
+        "chests": 0,
+        "position": {
+            "x": 279,
+            "y": 60
+        },
+        "landmarks": {
+            "square": {
+                "name": {
+                    "en_US": "Square Teleporter"
+                },
+                "description": {
+                    "en_US": "The City Square, where you can find many preparing to trek the Lost Zones."
+                }
+            }
+        }
+    },
+    "pastel-fields": {
+        "name": {
+            "en_US": "Pastel Fields",
+            "langUid": 7313005
+        },
+        "description": {
+            "en_US": "A Lost Zone east of Twilight City."
+        },
+        "areaType": "PATH",
+        "order": 2001,
+        "track": true,
+        "chests": 0,
+        "position": {
+            "x": 299,
+            "y": 60
+        },
+        "landmarks": {}
+    }
+}

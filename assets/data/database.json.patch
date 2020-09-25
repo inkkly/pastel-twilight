@@ -6,4 +6,12 @@
 	"src": "mod:patches/database/quests.json"
 }, {
 	"type": "EXIT"
+}, {
+	"type": "ENTER",
+	"index": "areas"
+}, {
+	"type": "IMPORT",
+	"src": "mod:patches/database/areas.json"
+}, {
+	"type": "EXIT"
 }]
