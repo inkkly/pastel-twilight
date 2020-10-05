@@ -18,7 +18,7 @@
         "landmarks": {
             "square": {
                 "name": {
-                    "en_US": "Square Teleporter"
+                    "en_US": "City Square"
                 },
                 "description": {
                     "en_US": "The City Square, where you can find many preparing to trek the Lost Zones."
@@ -43,5 +43,40 @@
             "y": 60
         },
         "landmarks": {}
+    },
+    "eldritch": {
+        "name": {
+            "en_US": "The Eldritch Wastes",
+            "langUid": 7313006
+        },
+        "description": {
+            "en_US": "A Lost Zone(?) west of Twilight City."
+        },
+        "areaType": "PATH",
+        "order": 2002,
+        "track": true,
+        "chests": 0,
+        "position": {
+            "x": 259,
+            "y": 60
+        },
+        "landmarks": {
+            "entrance": {
+                "name": {
+                    "en_US": "Entrance"
+                },
+                "description": {
+                    "en_US": "The Entrance to The Eldritch Wastes."
+                }
+            },
+            "town": {
+                "name": {
+                    "en_US": "Mothsmyth"
+                },
+                "description": {
+                    "en_US": "The town of Mothsmyth."
+                }
+            }
+        }
     }
 }

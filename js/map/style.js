@@ -31,3 +31,18 @@ ig.MapStyle.registerStyle("twilight-city-inner", "map", {
         }
     }
 });
+ig.MapStyle.registerStyle("eldritch", "map", {
+    sheet: "media/entity/style/eldritch-map.png",
+    hasDoorMat: false,
+    teleportField: {
+        x: 0,
+        y: 48,
+        xCount: 3,
+        zHeight: 0
+    },
+    doorGlow: {
+        x: 128,
+        y: 0,
+        xCount: 1
+    }
+});

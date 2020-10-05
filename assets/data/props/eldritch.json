@@ -1,0 +1,870 @@
+{
+    "DOCTYPE": "PROP_SHEET",
+    "props": [{
+        "name": "signpost",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 60
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 256,
+            "y": 320,
+            "w": 16,
+            "h": 80,
+            "shape": "Y_FLAT",
+            "flipX": false
+        }
+    }, {
+        "name": "arSignW",
+        "size": {
+            "x": 24,
+            "y": 8,
+            "z": 8
+        },
+        "collType": "IGNORE",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 225,
+            "y": 360,
+            "w": 24,
+            "h": 8,
+            "flipX": true,
+            "shape": "Y_FLAT",
+            "renderMode": "lighter"
+        }
+    }, {
+        "name": "arSignE",
+        "size": {
+            "x": 24,
+            "y": 8,
+            "z": 8
+        },
+        "collType": "IGNORE",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 225,
+            "y": 360,
+            "w": 24,
+            "h": 8,
+            "flipX": false,
+            "shape": "Y_FLAT",
+            "renderMode": "lighter"
+        }
+    }, {
+        "name": "arSignNW",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 8
+        },
+        "collType": "IGNORE",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 224,
+            "y": 336,
+            "w": 16,
+            "h": 24,
+            "flipX": false,
+            "shape": "Y_FLAT",
+            "renderMode": "lighter"
+        }
+    }, {
+        "name": "arSignNE",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 8
+        },
+        "collType": "IGNORE",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 224,
+            "y": 336,
+            "w": 16,
+            "h": 24,
+            "flipX": true,
+            "shape": "Y_FLAT",
+            "renderMode": "lighter"
+        }
+    }, {
+        "name": "arSignSE",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 8
+        },
+        "collType": "IGNORE",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 240,
+            "y": 336,
+            "w": 16,
+            "h": 24,
+            "flipX": false,
+            "shape": "Y_FLAT",
+            "renderMode": "lighter"
+        }
+    }, {
+        "name": "arSignSW",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 8
+        },
+        "collType": "IGNORE",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 240,
+            "y": 336,
+            "w": 16,
+            "h": 24,
+            "flipX": true,
+            "shape": "Y_FLAT",
+            "renderMode": "lighter"
+        }
+    }, {
+        "name": "arSignSquareE",
+        "size": {
+            "x": 16,
+            "y": 8,
+            "z": 16
+        },
+        "collType": "IGNORE",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 224,
+            "y": 368,
+            "w": 16,
+            "h": 24,
+            "flipX": false,
+            "shape": "Y_FLAT",
+            "renderMode": "lighter"
+        }
+    }, {
+        "name": "arSignSquareW",
+        "size": {
+            "x": 16,
+            "y": 8,
+            "z": 16
+        },
+        "collType": "IGNORE",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 224,
+            "y": 368,
+            "w": 16,
+            "h": 24,
+            "flipX": true,
+            "shape": "Y_FLAT",
+            "renderMode": "lighter"
+        }
+    }, {
+        "name": "tree1",
+        "size": {
+            "x": 32,
+            "y": 16,
+            "z": 64
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 0,
+            "y": 512,
+            "w": 80,
+            "h": 96,
+            "flipX": false,
+            "shape": "Y_FLAT",
+            "wallY": 0.5,
+            "offY": -8
+        }
+    }, {
+        "name": "tree2",
+        "size": {
+            "x": 32,
+            "y": 16,
+            "z": 64
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 80,
+            "y": 512,
+            "w": 80,
+            "h": 96,
+            "flipX": false,
+            "shape": "Y_FLAT",
+            "wallY": 0.5,
+            "offY": -8
+        }
+    }, {
+        "name": "tree3",
+        "size": {
+            "x": 32,
+            "y": 16,
+            "z": 64
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 160,
+            "y": 512,
+            "w": 80,
+            "h": 96,
+            "flipX": false,
+            "shape": "Y_FLAT",
+            "wallY": 0.5,
+            "offY": -8
+        }
+    }, {
+        "name": "tree4",
+        "size": {
+            "x": 32,
+            "y": 16,
+            "z": 64
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 240,
+            "y": 512,
+            "w": 64,
+            "h": 96,
+            "flipX": false,
+            "shape": "Y_FLAT",
+            "wallY": 0.5,
+            "offY": -8
+        }
+    }, {
+        "name": "tree1f",
+        "size": {
+            "x": 32,
+            "y": 16,
+            "z": 64
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 0,
+            "y": 512,
+            "w": 80,
+            "h": 96,
+            "flipX": true,
+            "shape": "Y_FLAT",
+            "wallY": 0.5,
+            "offY": -8
+        }
+    }, {
+        "name": "tree2f",
+        "size": {
+            "x": 32,
+            "y": 16,
+            "z": 64
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 80,
+            "y": 512,
+            "w": 80,
+            "h": 96,
+            "flipX": true,
+            "shape": "Y_FLAT",
+            "wallY": 0.5,
+            "offY": -8
+        }
+    }, {
+        "name": "tree3f",
+        "size": {
+            "x": 32,
+            "y": 16,
+            "z": 64
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 160,
+            "y": 512,
+            "w": 80,
+            "h": 96,
+            "flipX": true,
+            "shape": "Y_FLAT",
+            "wallY": 0.5,
+            "offY": -8
+        }
+    }, {
+        "name": "tree4f",
+        "size": {
+            "x": 32,
+            "y": 16,
+            "z": 64
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 240,
+            "y": 512,
+            "w": 64,
+            "h": 96,
+            "flipX": true,
+            "shape": "Y_FLAT",
+            "wallY": 0.5,
+            "offY": -8
+        }
+    }, {
+        "name": "block1",
+        "size": {
+            "x": 24,
+            "y": 24,
+            "z": 36
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 0,
+            "y": 112,
+            "w": 24,
+            "h": 64,
+            "flipX": false
+        }
+    }, {
+        "name": "block2",
+        "size": {
+            "x": 24,
+            "y": 24,
+            "z": 36
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 24,
+            "y": 112,
+            "w": 24,
+            "h": 64,
+            "flipX": false
+        }
+    }, {
+        "name": "groundLight",
+        "terrain": "METAL",
+        "size": {
+            "x": 24,
+            "y": 24,
+            "z": 2
+        },
+        "collType": "BLOCK",
+        "anims": {
+            "SUB": [{
+                "name": "default",
+                "time": 0.1,
+                "frames": [0],
+                "repeat": true,
+                "sheet": {
+                    "src": "media/map/eldritch.png",
+                    "width": 24,
+                    "height": 24,
+                    "offX": 272,
+                    "offY": 288,
+                    "xCount": 1
+                }
+            }, {
+                "name": "default",
+                "time": 0.1,
+                "frames": [0],
+                "repeat": true,
+                "sheet": {
+                    "src": "media/map/eldritch.png",
+                    "width": 16,
+                    "height": 72,
+                    "offX": 272,
+                    "offY": 320,
+                    "xCount": 1
+                },
+                "renderMode": "lighter",
+                "shapeType": "Y_FLAT"
+            }]
+        }
+    }, {
+        "name": "bridgeRailW",
+        "size": {
+            "x": 48,
+            "y": 8,
+            "z": 25
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 240,
+            "y": 408,
+            "w": 48,
+            "h": 24,
+            "flipX": false
+        }
+    }, {
+        "name": "bridgeRailE",
+        "size": {
+            "x": 48,
+            "y": 8,
+            "z": 25
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 240,
+            "y": 408,
+            "w": 48,
+            "h": 24,
+            "flipX": true
+        }
+    }, {
+        "name": "bridgeRailS",
+        "size": {
+            "x": 8,
+            "y": 48,
+            "z": 25
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 256,
+            "y": 448,
+            "w": 8,
+            "h": 64,
+            "flipX": false
+        }
+    }, {
+        "name": "bridgeRailN",
+        "size": {
+            "x": 8,
+            "y": 48,
+            "z": 25
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 264,
+            "y": 440,
+            "w": 8,
+            "h": 72,
+            "flipX": false
+        }
+    }, {
+        "name": "flowerM",
+        "size": {
+            "x": 32,
+            "y": 24,
+            "z": 4
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 48,
+            "y": 176,
+            "w": 32,
+            "h": 32,
+            "flipX": false,
+            "pivotX": 16,
+            "pivotY": 16,
+            "wallY": 1
+        },
+        "nudging": true,
+        "nudge-variance": 0.005,
+        "terrain": "CARDBOARD"
+    }, {
+        "name": "flowerS",
+        "size": {
+            "x": 24,
+            "y": 20,
+            "z": 4
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 32,
+            "y": 256,
+            "w": 24,
+            "h": 24,
+            "flipX": false,
+            "pivotX": 16,
+            "pivotY": 16,
+            "wallY": 1
+        },
+        "nudging": true,
+        "nudge-variance": 0.005,
+        "terrain": "CARDBOARD"
+    }, {
+        "name": "flowerL",
+        "size": {
+            "x": 24,
+            "y": 24,
+            "z": 30
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 32,
+            "y": 280,
+            "w": 32,
+            "h": 56,
+            "flipX": false,
+            "pivotX": 16,
+            "pivotY": 16,
+            "wallY": 1
+        },
+        "terrain": "CARDBOARD"
+    }, {
+        "name": "flowerXL",
+        "size": {
+            "x": 24,
+            "y": 24,
+            "z": 54
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 0,
+            "y": 256,
+            "w": 32,
+            "h": 80,
+            "flipX": false,
+            "pivotX": 16,
+            "pivotY": 16,
+            "wallY": 1
+        },
+        "terrain": "CARDBOARD"
+    }, {
+        "name": "bush1",
+        "size": {
+            "x": 32,
+            "y": 16,
+            "z": 24
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 400,
+            "y": 441,
+            "w": 32,
+            "h": 32
+        }
+    }, {
+        "name": "bush2",
+        "size": {
+            "x": 32,
+            "y": 16,
+            "z": 24
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 432,
+            "y": 441,
+            "w": 32,
+            "h": 32
+        }
+    }, {
+        "name": "bush3",
+        "size": {
+            "x": 48,
+            "y": 16,
+            "z": 24
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 352,
+            "y": 441,
+            "w": 48,
+            "h": 32
+        }
+    }, {
+        "name": "bush4",
+        "size": {
+            "x": 48,
+            "y": 16,
+            "z": 24
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 416,
+            "y": 393,
+            "w": 48,
+            "h": 32
+        }
+    }, {
+        "name": "benchD",
+        "size": {
+            "x": 48,
+            "y": 16,
+            "z": 24
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 0,
+            "y": 768,
+            "w": 48,
+            "h": 32,
+            "wallY": 1
+        }
+    }, {
+        "name": "benchU",
+        "size": {
+            "x": 48,
+            "y": 16,
+            "z": 24
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 48,
+            "y": 768,
+            "w": 48,
+            "h": 32
+        }
+    }, {
+        "name": "benchL",
+        "size": {
+            "x": 16,
+            "y": 48,
+            "z": 24
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 96,
+            "y": 768,
+            "w": 16,
+            "h": 64,
+            "wallY": 1
+        }
+    }, {
+        "name": "benchR",
+        "size": {
+            "x": 16,
+            "y": 48,
+            "z": 24
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 96,
+            "y": 768,
+            "w": 16,
+            "h": 64,
+            "flipX": true,
+            "wallY": 1
+        }
+    }, {
+        "name": "teleport-nw",
+        "size": {
+            "x": 32,
+            "y": 32,
+            "z": 80
+        },
+        "collType": "NONE",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 448,
+            "y": 160,
+            "w": 32,
+            "h": 104,
+            "flipX": true,
+            "wallY": 0.5
+        }
+    }, {
+        "name": "teleport-ne",
+        "size": {
+            "x": 32,
+            "y": 32,
+            "z": 80
+        },
+        "collType": "NONE",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 448,
+            "y": 160,
+            "w": 32,
+            "h": 104,
+            "flipX": false,
+            "wallY": 0.5
+        }
+    }, {
+        "name": "teleport-sw",
+        "size": {
+            "x": 32,
+            "y": 32,
+            "z": 80
+        },
+        "collType": "NONE",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 480,
+            "y": 160,
+            "w": 32,
+            "h": 104,
+            "flipX": true,
+            "wallY": 0.5
+        }
+    }, {
+        "name": "teleport-se",
+        "size": {
+            "x": 32,
+            "y": 32,
+            "z": 80
+        },
+        "collType": "NONE",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 480,
+            "y": 160,
+            "w": 32,
+            "h": 104,
+            "flipX": false,
+            "wallY": 0.5
+        }
+    }, {
+        "name": "boat1",
+        "size": {
+            "x": 80,
+            "y": 40,
+            "z": 8
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 176,
+            "y": 800,
+            "w": 80,
+            "h": 48
+        },
+        "terrain": "WOOD"
+    }, {
+        "name": "boat1b",
+        "size": {
+            "x": 80,
+            "y": 40,
+            "z": 8
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 176,
+            "y": 847,
+            "w": 80,
+            "h": 48
+        },
+        "terrain": "WOOD"
+    }, {
+        "name": "boat2",
+        "size": {
+            "x": 48,
+            "y": 80,
+            "z": 8
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 256,
+            "y": 784,
+            "w": 48,
+            "h": 88
+        },
+        "terrain": "WOOD"
+    }, {
+        "name": "boat2b",
+        "size": {
+            "x": 48,
+            "y": 80,
+            "z": 8
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 304,
+            "y": 784,
+            "w": 48,
+            "h": 88
+        },
+        "terrain": "WOOD"
+    }, {
+        "name": "boat1c",
+        "size": {
+            "x": 80,
+            "y": 48,
+            "z": 8
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 96,
+            "y": 912,
+            "w": 80,
+            "h": 48
+        },
+        "terrain": "WOOD"
+    }, {
+        "name": "boat1d",
+        "size": {
+            "x": 80,
+            "y": 48,
+            "z": 8
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 96,
+            "y": 960,
+            "w": 80,
+            "h": 48
+        },
+        "terrain": "WOOD"
+    }, {
+        "name": "barrelfire",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 22
+        },
+        "collType": "BLOCK",
+        "anims": {
+            "sheet": {
+                "src": "media/map/eldritch.png",
+                "width": 32,
+                "height": 54,
+                "offX": 384,
+                "offY": 896
+            },
+            "gfxOffset": {
+                "x": 0,
+                "y": 0
+            },
+            "shapeType": "Z_EXPAND",
+            "wallY": 1,
+            "SUB": [{
+                "name": "burn",
+                "time": 0.1,
+                "frames": [0, 1, 2, 3, 4, 5],
+                "repeat": true
+            }]
+        }
+    }, {
+        "name": "mast",
+        "size": {
+            "x": 8,
+            "y": 8,
+            "z": 58
+        },
+        "collType": "BLOCK",
+        "terrain": "WOOD",
+        "fix": {
+            "gfx": "media/map/eldritch.png",
+            "x": 64,
+            "y": 896,
+            "w": 32,
+            "h": 64
+        }
+    }]
+}

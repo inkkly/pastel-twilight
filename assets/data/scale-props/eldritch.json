@@ -1,0 +1,601 @@
+{
+    "DOCTYPE": "SCALABLE_PROP_SHEET",
+    "entries": {
+        "pipeH": {
+            "baseSize": {
+                "x": 16,
+                "y": 16,
+                "z": 16
+            },
+            "renderHeight": 16,
+            "scalableX": true,
+            "scalableY": false,
+            "scalableStep": 8,
+            "terrain": "METAL_HOLLOW",
+            "collType": "BLOCK",
+            "gfx": "media/map/eldritch.png",
+            "gfxBaseX": 112,
+            "gfxBaseY": 768,
+            "patterns": {
+                "x": 48,
+                "y": 0,
+                "w": 16,
+                "h": 32
+            },
+            "gfxEnds": {
+                "west": {
+                    "WEST_END": {
+                        "x": 48,
+                        "y": 32,
+                        "w": 16,
+                        "h": 32,
+                        "zHeight": 16
+                    },
+                    "WEST_GROUND": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 24,
+                        "h": 32,
+                        "zHeight": 16
+                    }
+                },
+                "east": {
+                    "EAST_END": {
+                        "x": 48,
+                        "y": 64,
+                        "w": 16,
+                        "h": 32,
+                        "zHeight": 16
+                    },
+                    "EAST_GROUND": {
+                        "x": 24,
+                        "y": 0,
+                        "w": 24,
+                        "h": 32,
+                        "zHeight": 16
+                    }
+                }
+            },
+            "wallY": 1
+        },
+        "pipeV": {
+            "baseSize": {
+                "x": 24,
+                "y": 16,
+                "z": 16
+            },
+            "renderHeight": 0,
+            "scalableX": false,
+            "scalableY": true,
+            "scalableStep": 8,
+            "terrain": "METAL_HOLLOW",
+            "collType": "BLOCK",
+            "gfx": "media/map/eldritch.png",
+            "gfxBaseX": 112,
+            "gfxBaseY": 768,
+            "patterns": {
+                "x": 16,
+                "y": 96,
+                "w": 24,
+                "h": 16
+            },
+            "wallY": 0,
+            "gfxEnds": {
+                "north": {
+                    "NORTH_EAST": {
+                        "x": 0,
+                        "y": 32,
+                        "w": 24,
+                        "h": 32,
+                        "zHeight": 16
+                    },
+                    "NORTH_WEST": {
+                        "x": 24,
+                        "y": 32,
+                        "w": 24,
+                        "h": 32,
+                        "zHeight": 16
+                    },
+                    "NORTH_END": {
+                        "x": 41,
+                        "y": 112,
+                        "w": 24,
+                        "h": 16,
+                        "zHeight": 16
+                    }
+                },
+                "south": {
+                    "SOUTH_EAST": {
+                        "x": 0,
+                        "y": 64,
+                        "w": 24,
+                        "h": 32,
+                        "zHeight": 8
+                    },
+                    "SOUTH_WEST": {
+                        "x": 24,
+                        "y": 64,
+                        "w": 24,
+                        "h": 32,
+                        "zHeight": 8
+                    }
+                }
+            }
+        },
+        "laserBridgeH": {
+            "baseSize": {
+                "x": 16,
+                "y": 16,
+                "z": 0
+            },
+            "terrain": "LASER",
+            "scalableX": true,
+            "scalableY": true,
+            "scalableStep": 16,
+            "renderMode": "lighter",
+            "collType": "BLOCK",
+            "gfx": "media/map/eldritch.png",
+            "gfxBaseX": 128,
+            "gfxBaseY": 448,
+            "patterns": {
+                "x": 0,
+                "y": 8,
+                "w": 48,
+                "h": 32,
+                "xCount": 1,
+                "yCount": 1
+            },
+            "timePadding": {
+                "x": 160,
+                "y": 0
+            },
+            "effects": {
+                "sheet": "ar",
+                "show": "bridgeHAppear",
+                "hide": "bridgeHHide"
+            },
+            "pivot": {
+                "x": 0,
+                "y": 0.5
+            }
+        },
+        "laserBridgeHBottom": {
+            "baseSize": {
+                "x": 16,
+                "y": 12,
+                "z": 4
+            },
+            "terrain": "LASER",
+            "scalableX": true,
+            "scalableY": false,
+            "scalableStep": 16,
+            "renderMode": "lighter",
+            "collType": "BLOCK",
+            "gfx": "media/map/eldritch.png",
+            "gfxBaseX": 128,
+            "gfxBaseY": 448,
+            "patterns": {
+                "x": 0,
+                "y": 40,
+                "w": 48,
+                "h": 16,
+                "xCount": 1,
+                "yCount": 1
+            },
+            "timePadding": {
+                "x": 160,
+                "y": 0
+            },
+            "effects": {
+                "sheet": "ar",
+                "show": "bridgeHAppear",
+                "hide": "bridgeHHide"
+            },
+            "pivot": {
+                "x": 0,
+                "y": 0.5
+            }
+        },
+        "laserBridgeHTop": {
+            "baseSize": {
+                "x": 16,
+                "y": 4,
+                "z": 0
+            },
+            "terrain": "LASER",
+            "scalableX": true,
+            "scalableY": false,
+            "scalableStep": 16,
+            "renderMode": "lighter",
+            "collType": "BLOCK",
+            "gfx": "media/map/eldritch.png",
+            "gfxBaseX": 128,
+            "gfxBaseY": 448,
+            "patterns": {
+                "x": 0,
+                "y": 4,
+                "w": 48,
+                "h": 4,
+                "xCount": 1,
+                "yCount": 1
+            },
+            "timePadding": {
+                "x": 160,
+                "y": 0
+            },
+            "effects": {
+                "sheet": "ar",
+                "show": "bridgeHAppear",
+                "hide": "bridgeHHide"
+            },
+            "pivot": {
+                "x": 0,
+                "y": 0.5
+            }
+        },
+        "laserBridgeV": {
+            "baseSize": {
+                "x": 16,
+                "y": 16,
+                "z": 0
+            },
+            "terrain": "LASER",
+            "scalableX": true,
+            "scalableY": true,
+            "scalableStep": 16,
+            "renderMode": "lighter",
+            "collType": "BLOCK",
+            "gfx": "media/map/eldritch.png",
+            "gfxBaseX": 80,
+            "gfxBaseY": 464,
+            "patterns": {
+                "x": 16,
+                "y": 0,
+                "w": 16,
+                "h": 48,
+                "xCount": 1,
+                "yCount": 1
+            },
+            "timePadding": {
+                "x": 0,
+                "y": 160
+            },
+            "effects": {
+                "sheet": "ar",
+                "show": "bridgeVAppear",
+                "hide": "bridgeVHide"
+            },
+            "pivot": {
+                "x": 0.5,
+                "y": 0
+            }
+        },
+        "laserBridgeVLeft": {
+            "baseSize": {
+                "x": 16,
+                "y": 16,
+                "z": 0
+            },
+            "terrain": "LASER",
+            "scalableX": false,
+            "scalableY": true,
+            "scalableStep": 16,
+            "renderMode": "lighter",
+            "collType": "BLOCK",
+            "gfx": "media/map/eldritch.png",
+            "gfxBaseX": 80,
+            "gfxBaseY": 464,
+            "patterns": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 48,
+                "xCount": 1,
+                "yCount": 1
+            },
+            "timePadding": {
+                "x": 0,
+                "y": 160
+            },
+            "effects": {
+                "sheet": "ar",
+                "show": "bridgeVAppear",
+                "hide": "bridgeVHide"
+            },
+            "pivot": {
+                "x": 0.5,
+                "y": 0
+            }
+        },
+        "laserBridgeVRight": {
+            "baseSize": {
+                "x": 16,
+                "y": 16,
+                "z": 0
+            },
+            "terrain": "LASER",
+            "scalableX": false,
+            "scalableY": true,
+            "scalableStep": 16,
+            "renderMode": "lighter",
+            "collType": "BLOCK",
+            "gfx": "media/map/eldritch.png",
+            "gfxBaseX": 80,
+            "gfxBaseY": 464,
+            "patterns": {
+                "x": 32,
+                "y": 0,
+                "w": 16,
+                "h": 48,
+                "xCount": 1,
+                "yCount": 1
+            },
+            "timePadding": {
+                "x": 0,
+                "y": 160
+            },
+            "effects": {
+                "sheet": "ar",
+                "show": "bridgeVAppear",
+                "hide": "bridgeVHide"
+            },
+            "pivot": {
+                "x": 0.5,
+                "y": 0
+            }
+        },
+        "water": {
+            "baseSize": {
+                "x": 32,
+                "y": 32,
+                "z": 0
+            },
+            "scalableX": true,
+            "scalableY": true,
+            "scalableStep": 32,
+            "collType": "BLOCK",
+            "gfx": "media/map/eldritch.png",
+            "gfxBaseX": 480,
+            "gfxBaseY": 640,
+            "patterns": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32,
+                "xCount": 5,
+                "yCount": 1
+            },
+            "animFrames": [0, 1, 2, 3, 4],
+            "animTime": 0.15,
+            "terrain": "WATER"
+        },
+        "fenceH": {
+            "baseSize": {
+                "x": 16,
+                "y": 4,
+                "z": 32
+            },
+            "renderHeight": 36,
+            "scalableX": true,
+            "scalableY": false,
+            "scalableStep": 8,
+            "collType": "NPFENCE",
+            "gfx": "media/map/eldritch.png",
+            "gfxBaseX": 576,
+            "gfxBaseY": 928,
+            "patterns": {
+                "x": 16,
+                "y": 0,
+                "w": 16,
+                "h": 40
+            },
+            "gfxEnds": {
+                "west": {
+                    "WEST_END": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 16,
+                        "h": 40
+                    },
+                    "WEST_BREAK": {
+                        "x": 32,
+                        "y": 40,
+                        "w": 16,
+                        "h": 40
+                    }
+                },
+                "east": {
+                    "EAST_END": {
+                        "x": 32,
+                        "y": 0,
+                        "w": 16,
+                        "h": 40
+                    },
+                    "EAST_BREAK": {
+                        "x": 16,
+                        "y": 40,
+                        "w": 16,
+                        "h": 40
+                    }
+                }
+            }
+        },
+        "fenceHole": {
+            "baseSize": {
+                "x": 16,
+                "y": 4,
+                "z": 32
+            },
+            "renderHeight": 36,
+            "scalableX": true,
+            "scalableY": false,
+            "scalableStep": 8,
+            "collType": "NONE",
+            "gfx": "media/map/eldritch.png",
+            "gfxBaseX": 576,
+            "gfxBaseY": 928,
+            "patterns": {
+                "x": 0,
+                "y": 40,
+                "w": 16,
+                "h": 40
+            }
+        },
+        "fenceVWest": {
+            "baseSize": {
+                "x": 8,
+                "y": 16,
+                "z": 32
+            },
+            "renderHeight": 0,
+            "scalableX": false,
+            "scalableY": true,
+            "scalableStep": 8,
+            "collType": "NPFENCE",
+            "gfx": "media/map/eldritch.png",
+            "gfxBaseX": 624,
+            "gfxBaseY": 904,
+            "patterns": {
+                "x": 0,
+                "y": 88,
+                "w": 8,
+                "h": 16
+            },
+            "gfxEnds": {
+                "north": {
+                    "NORTH_END": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 8,
+                        "h": 48,
+                        "zHeight": 32
+                    },
+                    "NORTH_BREAK": {
+                        "x": 8,
+                        "y": 8,
+                        "w": 8,
+                        "h": 32,
+                        "zHeight": 32
+                    }
+                },
+                "south": {
+                    "SOUTH_END": {
+                        "x": 0,
+                        "y": 48,
+                        "w": 8,
+                        "h": 40,
+                        "zHeight": 8
+                    },
+                    "SOUTH_BREAK": {
+                        "x": 8,
+                        "y": 40,
+                        "w": 8,
+                        "h": 16,
+                        "zHeight": 0
+                    }
+                }
+            }
+        },
+        "fenceVWestHole": {
+            "baseSize": {
+                "x": 8,
+                "y": 16,
+                "z": 32
+            },
+            "renderHeight": 32,
+            "scalableX": false,
+            "scalableY": true,
+            "scalableStep": 8,
+            "collType": "NONE",
+            "gfx": "media/map/eldritch.png",
+            "gfxBaseX": 624,
+            "gfxBaseY": 904,
+            "patterns": {
+                "x": 0,
+                "y": 104,
+                "w": 8,
+                "h": 16
+            }
+        },
+        "fenceVEast": {
+            "baseSize": {
+                "x": 8,
+                "y": 16,
+                "z": 32
+            },
+            "renderHeight": 0,
+            "scalableX": false,
+            "scalableY": true,
+            "scalableStep": 8,
+            "collType": "NPFENCE",
+            "gfx": "media/map/eldritch.png",
+            "gfxBaseX": 624,
+            "gfxBaseY": 904,
+            "patterns": {
+                "x": 8,
+                "y": 88,
+                "w": 8,
+                "h": 16
+            },
+            "gfxEnds": {
+                "north": {
+                    "NORTH_END": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 8,
+                        "h": 48,
+                        "zHeight": 32,
+                        "flipX": true
+                    },
+                    "NORTH_BREAK": {
+                        "x": 8,
+                        "y": 8,
+                        "w": 8,
+                        "h": 32,
+                        "zHeight": 32,
+                        "flipX": true
+                    }
+                },
+                "south": {
+                    "SOUTH_END": {
+                        "x": 0,
+                        "y": 48,
+                        "w": 8,
+                        "h": 40,
+                        "zHeight": 8,
+                        "flipX": true
+                    },
+                    "SOUTH_BREAK": {
+                        "x": 8,
+                        "y": 40,
+                        "w": 8,
+                        "h": 16,
+                        "zHeight": 0,
+                        "flipX": true
+                    }
+                }
+            }
+        },
+        "fenceVEastHole": {
+            "baseSize": {
+                "x": 8,
+                "y": 16,
+                "z": 32
+            },
+            "renderHeight": 32,
+            "scalableX": false,
+            "scalableY": true,
+            "scalableStep": 8,
+            "collType": "NONE",
+            "gfx": "media/map/eldritch.png",
+            "gfxBaseX": 624,
+            "gfxBaseY": 904,
+            "patterns": {
+                "x": 8,
+                "y": 104,
+                "w": 8,
+                "h": 16
+            }
+        }
+    }
+}
