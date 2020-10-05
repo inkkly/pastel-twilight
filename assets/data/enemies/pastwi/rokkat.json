@@ -1,12 +1,12 @@
 {
     "level": 60,
-    "boostedLevel": 65,
+    "boostedLevel": 68,
     "params": {
-        "hp": 6000,
-        "attack": 277,
-        "defense": 276,
-        "focus": 281,
-        "elemFactor": [0, 1.4, 1.2, 1.2],
+        "hp": 10000,
+        "attack": 350,
+        "defense": 340,
+        "focus": 370,
+        "elemFactor": [0.5, 1.4, 1, 1],
         "statusInflict": [1.25, 1.5, 1.5, 1.25],
         "statusEffect": [0, 1.5, 1, 1]
     },
@@ -15,19 +15,19 @@
     "maxSp": 8,
     "enduranceScale": 1.5,
     "itemDrops": [{
-        "item": "274",
+        "item": "trade-ashen-furball",
         "prob": 0.16,
         "min": 1,
         "max": 1,
         "rank": ""
     }, {
-        "item": "463",
+        "item": "trade-rose-quartz",
         "prob": 0.12,
         "min": 1,
         "max": 1,
         "rank": "C",
         "boosted": true,
-        "condition": "item.448.toggled || stat.items.457>= 1"
+        "condition": "item.pastel-booster.toggled || stat.items.trade-rose-quartz>= 1"
     }, {
         "item": "75",
         "prob": 0.02,
@@ -837,13 +837,13 @@
             "global": false,
             "loop": false,
             "type": "PLAY_SOUND",
-            "sound": "media\/sound\/battle\/enemies\/shokat\/shokat-meow.ogg"
+            "sound": "media/sound/battle/enemies/shokat/shokat-meow.ogg"
         }, {
             "volume": 0.3,
             "global": false,
             "loop": true,
             "type": "PLAY_SOUND",
-            "sound": "media\/sound\/battle\/enemies\/shokat\/shokat-purr.ogg"
+            "sound": "media/sound/battle/enemies/shokat/shokat-purr.ogg"
         }, {
             "kind": "PLAYER",
             "type": "SET_TEMP_TARGET"
@@ -889,7 +889,7 @@
             "global": false,
             "loop": true,
             "type": "PLAY_SOUND",
-            "sound": "media\/sound\/battle\/enemies\/shokat\/shokat-purr.ogg"
+            "sound": "media/sound/battle/enemies/shokat/shokat-purr.ogg"
         }, {
             "kind": "PLAYER",
             "type": "SET_TEMP_TARGET"
@@ -1127,13 +1127,13 @@
             "global": false,
             "loop": false,
             "type": "PLAY_SOUND",
-            "sound": "media\/sound\/battle\/airon\/fire-generic-attack-1.ogg"
+            "sound": "media/sound/battle/airon/fire-generic-attack-1.ogg"
         }, {
             "volume": 1,
             "global": false,
             "loop": false,
             "type": "PLAY_SOUND",
-            "sound": "media\/sound\/scenes\/dash.ogg"
+            "sound": "media/sound/scenes/dash.ogg"
         }, {
             "value": 2,
             "type": "SET_RELATIVE_SPEED"
@@ -1382,11 +1382,11 @@
                 "text": {
                     "en_US": "(ATK SNOWMAN)",
                     "de_DE": "(ATK SNOWMAN)<<C<<IGNORE",
-                    "zh_CN": "(ATK SNOWMAN)<<A<<[CHANGED 2018\/08\/01]",
-                    "ja_JP": "(\u96ea\u3060\u308b\u307e\u653b\u6483)<<A<<[CHANGED 2018\/08\/01]",
-                    "ko_KR": "(\ub208\uc0ac\ub78c \uacf5\uaca9)<<A<<[CHANGED 2018\/08\/01]",
+                    "zh_CN": "(ATK SNOWMAN)<<A<<[CHANGED 2018/08/01]",
+                    "ja_JP": "(雪だるま攻撃)<<A<<[CHANGED 2018/08/01]",
+                    "ko_KR": "(눈사람 공격)<<A<<[CHANGED 2018/08/01]",
                     "langUid": 7,
-                    "zh_TW": "(ATK SNOWMAN)<<A<<[CHANGED 2018\/08\/01]"
+                    "zh_TW": "(ATK SNOWMAN)<<A<<[CHANGED 2018/08/01]"
                 },
                 "mode": "NO_LINE",
                 "color": "RED",
@@ -1490,13 +1490,13 @@
             "global": false,
             "loop": false,
             "type": "PLAY_SOUND",
-            "sound": "media\/sound\/battle\/airon\/fire-generic-attack-1.ogg"
+            "sound": "media/sound/battle/airon/fire-generic-attack-1.ogg"
         }, {
             "volume": 1,
             "global": false,
             "loop": false,
             "type": "PLAY_SOUND",
-            "sound": "media\/sound\/scenes\/dash.ogg"
+            "sound": "media/sound/scenes/dash.ogg"
         }, {
             "value": 2,
             "type": "SET_RELATIVE_SPEED"
@@ -1639,11 +1639,11 @@
                 "text": {
                     "en_US": "(ADJUST SNOWMAN)",
                     "de_DE": "(ADJUST SNOWMAN)<<C<<IGNORE",
-                    "zh_CN": "(ADJUST SNOWMAN)<<A<<[CHANGED 2018\/08\/01]",
-                    "ja_JP": "(\u96ea\u3060\u308b\u307e\u8abf\u6574)<<A<<[CHANGED 2018\/08\/01]",
-                    "ko_KR": "(\ub208\uc0ac\ub78c \uc870\uc815)<<A<<[CHANGED 2018\/08\/01]",
+                    "zh_CN": "(ADJUST SNOWMAN)<<A<<[CHANGED 2018/08/01]",
+                    "ja_JP": "(雪だるま調整)<<A<<[CHANGED 2018/08/01]",
+                    "ko_KR": "(눈사람 조정)<<A<<[CHANGED 2018/08/01]",
                     "langUid": 8,
-                    "zh_TW": "(ADJUST SNOWMAN)<<A<<[CHANGED 2018\/08\/01]"
+                    "zh_TW": "(ADJUST SNOWMAN)<<A<<[CHANGED 2018/08/01]"
                 },
                 "mode": "NO_LINE",
                 "color": "GREEN",
@@ -1708,7 +1708,7 @@
             "global": false,
             "loop": false,
             "type": "PLAY_SOUND",
-            "sound": "media\/sound\/battle\/enemies\/shokat\/shokat-angry.ogg"
+            "sound": "media/sound/battle/enemies/shokat/shokat-angry.ogg"
         }, {
             "basedOn": "MAX_HP",
             "factor": 0.2,
@@ -1756,11 +1756,11 @@
                 "text": {
                     "en_US": "(AIRCON)",
                     "de_DE": "(AIRCON)<<C<<IGNORE",
-                    "zh_CN": "(AIRCON)<<A<<[CHANGED 2018\/08\/01]",
-                    "ja_JP": "(\u30a8\u30a2\u30b3\u30f3\uff01)<<A<<[CHANGED 2018\/08\/01]",
-                    "ko_KR": "(\uc5d0\uc5b4\ucee8)<<A<<[CHANGED 2018\/08\/01]",
+                    "zh_CN": "(AIRCON)<<A<<[CHANGED 2018/08/01]",
+                    "ja_JP": "(エアコン！)<<A<<[CHANGED 2018/08/01]",
+                    "ko_KR": "(에어컨)<<A<<[CHANGED 2018/08/01]",
                     "langUid": 11,
-                    "zh_TW": "(AIRCON)<<A<<[CHANGED 2018\/08\/01]"
+                    "zh_TW": "(AIRCON)<<A<<[CHANGED 2018/08/01]"
                 },
                 "mode": "NO_LINE",
                 "color": "RED",
@@ -1831,11 +1831,11 @@
                 "text": {
                     "en_US": "(AIRCON)",
                     "de_DE": "(AIRCON)<<C<<IGNORE",
-                    "zh_CN": "(AIRCON)<<A<<[CHANGED 2019\/05\/14]",
-                    "ja_JP": "(\u30a8\u30a2\u30b3\u30f3\uff01)<<A<<[CHANGED 2019\/05\/14]",
-                    "ko_KR": "(\uc5d0\uc5b4\ucee8)<<A<<[CHANGED 2019\/05\/14]",
+                    "zh_CN": "(AIRCON)<<A<<[CHANGED 2019/05/14]",
+                    "ja_JP": "(エアコン！)<<A<<[CHANGED 2019/05/14]",
+                    "ko_KR": "(에어컨)<<A<<[CHANGED 2019/05/14]",
                     "langUid": 14,
-                    "zh_TW": "(AIRCON)<<A<<[CHANGED 2019\/05\/14]"
+                    "zh_TW": "(AIRCON)<<A<<[CHANGED 2019/05/14]"
                 },
                 "mode": "NO_LINE",
                 "color": "RED",

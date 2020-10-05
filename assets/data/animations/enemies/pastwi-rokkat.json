@@ -2,14 +2,14 @@
     "DOCTYPE": "MULTI_DIR_ANIMATION",
     "namedSheets": {
         "move": {
-            "src": "media\/entity\/enemy\/rokkat.png",
+            "src": "media/entity/enemy/rokkat.png",
             "offX": 0,
             "offY": 0,
             "width": 32,
             "height": 32
         },
         "attack": {
-            "src": "media\/entity\/enemy\/rokkat.png",
+            "src": "media/entity/enemy/rokkat.png",
             "xCount": 6,
             "offX": 0,
             "offY": 96,

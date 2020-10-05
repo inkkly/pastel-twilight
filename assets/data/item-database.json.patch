@@ -1,7 +1,7 @@
 [{
 	"type": "ENTER",
 	"index": "items"
-}, {
+},{
 	"type": "ADD_ARRAY_ELEMENT",
 	"content":
 	{
@@ -34,6 +34,7 @@
             "description": {
                 "en_US": "A highly advanced visor created by Bits."
             },
+            "customItem": "equip-high-tech-visor",
             "type": "EQUIP",
             "cost": 0,
             "level": 69,
@@ -64,6 +65,145 @@
                 "name": null
             },
             "noTrack": false
+	}
+},{
+   "type": "ADD_ARRAY_ELEMENT",
+   "content":
+   {
+       "name": {
+                "en_US": "Robot Parts"
+            },
+            "description": {
+                "en_US": "Special parts salvaged from a boss."
+            },
+            "type": "KEY",
+            "customItem": "key-robot-parts",
+            "rarity": 0,
+            "level": 1,
+            "icon": "item-key",
+            "order": 7313002,
+            "effect": {
+                "sheet": "",
+                "name": null
+            },
+            "noTrack": true
+   } 
+}, {
+    "type": "ADD_ARRAY_ELEMENT",
+   "content":
+     {
+            "order": 7313005,
+            "name": {
+                "en_US": "Visor Scraps"
+            },
+            "description": {
+                "en_US": "Incredibly dented. Still works somehow...?"
+            },
+            "customItem": "trade-visor-scraps",
+            "type": "TRADE",
+            "rarity": 1,
+            "cost": 1200,
+            "level": 1,
+            "icon": "item-trade",
+            "effect": {
+                "sheet": "",
+                "name": null
+            },
+            "noTrack": false,
+            "sources": [
+                {
+                    "type": "ENEMY",
+                    "value": "pastwi.cyberkat"
+                }
+            ]
+    }
+},{
+   "type": "ADD_ARRAY_ELEMENT",
+   "content":
+   {
+        "order": 7313006,
+        "name": {
+           "en_US": "Ashen Furball"
+       },
+        "description": {
+           "en_US": "Warm and fluffy to the touch."
+       },
+        "customItem": "trade-ashen-furball",
+        "type": "TRADE",
+        "rarity": 1,
+        "cost": 1400,
+        "level": 1,
+        "icon": "item-trade",
+        "effect": {
+            "sheet": "",
+            "name": null
+        },
+        "noTrack": false,
+        "sources": [
+            {
+                "type": "ENEMY",
+                "value": "pastwi.rokkat"
+            }
+        ]
+   }
+},{
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": 
+    {
+            "order": 7313007,
+            "name": {
+                "en_US": "Rose Quartz"
+            },
+            "customItem": "trade-rose-quartz",
+            "description": {
+                "en_US": "A rare pink gem only found when fighting strong adversaries."
+            },
+            "type": "TRADE",
+            "rarity": 3,
+            "cost": 1500,
+            "level": 1,
+            "icon": "item-trade",
+            "noTrack": false,
+            "sources": [
+                {
+                    "type": "OTHER",
+                    "value": {
+                        "icon": "ENEMY",
+                        "text": {
+                            "en_US": "Boosted Enemies in \\c[3]\\v[area.pastel-fields.name]\\c[0]"
+                        },
+                        "type": "ENEMY",
+                        "value": "pastwi.cyberkat"
+                    }
+                }
+            ],
+            "effect": {
+                "sheet": "",
+                "name": null
+            }
+    }
+},{
+	"type": "ADD_ARRAY_ELEMENT",
+	"content":
+	{
+		"order": 7313100,
+		"customItem": "toggle-pastel-booster",
+		"name": {
+			"en_US": "Pastel Booster"
+		},
+		"description": {
+			"en_US": "Increases the levels of enemies in \\c[3]\\v[area.pastel-fields.name]\\c[0] and unlocks new loot drops."
+		},
+		"type": "TOGGLE",
+		"rarity": 0,
+		"cost": 1000,
+		"level": 1,
+		"icon": "item-toggle",
+		"noTrack": false,
+		"effect": {
+			"sheet": "",
+			"name": null
+		}
 	}
 },{
 	"type": "EXIT"

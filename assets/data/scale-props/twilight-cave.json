@@ -1,0 +1,584 @@
+{
+    "DOCTYPE": "SCALABLE_PROP_SHEET",
+    "entries": {
+        "waterfallSideLeft": {
+            "baseSize": {
+                "x": 16,
+                "y": 16,
+                "z": 0
+            },
+            "renderHeight": 0,
+            "scalableX": false,
+            "scalableY": true,
+            "scalableStep": 16,
+            "collType": "NONE",
+            "gfx": "media/map/twilight-cave.png",
+            "gfxBaseX": 384,
+            "gfxBaseY": 288,
+            "patterns": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16,
+                "xCount": 1,
+                "yCount": 4
+            },
+            "animFrames": [0, 1, 2, 3],
+            "animTime": 0.08
+        },
+        "waterfallSideRight": {
+            "baseSize": {
+                "x": 16,
+                "y": 16,
+                "z": 0
+            },
+            "renderHeight": 0,
+            "scalableX": false,
+            "scalableY": true,
+            "scalableStep": 16,
+            "collType": "NONE",
+            "gfx": "media/map/twilight-cave.png",
+            "gfxBaseX": 400,
+            "gfxBaseY": 288,
+            "patterns": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16,
+                "xCount": 1,
+                "yCount": 4
+            },
+            "animFrames": [0, 1, 2, 3],
+            "animTime": 0.08
+        },
+        "waterfallTop": {
+            "baseSize": {
+                "x": 16,
+                "y": 16,
+                "z": 16
+            },
+            "renderHeight": 16,
+            "scalableX": true,
+            "scalableY": false,
+            "scalableStep": 16,
+            "collType": "NONE",
+            "gfx": "media/map/twilight-cave.png",
+            "gfxBaseX": 320,
+            "gfxBaseY": 208,
+            "patterns": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 32,
+                "xCount": 4,
+                "yCount": 1
+            },
+            "animFrames": [0, 1, 2, 3],
+            "animTime": 0.08,
+            "wallY": 1
+        },
+        "waterfallMiddle": {
+            "baseSize": {
+                "x": 16,
+                "y": 16,
+                "z": 0
+            },
+            "renderHeight": 0,
+            "scalableX": true,
+            "scalableY": true,
+            "scalableStep": 16,
+            "collType": "NONE",
+            "gfx": "media/map/twilight-cave.png",
+            "gfxBaseX": 320,
+            "gfxBaseY": 208,
+            "patterns": {
+                "x": 0,
+                "y": 32,
+                "w": 16,
+                "h": 16,
+                "xCount": 4,
+                "yCount": 1
+            },
+            "animFrames": [0, 1, 2, 3],
+            "animTime": 0.08
+        },
+        "waterfallBottom": {
+            "baseSize": {
+                "x": 16,
+                "y": 16,
+                "z": 0
+            },
+            "renderHeight": 0,
+            "scalableX": true,
+            "scalableY": false,
+            "scalableStep": 16,
+            "collType": "NONE",
+            "gfx": "media/map/twilight-cave.png",
+            "gfxBaseX": 320,
+            "gfxBaseY": 208,
+            "patterns": {
+                "x": 0,
+                "y": 48,
+                "w": 16,
+                "h": 16,
+                "xCount": 4,
+                "yCount": 1
+            },
+            "animFrames": [0, 1, 2, 3],
+            "animTime": 0.08
+        },
+        "waterfallTopRight": {
+            "baseSize": {
+                "x": 16,
+                "y": 32,
+                "z": 0
+            },
+            "renderHeight": 0,
+            "scalableX": true,
+            "scalableY": false,
+            "scalableStep": 16,
+            "collType": "NONE",
+            "gfx": "media/map/twilight-cave.png",
+            "gfxBaseX": 384,
+            "gfxBaseY": 208,
+            "patterns": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 32,
+                "xCount": 4,
+                "yCount": 1
+            },
+            "animFrames": [0, 1, 2, 3],
+            "animTime": 0.08
+        },
+        "waterfallTopRightShort": {
+            "baseSize": {
+                "x": 16,
+                "y": 16,
+                "z": 0
+            },
+            "renderHeight": 0,
+            "scalableX": true,
+            "scalableY": false,
+            "scalableStep": 16,
+            "collType": "NONE",
+            "gfx": "media/map/twilight-cave.png",
+            "gfxBaseX": 384,
+            "gfxBaseY": 208,
+            "patterns": {
+                "x": 0,
+                "y": 16,
+                "w": 16,
+                "h": 16,
+                "xCount": 4,
+                "yCount": 1
+            },
+            "animFrames": [0, 1, 2, 3],
+            "animTime": 0.08
+        },
+        "waterfallMiddleRight": {
+            "baseSize": {
+                "x": 16,
+                "y": 16,
+                "z": 0
+            },
+            "renderHeight": 0,
+            "scalableX": true,
+            "scalableY": true,
+            "scalableStep": 16,
+            "collType": "NONE",
+            "gfx": "media/map/twilight-cave.png",
+            "gfxBaseX": 384,
+            "gfxBaseY": 208,
+            "patterns": {
+                "x": 0,
+                "y": 32,
+                "w": 16,
+                "h": 16,
+                "xCount": 4,
+                "yCount": 1
+            },
+            "animFrames": [0, 1, 2, 3],
+            "animTime": 0.08
+        },
+        "waterfallBottomRight": {
+            "baseSize": {
+                "x": 16,
+                "y": 32,
+                "z": 0
+            },
+            "renderHeight": 0,
+            "scalableX": true,
+            "scalableY": false,
+            "scalableStep": 16,
+            "collType": "NONE",
+            "gfx": "media/map/twilight-cave.png",
+            "gfxBaseX": 384,
+            "gfxBaseY": 208,
+            "patterns": {
+                "x": 0,
+                "y": 48,
+                "w": 16,
+                "h": 32,
+                "xCount": 4,
+                "yCount": 1
+            },
+            "animFrames": [0, 1, 2, 3],
+            "animTime": 0.08
+        },
+        "waterfallBottomRightShort": {
+            "baseSize": {
+                "x": 16,
+                "y": 27,
+                "z": 0
+            },
+            "renderHeight": 0,
+            "scalableX": true,
+            "scalableY": false,
+            "scalableStep": 16,
+            "collType": "NONE",
+            "gfx": "media/map/twilight-cave.png",
+            "gfxBaseX": 384,
+            "gfxBaseY": 208,
+            "patterns": {
+                "x": 0,
+                "y": 48,
+                "w": 16,
+                "h": 27,
+                "xCount": 4,
+                "yCount": 1
+            },
+            "animFrames": [0, 1, 2, 3],
+            "animTime": 0.08
+        },
+        "waterfallTopLeft": {
+            "baseSize": {
+                "x": 16,
+                "y": 32,
+                "z": 0
+            },
+            "renderHeight": 0,
+            "scalableX": true,
+            "scalableY": false,
+            "scalableStep": 16,
+            "collType": "NONE",
+            "gfx": "media/map/twilight-cave.png",
+            "gfxBaseX": 384,
+            "gfxBaseY": 208,
+            "patterns": {
+                "x": 64,
+                "y": 0,
+                "w": 16,
+                "h": 32,
+                "xCount": 4,
+                "yCount": 1
+            },
+            "animFrames": [0, 1, 2, 3],
+            "animTime": 0.08
+        },
+        "waterfallTopLeftShort": {
+            "baseSize": {
+                "x": 16,
+                "y": 16,
+                "z": 0
+            },
+            "renderHeight": 0,
+            "scalableX": true,
+            "scalableY": false,
+            "scalableStep": 16,
+            "collType": "NONE",
+            "gfx": "media/map/twilight-cave.png",
+            "gfxBaseX": 384,
+            "gfxBaseY": 208,
+            "patterns": {
+                "x": 64,
+                "y": 16,
+                "w": 16,
+                "h": 16,
+                "xCount": 4,
+                "yCount": 1
+            },
+            "animFrames": [0, 1, 2, 3],
+            "animTime": 0.08
+        },
+        "waterfallMiddleLeft": {
+            "baseSize": {
+                "x": 16,
+                "y": 16,
+                "z": 0
+            },
+            "renderHeight": 0,
+            "scalableX": true,
+            "scalableY": true,
+            "scalableStep": 16,
+            "collType": "NONE",
+            "gfx": "media/map/twilight-cave.png",
+            "gfxBaseX": 384,
+            "gfxBaseY": 208,
+            "patterns": {
+                "x": 64,
+                "y": 32,
+                "w": 16,
+                "h": 16,
+                "xCount": 4,
+                "yCount": 1
+            },
+            "animFrames": [0, 1, 2, 3],
+            "animTime": 0.08
+        },
+        "waterfallBottomLeft": {
+            "baseSize": {
+                "x": 16,
+                "y": 32,
+                "z": 0
+            },
+            "renderHeight": 0,
+            "scalableX": true,
+            "scalableY": false,
+            "scalableStep": 16,
+            "collType": "NONE",
+            "gfx": "media/map/twilight-cave.png",
+            "gfxBaseX": 384,
+            "gfxBaseY": 208,
+            "patterns": {
+                "x": 64,
+                "y": 48,
+                "w": 16,
+                "h": 32,
+                "xCount": 4,
+                "yCount": 1
+            },
+            "animFrames": [0, 1, 2, 3],
+            "animTime": 0.08
+        },
+        "fenceH": {
+            "baseSize": {
+                "x": 16,
+                "y": 4,
+                "z": 32
+            },
+            "renderHeight": 36,
+            "scalableX": true,
+            "scalableY": false,
+            "scalableStep": 8,
+            "collType": "NPFENCE",
+            "gfx": "media/map/twilight-cave.png",
+            "gfxBaseX": 192,
+            "gfxBaseY": 352,
+            "patterns": {
+                "x": 16,
+                "y": 0,
+                "w": 16,
+                "h": 40
+            },
+            "gfxEnds": {
+                "west": {
+                    "WEST_END": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 16,
+                        "h": 40
+                    },
+                    "WEST_BREAK": {
+                        "x": 32,
+                        "y": 40,
+                        "w": 16,
+                        "h": 40
+                    }
+                },
+                "east": {
+                    "EAST_END": {
+                        "x": 32,
+                        "y": 0,
+                        "w": 16,
+                        "h": 40
+                    },
+                    "EAST_BREAK": {
+                        "x": 16,
+                        "y": 40,
+                        "w": 16,
+                        "h": 40
+                    }
+                }
+            }
+        },
+        "fenceHole": {
+            "baseSize": {
+                "x": 16,
+                "y": 4,
+                "z": 32
+            },
+            "renderHeight": 36,
+            "scalableX": true,
+            "scalableY": false,
+            "scalableStep": 8,
+            "collType": "NONE",
+            "gfx": "media/map/twilight-cave.png",
+            "gfxBaseX": 192,
+            "gfxBaseY": 352,
+            "patterns": {
+                "x": 0,
+                "y": 40,
+                "w": 16,
+                "h": 40
+            }
+        },
+        "fenceVWest": {
+            "baseSize": {
+                "x": 8,
+                "y": 16,
+                "z": 32
+            },
+            "renderHeight": 0,
+            "scalableX": false,
+            "scalableY": true,
+            "scalableStep": 8,
+            "collType": "NPFENCE",
+            "gfx": "media/map/twilight-cave.png",
+            "gfxBaseX": 240,
+            "gfxBaseY": 328,
+            "patterns": {
+                "x": 0,
+                "y": 88,
+                "w": 8,
+                "h": 16
+            },
+            "gfxEnds": {
+                "north": {
+                    "NORTH_END": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 8,
+                        "h": 48,
+                        "zHeight": 32
+                    },
+                    "NORTH_BREAK": {
+                        "x": 8,
+                        "y": 8,
+                        "w": 8,
+                        "h": 32,
+                        "zHeight": 32
+                    }
+                },
+                "south": {
+                    "SOUTH_END": {
+                        "x": 0,
+                        "y": 48,
+                        "w": 8,
+                        "h": 40,
+                        "zHeight": 8
+                    },
+                    "SOUTH_BREAK": {
+                        "x": 8,
+                        "y": 40,
+                        "w": 8,
+                        "h": 16,
+                        "zHeight": 0
+                    }
+                }
+            }
+        },
+        "fenceVWestHole": {
+            "baseSize": {
+                "x": 8,
+                "y": 16,
+                "z": 32
+            },
+            "renderHeight": 32,
+            "scalableX": false,
+            "scalableY": true,
+            "scalableStep": 8,
+            "collType": "NONE",
+            "gfx": "media/map/twilight-cave.png",
+            "gfxBaseX": 240,
+            "gfxBaseY": 328,
+            "patterns": {
+                "x": 0,
+                "y": 104,
+                "w": 8,
+                "h": 16
+            }
+        },
+        "fenceVEast": {
+            "baseSize": {
+                "x": 8,
+                "y": 16,
+                "z": 32
+            },
+            "renderHeight": 0,
+            "scalableX": false,
+            "scalableY": true,
+            "scalableStep": 8,
+            "collType": "NPFENCE",
+            "gfx": "media/map/twilight-cave.png",
+            "gfxBaseX": 240,
+            "gfxBaseY": 328,
+            "patterns": {
+                "x": 8,
+                "y": 88,
+                "w": 8,
+                "h": 16
+            },
+            "gfxEnds": {
+                "north": {
+                    "NORTH_END": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 8,
+                        "h": 48,
+                        "zHeight": 32,
+                        "flipX": true
+                    },
+                    "NORTH_BREAK": {
+                        "x": 8,
+                        "y": 8,
+                        "w": 8,
+                        "h": 32,
+                        "zHeight": 32,
+                        "flipX": true
+                    }
+                },
+                "south": {
+                    "SOUTH_END": {
+                        "x": 0,
+                        "y": 48,
+                        "w": 8,
+                        "h": 40,
+                        "zHeight": 8,
+                        "flipX": true
+                    },
+                    "SOUTH_BREAK": {
+                        "x": 8,
+                        "y": 40,
+                        "w": 8,
+                        "h": 16,
+                        "zHeight": 0,
+                        "flipX": true
+                    }
+                }
+            }
+        },
+        "fenceVEastHole": {
+            "baseSize": {
+                "x": 8,
+                "y": 16,
+                "z": 32
+            },
+            "renderHeight": 32,
+            "scalableX": false,
+            "scalableY": true,
+            "scalableStep": 8,
+            "collType": "NONE",
+            "gfx": "media/map/twilight-cave.png",
+            "gfxBaseX": 240,
+            "gfxBaseY": 328,
+            "patterns": {
+                "x": 8,
+                "y": 104,
+                "w": 8,
+                "h": 16
+            }
+        }
+    }
+}
