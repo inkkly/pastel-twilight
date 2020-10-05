@@ -3,13 +3,12 @@
         "en_US": "Lydia",
         "langUid": 1,
         "de_DE": "Lydia"
- 
     },
     "animSheet": {
         "DOCTYPE": "MULTI_DIR_ANIMATION",
         "namedSheets": {
             "move": {
-                "src": "media\/entity\/npc\/purplegal.png",
+                "src": "media/entity/npc/purplegal.png",
                 "width": 32,
                 "height": 40,
                 "xCount": 3,

@@ -23,12 +23,7 @@
                 "xCount": 3,
                 "yCount": 1
             },
-            "animFrames": [
-                0,
-                1,
-                2,
-                1
-            ],
+            "animFrames": [0, 1, 2, 1],
             "animTime": 0.2
         },
         "waterfallTop": {
@@ -53,12 +48,7 @@
                 "xCount": 4,
                 "yCount": 1
             },
-            "animFrames": [
-                0,
-                1,
-                2,
-                3
-            ],
+            "animFrames": [0, 1, 2, 3],
             "animTime": 0.08
         },
         "waterfallMiddle": {
@@ -83,12 +73,7 @@
                 "xCount": 4,
                 "yCount": 1
             },
-            "animFrames": [
-                0,
-                1,
-                2,
-                3
-            ],
+            "animFrames": [0, 1, 2, 3],
             "animTime": 0.08
         },
         "waterfallBottom": {
@@ -113,12 +98,7 @@
                 "xCount": 4,
                 "yCount": 1
             },
-            "animFrames": [
-                0,
-                1,
-                2,
-                3
-            ],
+            "animFrames": [0, 1, 2, 3],
             "animTime": 0.08
         },
         "waterfallTopRight": {
@@ -143,12 +123,7 @@
                 "xCount": 4,
                 "yCount": 1
             },
-            "animFrames": [
-                0,
-                1,
-                2,
-                3
-            ],
+            "animFrames": [0, 1, 2, 3],
             "animTime": 0.08
         },
         "waterfallMiddleRight": {
@@ -173,12 +148,7 @@
                 "xCount": 4,
                 "yCount": 1
             },
-            "animFrames": [
-                0,
-                1,
-                2,
-                3
-            ],
+            "animFrames": [0, 1, 2, 3],
             "animTime": 0.08
         },
         "waterfallBottomRight": {
@@ -203,12 +173,7 @@
                 "xCount": 4,
                 "yCount": 1
             },
-            "animFrames": [
-                0,
-                1,
-                2,
-                3
-            ],
+            "animFrames": [0, 1, 2, 3],
             "animTime": 0.08
         },
         "waterfallBottomRightShort": {
@@ -233,12 +198,7 @@
                 "xCount": 4,
                 "yCount": 1
             },
-            "animFrames": [
-                0,
-                1,
-                2,
-                3
-            ],
+            "animFrames": [0, 1, 2, 3],
             "animTime": 0.08
         },
         "waterfallTopLeft": {
@@ -263,12 +223,7 @@
                 "xCount": 4,
                 "yCount": 1
             },
-            "animFrames": [
-                0,
-                1,
-                2,
-                3
-            ],
+            "animFrames": [0, 1, 2, 3],
             "animTime": 0.08
         },
         "waterfallMiddleLeft": {
@@ -293,12 +248,7 @@
                 "xCount": 4,
                 "yCount": 1
             },
-            "animFrames": [
-                0,
-                1,
-                2,
-                3
-            ],
+            "animFrames": [0, 1, 2, 3],
             "animTime": 0.08
         },
         "waterfallBottomLeft": {
@@ -323,12 +273,7 @@
                 "xCount": 4,
                 "yCount": 1
             },
-            "animFrames": [
-                0,
-                1,
-                2,
-                3
-            ],
+            "animFrames": [0, 1, 2, 3],
             "animTime": 0.08
         },
         "laserBridgeH": {

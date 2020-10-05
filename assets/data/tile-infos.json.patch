@@ -1,4 +1,4 @@
-{
+[{
 	"type": "IMPORT",
-	"src": "mod:patches/database/tile-infos.json"
-}
+	"src": "mod:patches/tile-infos.json"
+}]

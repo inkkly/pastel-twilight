@@ -12,6 +12,22 @@
 }, {
 	"type": "IMPORT",
 	"src": "mod:patches/database/areas.json"
+}, { 
+	"type": "EXIT"
 }, {
+	"type": "ENTER",
+	"index": "enemies"
+},{
+	"type": "IMPORT",
+	"src": "mod:patches/database/enemies.json" 
+},{
+	"type": "EXIT"
+},{
+	"type": "ENTER",
+	"index": "questHubs"
+},{
+	"type": "IMPORT",
+	"src": "mod:patches/database/questHubs.json"
+},{
 	"type": "EXIT"
 }]

@@ -1,0 +1,4 @@
+[{
+	"type": "IMPORT",
+	"src": "mod:patches/terrain.json"
+}]

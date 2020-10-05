@@ -6,24 +6,9 @@
         "attack": 285,
         "defense": 300,
         "focus": 286,
-        "elemFactor": [
-            1.25,
-            0.5,
-            1.25,
-            0.5
-        ],
-        "statusInflict": [
-            1.5,
-            0.5,
-            1.5,
-            0.5
-        ],
-        "statusEffect": [
-            2,
-            0.5,
-            1.5,
-            0.5
-        ]
+        "elemFactor": [1.25, 0.5, 1.25, 0.5],
+        "statusInflict": [1.5, 0.5, 1.5, 0.5],
+        "statusEffect": [2, 0.5, 1.5, 0.5]
     },
     "credit": 999,
     "exp": 69,
@@ -85,99 +70,70 @@
     },
     "states": {
         "IDLE": {
-            "choices": [
-                {
-                    "req": [
-                        {
-                            "type": "HAS_TARGET"
-                        }
-                    ],
-                    "postSwitchState": "DEFAULT"
-                },
-                {
-                    "req": [
-                        {
-                            "type": "!SPAWN_POINT_DISTANCE",
-                            "max": 64
-                        }
-                    ],
-                    "action": "MoveToSpawnPoint"
-                },
-                {
-                    "req": [
-                        {
-                            "type": "RANDOM",
-                            "max": 0.3
-                        }
-                    ],
-                    "action": "MoveRandom"
-                },
-                {
-                    "action": "Idle"
-                }
-            ]
+            "choices": [{
+                "req": [{
+                    "type": "HAS_TARGET"
+                }],
+                "postSwitchState": "DEFAULT"
+            }, {
+                "req": [{
+                    "type": "!SPAWN_POINT_DISTANCE",
+                    "max": 64
+                }],
+                "action": "MoveToSpawnPoint"
+            }, {
+                "req": [{
+                    "type": "RANDOM",
+                    "max": 0.3
+                }],
+                "action": "MoveRandom"
+            }, {
+                "action": "Idle"
+            }]
         },
         "DEFAULT": {
-            "enabledReactions": [
-                "COLLAB"
-            ],
-            "choices": [
-                {
-                    "req": [
-                        {
-                            "type": "!HAS_TARGET"
-                        }
-                    ],
-                    "postSwitchState": "IDLE"
-                },
-                {
-                    "req": [
-                        {
-                            "distance": 200,
-                            "throwing": false,
-                            "type": "!TARGET_REACHABLE"
-                        }
-                    ],
-                    "action": "AdjustFast"
-                },
-                {
-                    "action": "TeamStart",
-                    "frequency": "SOMETIMES",
-                    "collab": {
-                        "breakType": "ANY",
-                        "initiatorLabel": "",
-                        "participants": [
-                            {
-                                "0": " ",
-                                "collabKey": "spiderIce",
-                                "label": "",
-                                "min": 2,
-                                "acceptStunned": false
-                            }
-                        ]
-                    }
-                },
-                {
-                    "action": "Scream",
-                    "frequency": "NORMAL"
-                },
-                {
-                    "action": "Spiderweb",
-                    "frequency": "OFTEN"
-                },
-                {
-                    "req": [
-                        {
-                            "type": "!TARGET_REACHABLE",
-                            "distance": 120
-                        }
-                    ],
-                    "action": "Adjust"
-                },
-                {
-                    "action": "BattleIdle"
+            "enabledReactions": ["COLLAB"],
+            "choices": [{
+                "req": [{
+                    "type": "!HAS_TARGET"
+                }],
+                "postSwitchState": "IDLE"
+            }, {
+                "req": [{
+                    "distance": 200,
+                    "throwing": false,
+                    "type": "!TARGET_REACHABLE"
+                }],
+                "action": "AdjustFast"
+            }, {
+                "action": "TeamStart",
+                "frequency": "SOMETIMES",
+                "collab": {
+                    "breakType": "ANY",
+                    "initiatorLabel": "",
+                    "participants": [{
+                        "0": " ",
+                        "collabKey": "spiderIce",
+                        "label": "",
+                        "min": 2,
+                        "acceptStunned": false
+                    }]
                 }
-            ]
+            }, {
+                "action": "Scream",
+                "frequency": "NORMAL"
+            }, {
+                "action": "Spiderweb",
+                "frequency": "OFTEN"
+            }, {
+                "req": [{
+                    "type": "!TARGET_REACHABLE",
+                    "distance": 120
+                }],
+                "action": "Adjust"
+            }, {
+                "action": "BattleIdle"
+            }]
         },
         "WEAK": {
             "walkAnims": "weak",
@@ -189,18 +145,14 @@
                 "element": "ANY",
                 "extra": []
             },
-            "choices": [
-                {
-                    "req": [
-                        {
-                            "negated": false,
-                            "type": "TRACKER_READY",
-                            "name": "weakRegen"
-                        }
-                    ],
-                    "preSwitchState": "DEFAULT"
-                }
-            ]
+            "choices": [{
+                "req": [{
+                    "negated": false,
+                    "type": "TRACKER_READY",
+                    "name": "weakRegen"
+                }],
+                "preSwitchState": "DEFAULT"
+            }]
         },
         "PASSIVE_INVIS": {
             "weight": -1,
@@ -235,9 +187,7 @@
                 "renderMode": "lighter",
                 "time": 0.05,
                 "repeat": true,
-                "frames": [
-                    0
-                ]
+                "frames": [0]
             },
             "copyOwnerAnims": false,
             "size": {
@@ -249,54 +199,50 @@
             "config": {
                 "collType": "BLOCK"
             },
-            "action": [
-                {
-                    "duration": 0,
-                    "align": "BOTTOM",
-                    "rotateFace": 0,
-                    "flipLeftFace": false,
-                    "wait": false,
-                    "waitSkip": 0,
-                    "actionDetached": false,
-                    "fixPos": false,
-                    "type": "SHOW_EFFECT",
-                    "effect": {
-                        "sheet": "enemies.forest",
-                        "name": "spiderWebShow"
-                    },
-                    "offset": {
-                        "x": 0,
-                        "y": 0,
-                        "z": 0
-                    }
+            "action": [{
+                "duration": 0,
+                "align": "BOTTOM",
+                "rotateFace": 0,
+                "flipLeftFace": false,
+                "wait": false,
+                "waitSkip": 0,
+                "actionDetached": false,
+                "fixPos": false,
+                "type": "SHOW_EFFECT",
+                "effect": {
+                    "sheet": "enemies.forest",
+                    "name": "spiderWebShow"
                 },
-                {
-                    "duration": 0.3,
-                    "align": "BOTTOM",
-                    "rotateFace": 0,
-                    "flipLeftFace": false,
-                    "wait": false,
-                    "waitSkip": 0,
-                    "actionDetached": false,
-                    "target2": "PROXY_OWNER",
-                    "target2Align": "FACE",
-                    "fixPos": false,
-                    "type": "SHOW_EFFECT",
-                    "effect": {
-                        "sheet": "enemies.forest",
-                        "name": "spiderWebStream"
-                    },
-                    "offset": {
-                        "x": 0,
-                        "y": 0,
-                        "z": 0
-                    }
-                },
-                {
-                    "time": 10,
-                    "type": "WAIT"
+                "offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
                 }
-            ],
+            }, {
+                "duration": 0.3,
+                "align": "BOTTOM",
+                "rotateFace": 0,
+                "flipLeftFace": false,
+                "wait": false,
+                "waitSkip": 0,
+                "actionDetached": false,
+                "target2": "PROXY_OWNER",
+                "target2Align": "FACE",
+                "fixPos": false,
+                "type": "SHOW_EFFECT",
+                "effect": {
+                    "sheet": "enemies.forest",
+                    "name": "spiderWebStream"
+                },
+                "offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            }, {
+                "time": 10,
+                "type": "WAIT"
+            }],
             "invisible": true,
             "hp": 0,
             "terrain": "SPIDERWEB",
@@ -312,870 +258,733 @@
         }
     },
     "actions": {
-        "Idle": [
-            {
-                "kind": "NAMED_ENTITY",
-                "key": {
-                    "varName": ""
-                },
-                "type": "SET_TEMP_TARGET"
+        "Idle": [{
+            "kind": "NAMED_ENTITY",
+            "key": {
+                "varName": ""
             },
-            {
-                "poiFilter": {
-                    "name": "",
-                    "namePart": "",
-                    "conditions": [],
-                    "type": "NAMED_ENTITY"
-                },
-                "distance": 0,
-                "type": "SET_POI_TEMP_TARGET"
+            "type": "SET_TEMP_TARGET"
+        }, {
+            "poiFilter": {
+                "name": "",
+                "namePart": "",
+                "conditions": [],
+                "type": "NAMED_ENTITY"
             },
-            {
-                "value": true,
-                "type": "FACE_TO_TARGET"
-            },
-            {
-                "minTime": 0.1,
-                "maxTime": 0.3,
-                "type": "WAIT_RANDOM"
+            "distance": 0,
+            "type": "SET_POI_TEMP_TARGET"
+        }, {
+            "value": true,
+            "type": "FACE_TO_TARGET"
+        }, {
+            "minTime": 0.1,
+            "maxTime": 0.3,
+            "type": "WAIT_RANDOM"
+        }],
+        "BattleIdle": [{
+            "value": true,
+            "type": "FACE_TO_TARGET"
+        }, {
+            "minTime": 0.2,
+            "maxTime": 0.4,
+            "type": "WAIT_RANDOM"
+        }],
+        "MoveToSpawnPoint": [{
+            "value": 0.5,
+            "type": "SET_RELATIVE_SPEED"
+        }, {
+            "maxTime": 3,
+            "maxDistance": 16,
+            "precise": false,
+            "type": "NAVIGATE_TO_SPAWN_POINT"
+        }],
+        "MoveRandom": [{
+            "value": 0.3,
+            "type": "SET_RELATIVE_SPEED"
+        }, {
+            "value": false,
+            "type": "SET_JUMPING"
+        }, {
+            "minTime": 0.3,
+            "maxTime": 0.5,
+            "dirChanges": 0,
+            "stopBeforeEdge": true,
+            "type": "MOVE_RANDOM"
+        }, {
+            "minTime": 0.5,
+            "maxTime": 0.6,
+            "type": "WAIT_RANDOM"
+        }],
+        "Adjust": [{
+            "value": 0.8,
+            "type": "SET_RELATIVE_SPEED"
+        }, {
+            "maxTime": 1,
+            "forceTime": false,
+            "distance": 100,
+            "planOnly": false,
+            "targetType": "ENEMY",
+            "precise": false,
+            "stayBehind": false,
+            "type": "NAVIGATE_TO_TARGET"
+        }],
+        "AdjustFast": [{
+            "value": 1.2,
+            "type": "SET_RELATIVE_SPEED"
+        }, {
+            "maxTime": 0.5,
+            "forceTime": false,
+            "distance": 140,
+            "planOnly": false,
+            "targetType": "ENEMY",
+            "precise": false,
+            "stayBehind": false,
+            "type": "NAVIGATE_TO_TARGET"
+        }],
+        "GetClose": [{
+            "value": 0.7,
+            "type": "SET_RELATIVE_SPEED"
+        }, {
+            "value": "MEDIUM",
+            "type": "SET_HIT_STABLE"
+        }, {
+            "maxTime": 0.5,
+            "forceTime": false,
+            "distance": 60,
+            "planOnly": false,
+            "targetType": "ENEMY",
+            "precise": false,
+            "stayBehind": false,
+            "type": "NAVIGATE_TO_TARGET"
+        }],
+        "Spiderweb": [{
+            "active": "PRE_ATTACK",
+            "type": "CHANGE_ENEMY_ANNOTATION"
+        }, {
+            "value": 1,
+            "type": "SET_RELATIVE_SPEED"
+        }, {
+            "value": "MEDIUM",
+            "type": "SET_HIT_STABLE"
+        }, {
+            "maxTime": 0.5,
+            "forceTime": false,
+            "distance": 120,
+            "throwing": true,
+            "planOnly": false,
+            "targetType": "ENEMY",
+            "type": "NAVIGATE_ESCAPE_TARGET"
+        }, {
+            "value": 1,
+            "type": "SET_RELATIVE_SPEED"
+        }, {
+            "value": true,
+            "immediately": true,
+            "type": "FACE_TO_TARGET"
+        }, {
+            "value": 0.3,
+            "type": "FACE_TO_TARGET_SPEED"
+        }, {
+            "wait": false,
+            "viaWalkConfig": false,
+            "type": "SHOW_ANIMATION",
+            "anim": "preAttack"
+        }, {
+            "time": 0.5,
+            "type": "WAIT"
+        }, {
+            "value": false,
+            "type": "FACE_TO_TARGET"
+        }, {
+            "wait": false,
+            "viaWalkConfig": false,
+            "type": "SHOW_ANIMATION",
+            "anim": "attack"
+        }, {
+            "type": "DISABLE_REACTION",
+            "reaction": "COLLAB"
+        }, {
+            "align": "BOTTOM",
+            "centralAngle": 0,
+            "angleVary": 0,
+            "startDist": 120,
+            "startDistCollide": "CLOSER",
+            "random": false,
+            "count": 1,
+            "duration": 0,
+            "clockwise": false,
+            "flipLeftFace": 0,
+            "circularArea": false,
+            "uniformDir": 0,
+            "delay": 0,
+            "repeat": false,
+            "type": "SHOOT_PROXY_RANGE",
+            "proxy": "spiderweb",
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
             }
-        ],
-        "BattleIdle": [
-            {
-                "value": true,
-                "type": "FACE_TO_TARGET"
+        }, {
+            "time": 0.6,
+            "type": "WAIT"
+        }],
+        "Scream": [{
+            "active": "PRE_ATTACK",
+            "type": "CHANGE_ENEMY_ANNOTATION"
+        }, {
+            "value": "LIGHT",
+            "type": "SET_HIT_STABLE"
+        }, {
+            "value": 1,
+            "type": "SET_RELATIVE_SPEED"
+        }, {
+            "value": "IGNORE",
+            "type": "SET_COLL_TYPE"
+        }, {
+            "maxTime": 0.5,
+            "forceTime": false,
+            "distance": 100,
+            "throwing": true,
+            "planOnly": false,
+            "targetType": "ENEMY",
+            "type": "NAVIGATE_ESCAPE_TARGET"
+        }, {
+            "value": "VIRTUAL",
+            "type": "SET_COLL_TYPE"
+        }, {
+            "type": "DISABLE_REACTION",
+            "reaction": "TEAM_ATTACK"
+        }, {
+            "wait": false,
+            "viaWalkConfig": false,
+            "type": "SHOW_ANIMATION",
+            "anim": "preAttack"
+        }, {
+            "duration": -1,
+            "align": "BOTTOM",
+            "rotateFace": 0,
+            "flipLeftFace": false,
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": false,
+            "fixPos": false,
+            "type": "SHOW_EFFECT",
+            "effect": {
+                "sheet": "enemies.forest",
+                "name": "spiderPreScream"
             },
-            {
-                "minTime": 0.2,
-                "maxTime": 0.4,
-                "type": "WAIT_RANDOM"
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
             }
-        ],
-        "MoveToSpawnPoint": [
-            {
-                "value": 0.5,
-                "type": "SET_RELATIVE_SPEED"
+        }, {
+            "time": 0.4,
+            "type": "WAIT"
+        }, {
+            "type": "CLEAR_ANIMATION"
+        }, {
+            "value": "IGNORE",
+            "type": "SET_COLL_TYPE"
+        }, {
+            "value": 1.5,
+            "type": "SET_RELATIVE_SPEED"
+        }, {
+            "maxTime": 1,
+            "forceTime": false,
+            "distance": 72,
+            "planOnly": false,
+            "targetType": "ENEMY",
+            "precise": false,
+            "stayBehind": false,
+            "type": "NAVIGATE_TO_TARGET"
+        }, {
+            "value": true,
+            "immediately": true,
+            "type": "FACE_TO_TARGET"
+        }, {
+            "value": 0.6,
+            "type": "FACE_TO_TARGET_SPEED"
+        }, {
+            "wait": false,
+            "viaWalkConfig": false,
+            "type": "SHOW_ANIMATION",
+            "anim": "preAttack"
+        }, {
+            "time": 0.3,
+            "type": "WAIT"
+        }, {
+            "wait": false,
+            "viaWalkConfig": false,
+            "type": "SHOW_ANIMATION",
+            "anim": "attack"
+        }, {
+            "value": false,
+            "type": "FACE_TO_TARGET"
+        }, {
+            "type": "CLEAR_EFFECTS"
+        }, {
+            "duration": 0.3,
+            "align": "BOTTOM",
+            "rotateFace": 6,
+            "flipLeftFace": false,
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": false,
+            "fixPos": false,
+            "type": "SHOW_EFFECT",
+            "effect": {
+                "sheet": "enemies.forest",
+                "name": "spiderScream"
             },
-            {
-                "maxTime": 3,
-                "maxDistance": 16,
-                "precise": false,
-                "type": "NAVIGATE_TO_SPAWN_POINT"
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
             }
-        ],
-        "MoveRandom": [
-            {
-                "value": 0.3,
-                "type": "SET_RELATIVE_SPEED"
+        }, {
+            "value": 1,
+            "forwardToProxies": false,
+            "type": "SET_DAMAGE_CEILING"
+        }, {
+            "align": "BOTTOM",
+            "radius": 80,
+            "yScale": 0,
+            "zHeight": 0,
+            "centralAngle": 0.2,
+            "duration": 0.1,
+            "expandRadius": 0,
+            "alwaysFull": true,
+            "clockwise": false,
+            "flipLeftFace": 0,
+            "rectangular": false,
+            "repeat": true,
+            "uniformHitDir": false,
+            "fixPos": false,
+            "checkCollision": false,
+            "type": "CIRCLE_ATTACK",
+            "attack": {
+                "type": "LIGHT",
+                "element": "WAVE",
+                "damageFactor": 0.6,
+                "reverse": false,
+                "status": 4,
+                "guardable": "",
+                "skillBonus": "",
+                "limiter": ""
             },
-            {
-                "value": false,
-                "type": "SET_JUMPING"
-            },
-            {
-                "minTime": 0.3,
-                "maxTime": 0.5,
-                "dirChanges": 0,
-                "stopBeforeEdge": true,
-                "type": "MOVE_RANDOM"
-            },
-            {
-                "minTime": 0.5,
-                "maxTime": 0.6,
-                "type": "WAIT_RANDOM"
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
             }
-        ],
-        "Adjust": [
-            {
-                "value": 0.8,
-                "type": "SET_RELATIVE_SPEED"
-            },
-            {
-                "maxTime": 1,
-                "forceTime": false,
-                "distance": 100,
-                "planOnly": false,
-                "targetType": "ENEMY",
-                "precise": false,
-                "stayBehind": false,
-                "type": "NAVIGATE_TO_TARGET"
+        }, {
+            "time": 0.05,
+            "stopBeforeEdge": false,
+            "type": "MOVE_FORWARD"
+        }, {
+            "time": 0.2,
+            "type": "WAIT"
+        }, {
+            "type": "STOP_REPEATING_FORCE"
+        }, {
+            "time": 0.2,
+            "type": "WAIT"
+        }, {
+            "type": "CLEAR_ANIMATION"
+        }],
+        "TeamStart": [{
+            "value": "MASSIVE",
+            "type": "SET_HIT_STABLE"
+        }, {
+            "entityType": "SELF",
+            "entityLabel": "",
+            "type": "SET_COLLAB_ENTITY"
+        }, {
+            "varName": "pointReady",
+            "changeType": "add",
+            "type": "CHANGE_COLLAB_VAR",
+            "value": 1
+        }, {
+            "value": 1.5,
+            "type": "SET_Z_GRAVITY_FACTOR"
+        }, {
+            "value": true,
+            "type": "FACE_TO_TARGET"
+        }, {
+            "jumpHeight": "M",
+            "wait": true,
+            "ignoreSounds": false,
+            "type": "JUMP"
+        }, {
+            "jumpHeight": "M",
+            "wait": true,
+            "ignoreSounds": false,
+            "type": "JUMP"
+        }, {
+            "varName": "ready",
+            "changeType": "add",
+            "type": "CHANGE_COLLAB_VAR",
+            "value": 1
+        }, {
+            "type": "WAIT_UNTIL",
+            "condition": "entity.collab.var.ready >= 3"
+        }, {
+            "varName": "charge",
+            "changeType": "add",
+            "type": "CHANGE_COLLAB_VAR",
+            "value": 1
+        }, {
+            "wait": false,
+            "viaWalkConfig": false,
+            "type": "SHOW_ANIMATION",
+            "anim": "preAttack"
+        }, {
+            "value": -1,
+            "type": "SET_WEIGHT"
+        }, {
+            "name": "shield",
+            "actionDetached": false,
+            "type": "ADD_SHIELD",
+            "shield": {
+                "type": "DIRECTIONAL",
+                "settings": {
+                    "baseFactor": 0.3,
+                    "strength": "REGULAR",
+                    "hitResist": "MASSIVE",
+                    "stableOverride": "MASSIVE",
+                    "duration": -1,
+                    "range": 1,
+                    "back": false
+                }
             }
-        ],
-        "AdjustFast": [
-            {
-                "value": 1.2,
-                "type": "SET_RELATIVE_SPEED"
+        }, {
+            "duration": -1,
+            "align": "BOTTOM",
+            "rotateFace": 0,
+            "flipLeftFace": false,
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": false,
+            "fixPos": false,
+            "type": "SHOW_EFFECT",
+            "effect": {
+                "sheet": "enemies.forest",
+                "name": "spiderColdCharge"
             },
-            {
-                "maxTime": 0.5,
-                "forceTime": false,
-                "distance": 140,
-                "planOnly": false,
-                "targetType": "ENEMY",
-                "precise": false,
-                "stayBehind": false,
-                "type": "NAVIGATE_TO_TARGET"
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
             }
-        ],
-        "GetClose": [
-            {
-                "value": 0.7,
-                "type": "SET_RELATIVE_SPEED"
+        }, {
+            "time": 1.5,
+            "type": "WAIT"
+        }, {
+            "varName": "shoot",
+            "changeType": "add",
+            "type": "CHANGE_COLLAB_VAR",
+            "value": 1
+        }, {
+            "breakType": "ALL",
+            "type": "SET_COLLAB_BREAK_TYPE"
+        }, {
+            "name": "shield",
+            "type": "REMOVE_SHIELD"
+        }, {
+            "type": "CLEAR_EFFECTS"
+        }, {
+            "value": 2,
+            "type": "SET_Z_GRAVITY_FACTOR"
+        }, {
+            "value": 600,
+            "type": "SET_Z_VEL"
+        }, {
+            "type": "CLEAR_ANIMATION"
+        }, {
+            "duration": 0,
+            "align": "BOTTOM",
+            "rotateFace": 0,
+            "flipLeftFace": false,
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": false,
+            "fixPos": true,
+            "type": "SHOW_EFFECT",
+            "effect": {
+                "sheet": "enemies.forest",
+                "name": "spiderColdBurst"
             },
-            {
-                "value": "MEDIUM",
-                "type": "SET_HIT_STABLE"
-            },
-            {
-                "maxTime": 0.5,
-                "forceTime": false,
-                "distance": 60,
-                "planOnly": false,
-                "targetType": "ENEMY",
-                "precise": false,
-                "stayBehind": false,
-                "type": "NAVIGATE_TO_TARGET"
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
             }
-        ],
-        "Spiderweb": [
-            {
-                "active": "PRE_ATTACK",
-                "type": "CHANGE_ENEMY_ANNOTATION"
+        }, {
+            "duration": -1,
+            "align": "BOTTOM",
+            "rotateFace": 0,
+            "flipLeftFace": false,
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": false,
+            "group": "trail",
+            "fixPos": false,
+            "type": "SHOW_EFFECT",
+            "effect": {
+                "sheet": "enemies.forest",
+                "name": "spiderJumpTrail"
             },
-            {
-                "value": 1,
-                "type": "SET_RELATIVE_SPEED"
-            },
-            {
-                "value": "MEDIUM",
-                "type": "SET_HIT_STABLE"
-            },
-            {
-                "maxTime": 0.5,
-                "forceTime": false,
-                "distance": 120,
-                "throwing": true,
-                "planOnly": false,
-                "targetType": "ENEMY",
-                "type": "NAVIGATE_ESCAPE_TARGET"
-            },
-            {
-                "value": 1,
-                "type": "SET_RELATIVE_SPEED"
-            },
-            {
-                "value": true,
-                "immediately": true,
-                "type": "FACE_TO_TARGET"
-            },
-            {
-                "value": 0.3,
-                "type": "FACE_TO_TARGET_SPEED"
-            },
-            {
-                "wait": false,
-                "viaWalkConfig": false,
-                "type": "SHOW_ANIMATION",
-                "anim": "preAttack"
-            },
-            {
-                "time": 0.5,
-                "type": "WAIT"
-            },
-            {
-                "value": false,
-                "type": "FACE_TO_TARGET"
-            },
-            {
-                "wait": false,
-                "viaWalkConfig": false,
-                "type": "SHOW_ANIMATION",
-                "anim": "attack"
-            },
-            {
-                "type": "DISABLE_REACTION",
-                "reaction": "COLLAB"
-            },
-            {
-                "align": "BOTTOM",
-                "centralAngle": 0,
-                "angleVary": 0,
-                "startDist": 120,
-                "startDistCollide": "CLOSER",
-                "random": false,
-                "count": 1,
-                "duration": 0,
-                "clockwise": false,
-                "flipLeftFace": 0,
-                "circularArea": false,
-                "uniformDir": 0,
-                "delay": 0,
-                "repeat": false,
-                "type": "SHOOT_PROXY_RANGE",
-                "proxy": "spiderweb",
-                "offset": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                }
-            },
-            {
-                "time": 0.6,
-                "type": "WAIT"
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
             }
-        ],
-        "Scream": [
-            {
-                "active": "PRE_ATTACK",
-                "type": "CHANGE_ENEMY_ANNOTATION"
+        }, {
+            "value": 1,
+            "type": "SET_AIR_FRICTION"
+        }, {
+            "stopType": "LANDED",
+            "stopBeforeTime": 0.2,
+            "distance": 0,
+            "rotateSpeed": 0.3,
+            "adjustSpeedMax": 400,
+            "missileMode": 0,
+            "cancelIfBelowFall": false,
+            "type": "JUMP_TARGET_MOVEMENT"
+        }, {
+            "value": 0,
+            "type": "SET_AIR_FRICTION"
+        }, {
+            "type": "WAIT_UNTIL_ON_GROUND"
+        }, {
+            "group": "trail",
+            "type": "CLEAR_EFFECTS"
+        }, {
+            "type": "STOP_XY"
+        }, {
+            "align": "BOTTOM",
+            "radius": 52,
+            "yScale": 0,
+            "zHeight": 16,
+            "centralAngle": 1,
+            "duration": 0.15,
+            "expandRadius": 0,
+            "alwaysFull": true,
+            "clockwise": false,
+            "flipLeftFace": 0,
+            "rectangular": false,
+            "repeat": false,
+            "uniformHitDir": false,
+            "fixPos": false,
+            "checkCollision": false,
+            "type": "CIRCLE_ATTACK",
+            "attack": {
+                "type": "MASSIVE",
+                "element": "COLD",
+                "damageFactor": 1.5,
+                "fly": "MASSIVE+",
+                "reverse": false,
+                "status": 10,
+                "guardable": "AUTO",
+                "skillBonus": "MELEE_DMG",
+                "limiter": ""
             },
-            {
-                "value": "LIGHT",
-                "type": "SET_HIT_STABLE"
-            },
-            {
-                "value": 1,
-                "type": "SET_RELATIVE_SPEED"
-            },
-            {
-                "value": "IGNORE",
-                "type": "SET_COLL_TYPE"
-            },
-            {
-                "maxTime": 0.5,
-                "forceTime": false,
-                "distance": 100,
-                "throwing": true,
-                "planOnly": false,
-                "targetType": "ENEMY",
-                "type": "NAVIGATE_ESCAPE_TARGET"
-            },
-            {
-                "value": "VIRTUAL",
-                "type": "SET_COLL_TYPE"
-            },
-            {
-                "type": "DISABLE_REACTION",
-                "reaction": "TEAM_ATTACK"
-            },
-            {
-                "wait": false,
-                "viaWalkConfig": false,
-                "type": "SHOW_ANIMATION",
-                "anim": "preAttack"
-            },
-            {
-                "duration": -1,
-                "align": "BOTTOM",
-                "rotateFace": 0,
-                "flipLeftFace": false,
-                "wait": false,
-                "waitSkip": 0,
-                "actionDetached": false,
-                "fixPos": false,
-                "type": "SHOW_EFFECT",
-                "effect": {
-                    "sheet": "enemies.forest",
-                    "name": "spiderPreScream"
-                },
-                "offset": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                }
-            },
-            {
-                "time": 0.4,
-                "type": "WAIT"
-            },
-            {
-                "type": "CLEAR_ANIMATION"
-            },
-            {
-                "value": "IGNORE",
-                "type": "SET_COLL_TYPE"
-            },
-            {
-                "value": 1.5,
-                "type": "SET_RELATIVE_SPEED"
-            },
-            {
-                "maxTime": 1,
-                "forceTime": false,
-                "distance": 72,
-                "planOnly": false,
-                "targetType": "ENEMY",
-                "precise": false,
-                "stayBehind": false,
-                "type": "NAVIGATE_TO_TARGET"
-            },
-            {
-                "value": true,
-                "immediately": true,
-                "type": "FACE_TO_TARGET"
-            },
-            {
-                "value": 0.6,
-                "type": "FACE_TO_TARGET_SPEED"
-            },
-            {
-                "wait": false,
-                "viaWalkConfig": false,
-                "type": "SHOW_ANIMATION",
-                "anim": "preAttack"
-            },
-            {
-                "time": 0.3,
-                "type": "WAIT"
-            },
-            {
-                "wait": false,
-                "viaWalkConfig": false,
-                "type": "SHOW_ANIMATION",
-                "anim": "attack"
-            },
-            {
-                "value": false,
-                "type": "FACE_TO_TARGET"
-            },
-            {
-                "type": "CLEAR_EFFECTS"
-            },
-            {
-                "duration": 0.3,
-                "align": "BOTTOM",
-                "rotateFace": 6,
-                "flipLeftFace": false,
-                "wait": false,
-                "waitSkip": 0,
-                "actionDetached": false,
-                "fixPos": false,
-                "type": "SHOW_EFFECT",
-                "effect": {
-                    "sheet": "enemies.forest",
-                    "name": "spiderScream"
-                },
-                "offset": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                }
-            },
-            {
-                "value": 1,
-                "forwardToProxies": false,
-                "type": "SET_DAMAGE_CEILING"
-            },
-            {
-                "align": "BOTTOM",
-                "radius": 80,
-                "yScale": 0,
-                "zHeight": 0,
-                "centralAngle": 0.2,
-                "duration": 0.1,
-                "expandRadius": 0,
-                "alwaysFull": true,
-                "clockwise": false,
-                "flipLeftFace": 0,
-                "rectangular": false,
-                "repeat": true,
-                "uniformHitDir": false,
-                "fixPos": false,
-                "checkCollision": false,
-                "type": "CIRCLE_ATTACK",
-                "attack": {
-                    "type": "LIGHT",
-                    "element": "WAVE",
-                    "damageFactor": 0.6,
-                    "reverse": false,
-                    "status": 4,
-                    "guardable": "",
-                    "skillBonus": "",
-                    "limiter": ""
-                },
-                "offset": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                }
-            },
-            {
-                "time": 0.05,
-                "stopBeforeEdge": false,
-                "type": "MOVE_FORWARD"
-            },
-            {
-                "time": 0.2,
-                "type": "WAIT"
-            },
-            {
-                "type": "STOP_REPEATING_FORCE"
-            },
-            {
-                "time": 0.2,
-                "type": "WAIT"
-            },
-            {
-                "type": "CLEAR_ANIMATION"
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
             }
-        ],
-        "TeamStart": [
-            {
-                "value": "MASSIVE",
-                "type": "SET_HIT_STABLE"
+        }, {
+            "duration": 0,
+            "align": "BOTTOM",
+            "rotateFace": 0,
+            "flipLeftFace": false,
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": false,
+            "fixPos": true,
+            "type": "SHOW_EFFECT",
+            "effect": {
+                "sheet": "enemies.forest",
+                "name": "spiderColdImpact"
             },
-            {
-                "entityType": "SELF",
-                "entityLabel": "",
-                "type": "SET_COLLAB_ENTITY"
-            },
-            {
-                "varName": "pointReady",
-                "changeType": "add",
-                "type": "CHANGE_COLLAB_VAR",
-                "value": 1
-            },
-            {
-                "value": 1.5,
-                "type": "SET_Z_GRAVITY_FACTOR"
-            },
-            {
-                "value": true,
-                "type": "FACE_TO_TARGET"
-            },
-            {
-                "jumpHeight": "M",
-                "wait": true,
-                "ignoreSounds": false,
-                "type": "JUMP"
-            },
-            {
-                "jumpHeight": "M",
-                "wait": true,
-                "ignoreSounds": false,
-                "type": "JUMP"
-            },
-            {
-                "varName": "ready",
-                "changeType": "add",
-                "type": "CHANGE_COLLAB_VAR",
-                "value": 1
-            },
-            {
-                "type": "WAIT_UNTIL",
-                "condition": "entity.collab.var.ready >= 3"
-            },
-            {
-                "varName": "charge",
-                "changeType": "add",
-                "type": "CHANGE_COLLAB_VAR",
-                "value": 1
-            },
-            {
-                "wait": false,
-                "viaWalkConfig": false,
-                "type": "SHOW_ANIMATION",
-                "anim": "preAttack"
-            },
-            {
-                "value": -1,
-                "type": "SET_WEIGHT"
-            },
-            {
-                "name": "shield",
-                "actionDetached": false,
-                "type": "ADD_SHIELD",
-                "shield": {
-                    "type": "DIRECTIONAL",
-                    "settings": {
-                        "baseFactor": 0.3,
-                        "strength": "REGULAR",
-                        "hitResist": "MASSIVE",
-                        "stableOverride": "MASSIVE",
-                        "duration": -1,
-                        "range": 1,
-                        "back": false
-                    }
-                }
-            },
-            {
-                "duration": -1,
-                "align": "BOTTOM",
-                "rotateFace": 0,
-                "flipLeftFace": false,
-                "wait": false,
-                "waitSkip": 0,
-                "actionDetached": false,
-                "fixPos": false,
-                "type": "SHOW_EFFECT",
-                "effect": {
-                    "sheet": "enemies.forest",
-                    "name": "spiderColdCharge"
-                },
-                "offset": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                }
-            },
-            {
-                "time": 1.5,
-                "type": "WAIT"
-            },
-            {
-                "varName": "shoot",
-                "changeType": "add",
-                "type": "CHANGE_COLLAB_VAR",
-                "value": 1
-            },
-            {
-                "breakType": "ALL",
-                "type": "SET_COLLAB_BREAK_TYPE"
-            },
-            {
-                "name": "shield",
-                "type": "REMOVE_SHIELD"
-            },
-            {
-                "type": "CLEAR_EFFECTS"
-            },
-            {
-                "value": 2,
-                "type": "SET_Z_GRAVITY_FACTOR"
-            },
-            {
-                "value": 600,
-                "type": "SET_Z_VEL"
-            },
-            {
-                "type": "CLEAR_ANIMATION"
-            },
-            {
-                "duration": 0,
-                "align": "BOTTOM",
-                "rotateFace": 0,
-                "flipLeftFace": false,
-                "wait": false,
-                "waitSkip": 0,
-                "actionDetached": false,
-                "fixPos": true,
-                "type": "SHOW_EFFECT",
-                "effect": {
-                    "sheet": "enemies.forest",
-                    "name": "spiderColdBurst"
-                },
-                "offset": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                }
-            },
-            {
-                "duration": -1,
-                "align": "BOTTOM",
-                "rotateFace": 0,
-                "flipLeftFace": false,
-                "wait": false,
-                "waitSkip": 0,
-                "actionDetached": false,
-                "group": "trail",
-                "fixPos": false,
-                "type": "SHOW_EFFECT",
-                "effect": {
-                    "sheet": "enemies.forest",
-                    "name": "spiderJumpTrail"
-                },
-                "offset": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                }
-            },
-            {
-                "value": 1,
-                "type": "SET_AIR_FRICTION"
-            },
-            {
-                "stopType": "LANDED",
-                "stopBeforeTime": 0.2,
-                "distance": 0,
-                "rotateSpeed": 0.3,
-                "adjustSpeedMax": 400,
-                "missileMode": 0,
-                "cancelIfBelowFall": false,
-                "type": "JUMP_TARGET_MOVEMENT"
-            },
-            {
-                "value": 0,
-                "type": "SET_AIR_FRICTION"
-            },
-            {
-                "type": "WAIT_UNTIL_ON_GROUND"
-            },
-            {
-                "group": "trail",
-                "type": "CLEAR_EFFECTS"
-            },
-            {
-                "type": "STOP_XY"
-            },
-            {
-                "align": "BOTTOM",
-                "radius": 52,
-                "yScale": 0,
-                "zHeight": 16,
-                "centralAngle": 1,
-                "duration": 0.15,
-                "expandRadius": 0,
-                "alwaysFull": true,
-                "clockwise": false,
-                "flipLeftFace": 0,
-                "rectangular": false,
-                "repeat": false,
-                "uniformHitDir": false,
-                "fixPos": false,
-                "checkCollision": false,
-                "type": "CIRCLE_ATTACK",
-                "attack": {
-                    "type": "MASSIVE",
-                    "element": "COLD",
-                    "damageFactor": 1.5,
-                    "fly": "MASSIVE+",
-                    "reverse": false,
-                    "status": 10,
-                    "guardable": "AUTO",
-                    "skillBonus": "MELEE_DMG",
-                    "limiter": ""
-                },
-                "offset": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                }
-            },
-            {
-                "duration": 0,
-                "align": "BOTTOM",
-                "rotateFace": 0,
-                "flipLeftFace": false,
-                "wait": false,
-                "waitSkip": 0,
-                "actionDetached": false,
-                "fixPos": true,
-                "type": "SHOW_EFFECT",
-                "effect": {
-                    "sheet": "enemies.forest",
-                    "name": "spiderColdImpact"
-                },
-                "offset": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                }
-            },
-            {
-                "time": 1,
-                "type": "WAIT"
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
             }
-        ],
-        "TeamSupport": [
-            {
-                "type": "WAIT_UNTIL",
-                "condition": "entity.collab.var.pointReady"
-            },
-            {
-                "value": "MASSIVE",
-                "type": "SET_HIT_STABLE"
-            },
-            {
-                "value": false,
-                "type": "FACE_TO_TARGET"
-            },
-            {
-                "kind": "COLLAB_ENTITY",
-                "type": "SET_TEMP_TARGET"
-            },
-            {
-                "value": 1.5,
-                "type": "SET_RELATIVE_SPEED"
-            },
-            {
-                "value": "IGNORE",
-                "type": "SET_COLL_TYPE"
-            },
-            {
-                "maxTime": 1,
-                "forceTime": false,
-                "distance": 120,
-                "throwing": false,
-                "planOnly": false,
-                "targetType": "ENEMY",
-                "type": "NAVIGATE_ESCAPE_TARGET"
-            },
-            {
-                "value": "VIRTUAL",
-                "type": "SET_COLL_TYPE"
-            },
-            {
-                "value": true,
-                "type": "FACE_TO_TARGET"
-            },
-            {
-                "wait": false,
-                "viaWalkConfig": false,
-                "type": "SHOW_ANIMATION",
-                "anim": "preAttack"
-            },
-            {
-                "value": -1,
-                "type": "SET_WEIGHT"
-            },
-            {
-                "name": "shield",
-                "actionDetached": false,
-                "type": "ADD_SHIELD",
-                "shield": {
-                    "type": "DIRECTIONAL",
-                    "settings": {
-                        "baseFactor": 0.3,
-                        "strength": "REGULAR",
-                        "hitResist": "MASSIVE",
-                        "stableOverride": "MASSIVE",
-                        "duration": -1,
-                        "range": 1,
-                        "back": false
-                    }
+        }, {
+            "time": 1,
+            "type": "WAIT"
+        }],
+        "TeamSupport": [{
+            "type": "WAIT_UNTIL",
+            "condition": "entity.collab.var.pointReady"
+        }, {
+            "value": "MASSIVE",
+            "type": "SET_HIT_STABLE"
+        }, {
+            "value": false,
+            "type": "FACE_TO_TARGET"
+        }, {
+            "kind": "COLLAB_ENTITY",
+            "type": "SET_TEMP_TARGET"
+        }, {
+            "value": 1.5,
+            "type": "SET_RELATIVE_SPEED"
+        }, {
+            "value": "IGNORE",
+            "type": "SET_COLL_TYPE"
+        }, {
+            "maxTime": 1,
+            "forceTime": false,
+            "distance": 120,
+            "throwing": false,
+            "planOnly": false,
+            "targetType": "ENEMY",
+            "type": "NAVIGATE_ESCAPE_TARGET"
+        }, {
+            "value": "VIRTUAL",
+            "type": "SET_COLL_TYPE"
+        }, {
+            "value": true,
+            "type": "FACE_TO_TARGET"
+        }, {
+            "wait": false,
+            "viaWalkConfig": false,
+            "type": "SHOW_ANIMATION",
+            "anim": "preAttack"
+        }, {
+            "value": -1,
+            "type": "SET_WEIGHT"
+        }, {
+            "name": "shield",
+            "actionDetached": false,
+            "type": "ADD_SHIELD",
+            "shield": {
+                "type": "DIRECTIONAL",
+                "settings": {
+                    "baseFactor": 0.3,
+                    "strength": "REGULAR",
+                    "hitResist": "MASSIVE",
+                    "stableOverride": "MASSIVE",
+                    "duration": -1,
+                    "range": 1,
+                    "back": false
                 }
-            },
-            {
-                "duration": -1,
-                "align": "BOTTOM",
-                "rotateFace": 0,
-                "flipLeftFace": false,
-                "wait": false,
-                "waitSkip": 0,
-                "actionDetached": false,
-                "fixPos": false,
-                "type": "SHOW_EFFECT",
-                "effect": {
-                    "sheet": "enemies.forest",
-                    "name": "spiderColdSub"
-                },
-                "offset": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                }
-            },
-            {
-                "time": 0.3,
-                "type": "WAIT"
-            },
-            {
-                "varName": "ready",
-                "changeType": "add",
-                "type": "CHANGE_COLLAB_VAR",
-                "value": 1
-            },
-            {
-                "type": "WAIT_UNTIL",
-                "condition": "entity.collab.var.charge"
-            },
-            {
-                "wait": false,
-                "viaWalkConfig": false,
-                "type": "SHOW_ANIMATION",
-                "anim": "attack"
-            },
-            {
-                "duration": -1,
-                "align": "BOTTOM",
-                "rotateFace": 0,
-                "flipLeftFace": false,
-                "wait": false,
-                "waitSkip": 0,
-                "actionDetached": false,
-                "target2": "TARGET",
-                "target2Align": "CENTER",
-                "fixPos": false,
-                "type": "SHOW_EFFECT",
-                "effect": {
-                    "sheet": "enemies.forest",
-                    "name": "spiderColdSubLine"
-                },
-                "offset": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                }
-            },
-            {
-                "type": "WAIT_UNTIL",
-                "condition": "entity.collab.var.shoot"
-            },
-            {
-                "name": "shield",
-                "type": "REMOVE_SHIELD"
-            },
-            {
-                "type": "CLEAR_EFFECTS"
-            },
-            {
-                "value": true,
-                "type": "SET_FACE_FIX"
-            },
-            {
-                "wait": false,
-                "viaWalkConfig": false,
-                "type": "SHOW_ANIMATION",
-                "anim": "fall"
-            },
-            {
-                "time": 0.05,
-                "stopBeforeEdge": true,
-                "type": "MOVE_BACKWARD"
-            },
-            {
-                "value": 0.6,
-                "type": "SET_FRICTION"
-            },
-            {
-                "time": 0.3,
-                "stopBeforeEdge": true,
-                "type": "SLIDE_OUT"
-            },
-            {
-                "type": "STOP_XY"
             }
-        ],
-        "BlockCounter": [
-            {
-                "duration": 0,
-                "align": "BOTTOM",
-                "rotateFace": 0,
-                "flipLeftFace": false,
-                "wait": false,
-                "waitSkip": 0,
-                "actionDetached": false,
-                "fixPos": false,
-                "type": "SHOW_EFFECT",
-                "effect": {
-                    "sheet": "combat",
-                    "name": "flashShort"
-                }
+        }, {
+            "duration": -1,
+            "align": "BOTTOM",
+            "rotateFace": 0,
+            "flipLeftFace": false,
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": false,
+            "fixPos": false,
+            "type": "SHOW_EFFECT",
+            "effect": {
+                "sheet": "enemies.forest",
+                "name": "spiderColdSub"
             },
-            {
-                "flyLevel": "MASSIVE",
-                "breaking": false,
-                "stable": false,
-                "wait": true,
-                "type": "DO_DAMAGE_MOVEMENT"
-            },
-            {
-                "time": 0.4,
-                "type": "WAIT"
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
             }
-        ]
+        }, {
+            "time": 0.3,
+            "type": "WAIT"
+        }, {
+            "varName": "ready",
+            "changeType": "add",
+            "type": "CHANGE_COLLAB_VAR",
+            "value": 1
+        }, {
+            "type": "WAIT_UNTIL",
+            "condition": "entity.collab.var.charge"
+        }, {
+            "wait": false,
+            "viaWalkConfig": false,
+            "type": "SHOW_ANIMATION",
+            "anim": "attack"
+        }, {
+            "duration": -1,
+            "align": "BOTTOM",
+            "rotateFace": 0,
+            "flipLeftFace": false,
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": false,
+            "target2": "TARGET",
+            "target2Align": "CENTER",
+            "fixPos": false,
+            "type": "SHOW_EFFECT",
+            "effect": {
+                "sheet": "enemies.forest",
+                "name": "spiderColdSubLine"
+            },
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }, {
+            "type": "WAIT_UNTIL",
+            "condition": "entity.collab.var.shoot"
+        }, {
+            "name": "shield",
+            "type": "REMOVE_SHIELD"
+        }, {
+            "type": "CLEAR_EFFECTS"
+        }, {
+            "value": true,
+            "type": "SET_FACE_FIX"
+        }, {
+            "wait": false,
+            "viaWalkConfig": false,
+            "type": "SHOW_ANIMATION",
+            "anim": "fall"
+        }, {
+            "time": 0.05,
+            "stopBeforeEdge": true,
+            "type": "MOVE_BACKWARD"
+        }, {
+            "value": 0.6,
+            "type": "SET_FRICTION"
+        }, {
+            "time": 0.3,
+            "stopBeforeEdge": true,
+            "type": "SLIDE_OUT"
+        }, {
+            "type": "STOP_XY"
+        }],
+        "BlockCounter": [{
+            "duration": 0,
+            "align": "BOTTOM",
+            "rotateFace": 0,
+            "flipLeftFace": false,
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": false,
+            "fixPos": false,
+            "type": "SHOW_EFFECT",
+            "effect": {
+                "sheet": "combat",
+                "name": "flashShort"
+            }
+        }, {
+            "flyLevel": "MASSIVE",
+            "breaking": false,
+            "stable": false,
+            "wait": true,
+            "type": "DO_DAMAGE_MOVEMENT"
+        }, {
+            "time": 0.4,
+            "type": "WAIT"
+        }]
     },
     "reactions": {
         "GUARD_COUNTER": {
@@ -1196,14 +1005,11 @@
             "en_US": "Definitely a bug"
         },
         "category": "ANIMALS",
-        "descriptions": [
-            {
-                "condition": "",
-                "text": {
-                    "en_US": "Mostly found in caves in \\v[area.forest.name], this variant seems to have boosted stats as a result of the hacker who spawned it."
-
-                }
+        "descriptions": [{
+            "condition": "",
+            "text": {
+                "en_US": "Mostly found in caves in \\v[area.forest.name], this variant seems to have boosted stats as a result of the hacker who spawned it."
             }
-        ]
+        }]
     }
 }

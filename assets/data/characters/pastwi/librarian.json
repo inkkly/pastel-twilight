@@ -3,13 +3,12 @@
         "en_US": "The Archivist",
         "langUid": 1,
         "de_DE": "Die Archivarin"
- 
     },
     "animSheet": {
         "DOCTYPE": "MULTI_DIR_ANIMATION",
         "namedSheets": {
             "move": {
-                "src": "media\/entity\/npc\/librarian.png",
+                "src": "media/entity/npc/librarian.png",
                 "width": 32,
                 "height": 40,
                 "xCount": 3,

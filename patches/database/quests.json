@@ -3,66 +3,54 @@
         "hubSettings": {
             "character": "pastwi.lydia",
             "location": {
-                "en_US": "Could you help me gather some things to give to someone special? \\c[3]- Basin Keep - North\\c[0]"
-
+                "en_US": "Could you help me gather some things to give to someone special? \\c[3]- Twilight City - Square\\c[0]"
             },
             "condition": "plot.line >= 19200"
         },
         "name": {
             "en_US": "Pal Time's Day Surprise"
-
         },
         "person": {
             "en_US": "Lydia"
-
         },
         "level": 60,
         "order": 731300,
         "description": {
             "en_US": "Lydia has asked you to \\c[3]collect materials\\c[0] for her gift to \\c[3]a special friend\\c[0]."
-
         },
         "briefing": {
             "en_US": "Lydia is grateful, and so is \\c[3]Bits\\c[0]! "
-
         },
         "hideRewards": false,
         "tasks": [{
-                "task": {
-                    "en_US": "Collect the materials Lydia needs for her gift."
-
-                },
-                "subtasks": [{
-                        "item": "457",
-                        "amount": 1,
-                        "keepItems": false,
-                        "type": "COLLECT"
-                    },
-                    {
-                        "item": "384",
-                        "amount": 8,
-                        "keepItems": false,
-                        "type": "COLLECT"
-                    },
-                    {
-                        "item": "190",
-                        "amount": 5,
-                        "keepItems": false,
-                        "type": "COLLECT"
-                    }
-                ]
+            "task": {
+                "en_US": "Collect the materials Lydia needs for her gift."
             },
-            {
-                "task": {
-                    "en_US": "Give Lydia the materials in \\c[3]Basin Keep - North\\c[0]"
-
-                },
-                "subtasks": [{
-                    "label": "done",
-                    "type": "CONDITION"
-                }]
-            }
-        ],
+            "subtasks": [{
+                "item": "457",
+                "amount": 1,
+                "keepItems": false,
+                "type": "COLLECT"
+            }, {
+                "item": "384",
+                "amount": 8,
+                "keepItems": false,
+                "type": "COLLECT"
+            }, {
+                "item": "190",
+                "amount": 5,
+                "keepItems": false,
+                "type": "COLLECT"
+            }]
+        }, {
+            "task": {
+                "en_US": "Give Lydia the materials in \\c[3]Basin Keep - North\\c[0]"
+            },
+            "subtasks": [{
+                "label": "done",
+                "type": "CONDITION"
+            }]
+        }],
         "rewards": {
             "exp": {
                 "exp": 666,
@@ -70,51 +58,41 @@
             },
             "money": 6969
         },
-        "area": "jungle-city"
+        "area": "twilight-city"
     },
-
     "archivist-1": {
         "name": {
-            "en_US": "The Archivist"
-
+            "en_US": "Helping The Archivist"
         },
         "person": {
             "en_US": "The Archivist"
-
         },
         "level": 60,
         "order": 731301,
         "description": {
             "en_US": "The Archivist has asked you to clear out the second floor of \\c[3]The Library\\c[0] for her."
-
         },
         "briefing": {
             "en_US": "The Archivist is thankful for your help, and has agreed to divulge some information about \\c[3]how she became The Archivist\\c[0]."
-
         },
         "hideRewards": false,
         "tasks": [{
-                "task": {
-                    "en_US": "Clear the second floor of enemies."
-
-                },
-                "subtasks": [{
-                        "label":"second-floor-clear",
-                        "type": "CONDITION"
-                    }
-                ]
+            "task": {
+                "en_US": "Clear the second floor of enemies."
             },
-            {
-                "task": {
-                    "en_US": "Talk to The Archivist in \\c[3]The Library\\c[0]"
-
-                },
-                "subtasks": [{
-                    "label": "done",
-                    "type": "CONDITION"
-                }]
-            }
-        ],
+            "subtasks": [{
+                "label": "second-floor-clear",
+                "type": "CONDITION"
+            }]
+        }, {
+            "task": {
+                "en_US": "Talk to The Archivist in \\c[3]The Library\\c[0]"
+            },
+            "subtasks": [{
+                "label": "done",
+                "type": "CONDITION"
+            }]
+        }],
         "rewards": {
             "exp": {
                 "exp": 250,
@@ -122,6 +100,6 @@
             },
             "money": 900
         },
-        "area": "jungle-city"
+        "area": "twilight-city"
     }
 }

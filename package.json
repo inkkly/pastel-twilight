@@ -3,10 +3,21 @@
     "displayName": "Pastel Twilight",
     "prestart": "prestart.js",
     "description": "A mod with its own areas, story, dungeons, and more",
-    "version": "0.0.2",
+    "version": "0.0.5",
     "module": true,
     "ccmodDependencies": {
         "item-api": "^0.*",
         "modifier-api": "^0.1.0"
+    },
+    "scripts": {
+        "format": "npm run minify-json && npm run json-beautify && npm run js-beautify",
+        "minify-json": "minify-json ./",
+        "js-beautify": "js-beautify -js -q -r -f \"./**/*.js\"",
+        "json-beautify": "js-beautify -js -r -f \"./**/*.json\""
+    },
+    "dependencies": {
+        "js-beautify": "^1.13.0",
+        "json-beautify": "^1.1.1",
+        "minify-json": "^1.0.0"
     }
 }

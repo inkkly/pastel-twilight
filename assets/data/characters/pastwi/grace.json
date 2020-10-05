@@ -3,13 +3,12 @@
         "en_US": "Grace",
         "langUid": 1,
         "de_DE": "Grace"
- 
     },
     "animSheet": {
         "DOCTYPE": "MULTI_DIR_ANIMATION",
         "namedSheets": {
             "move": {
-                "src": "media\/entity\/npc\/grace.png",
+                "src": "media/entity/npc/grace.png",
                 "width": 32,
                 "height": 40,
                 "xCount": 3,
