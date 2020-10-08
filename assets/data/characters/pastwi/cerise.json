@@ -81,18 +81,119 @@
     },
     "face": {
         "width": 134,
-        "height": 159,
+        "height": 154,
         "centerX": 46,
         "centerY": 56,
         "src": "cerise.png",
         "parts": [{
-            "default": {
-                "srcX": 0,
+            "lowerDefault": {
+                "srcX": 352,
                 "srcY": 0,
                 "width": 134,
-                "height": 159,
+                "height": 74,
                 "destX": 0,
+                "destY": 80,
+                "subX": 0,
+                "subY": 0,
+                "img": ""
+            }
+        }, {
+            "top": {
+                "srcX": 0,
+                "srcY": 0,
+                "width": 96,
+                "height": 32,
+                "destX": 16,
                 "destY": 0,
+                "subX": 0,
+                "subY": 0,
+                "img": ""
+            }
+        }, {
+            "upFrown": {
+                "srcX": 0,
+                "srcY": 32,
+                "width": 96,
+                "height": 48,
+                "destX": 16,
+                "destY": 32,
+                "subX": 0,
+                "subY": 0,
+                "img": ""
+            },
+            "upHappy": {
+                "srcX": 0,
+                "srcY": 80,
+                "width": 96,
+                "height": 48,
+                "destX": 16,
+                "destY": 32,
+                "subX": 0,
+                "subY": 0,
+                "img": ""
+            },
+            "upFluster": {
+                "srcX": 0,
+                "srcY": 128,
+                "width": 96,
+                "height": 48,
+                "destX": 16,
+                "destY": 32,
+                "subX": 0,
+                "subY": 0,
+                "img": ""
+            },
+            "upCheerful": {
+                "srcX": 0,
+                "srcY": 176,
+                "width": 96,
+                "height": 48,
+                "destX": 16,
+                "destY": 32,
+                "subX": 0,
+                "subY": 0,
+                "img": ""
+            },
+            "upTears": {
+                "srcX": 96,
+                "srcY": 0,
+                "width": 96,
+                "height": 48,
+                "destX": 16,
+                "destY": 32,
+                "subX": 0,
+                "subY": 0,
+                "img": ""
+            },
+            "upCrying": {
+                "srcX": 96,
+                "srcY": 48,
+                "width": 96,
+                "height": 48,
+                "destX": 16,
+                "destY": 32,
+                "subX": 0,
+                "subY": 0,
+                "img": ""
+            },
+            "upSmirk": {
+                "srcX": 96,
+                "srcY": 96,
+                "width": 96,
+                "height": 48,
+                "destX": 16,
+                "destY": 32,
+                "subX": 0,
+                "subY": 0,
+                "img": ""
+            },
+            "upLookDown": {
+                "srcX": 96,
+                "srcY": 144,
+                "width": 96,
+                "height": 48,
+                "destX": 16,
+                "destY": 32,
                 "subX": 0,
                 "subY": 0,
                 "img": ""
@@ -101,7 +202,42 @@
         "expressions": {
             "DEFAULT": {
                 "faces": [
-                    ["default"]
+                    ["lowerDefault", "top", "upFrown"]
+                ]
+            },
+            "HAPPY": {
+                "faces": [
+                    ["lowerDefault", "top", "upHappy"]
+                ]
+            },
+            "BLUSH": {
+                "faces": [
+                    ["lowerDefault", "top", "upFluster"]
+                ]
+            },
+            "CHEERFUL": {
+                "faces": [
+                    ["lowerDefault", "top", "upCheerful"]
+                ]
+            },
+            "PRECRY1": {
+                "faces": [
+                    ["lowerDefault", "top", "upTears"]
+                ]
+            },
+            "CRY": {
+                "faces": [
+                    ["lowerDefault", "top", "upCrying"]
+                ]
+            },
+            "SMIRK": {
+                "faces": [
+                    ["lowerDefault", "top", "upSmirk"]
+                ]
+            },
+            "LOOKDOWN": {
+                "faces": [
+                    ["lowerDefault", "top", "upLookDown"]
                 ]
             }
         }
