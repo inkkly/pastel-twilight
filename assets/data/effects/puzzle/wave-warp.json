@@ -1,0 +1,1069 @@
+{
+    "DOCTYPE": "EFFECT",
+    "ANIMS": {
+        "SUB": [{
+            "name": "TELEPORT_DOT1",
+            "sheet": {
+                "src": "media/entity/effects/pastwi/puzzle.png ",
+                "offX": 8,
+                "offY": 32,
+                "width": 8,
+                "height": 8
+            },
+            "guiSprites": true,
+            "renderMode": "lighter",
+            "time": 0.4,
+            "flipY": false,
+            "frames": [0]
+        }, {
+            "name": "TELEPORT_RIPPLE",
+            "sheet": {
+                "src": "media/entity/effects/pastwi/puzzle.png  ",
+                "xCount": 2,
+                "offX": 0,
+                "offY": 40,
+                "width": 8,
+                "height": 8
+            },
+            "guiSprites": true,
+            "renderMode": "lighter",
+            "time": 0.05,
+            "flipY": false,
+            "frames": [0, 1, 2, 3, 4]
+        }, {
+            "name": "TELEPORT_DOT2",
+            "sheet": {
+                "src": "media/entity/effects/pastwi/puzzle.png ",
+                "offX": 0,
+                "offY": 32,
+                "width": 8,
+                "height": 8
+            },
+            "guiSprites": true,
+            "renderMode": "lighter",
+            "time": 0.4,
+            "flipY": true,
+            "frames": [0]
+        }, {
+            "name": "TELEPORT_DOT3",
+            "sheet": {
+                "src": "media/entity/effects/pastwi/puzzle.png ",
+                "offX": 0,
+                "offY": 32,
+                "width": 8,
+                "height": 8
+            },
+            "guiSprites": true,
+            "renderMode": "lighter",
+            "time": 0.4,
+            "flipY": false,
+            "frames": [0]
+        }]
+    },
+    "EFFECTS": {
+        "hide": [{
+            "alpha": 0,
+            "duration": 0.1,
+            "type": "CHANGE_ALPHA"
+        }, {
+            "color": "#008F6F",
+            "noLighter": false,
+            "pAlpha": {
+                "init": 0.6,
+                "start": {
+                    "value": 0,
+                    "spline": ""
+                }
+            },
+            "pScale": {
+                "init": {
+                    "x": 1,
+                    "y": 1
+                },
+                "start": {
+                    "value": {
+                        "x": 0.4,
+                        "y": 1.8
+                    },
+                    "spline": ""
+                }
+            },
+            "particleDuration": 0.2,
+            "type": "COPY_SPRITE"
+        }, {
+            "color": "#008F6F",
+            "noLighter": false,
+            "pAlpha": {
+                "init": 0.6,
+                "start": {
+                    "value": 0,
+                    "spline": ""
+                }
+            },
+            "pScale": {
+                "init": {
+                    "x": 1,
+                    "y": 1
+                },
+                "start": {
+                    "value": {
+                        "x": 1.2,
+                        "y": 1.2
+                    },
+                    "spline": ""
+                }
+            },
+            "particleDuration": 0.2,
+            "type": "COPY_SPRITE"
+        }, {
+            "color": "#008F6F",
+            "noLighter": false,
+            "pAlpha": {
+                "init": 0.6,
+                "start": {
+                    "value": 0,
+                    "spline": ""
+                }
+            },
+            "pScale": {
+                "init": {
+                    "x": 1,
+                    "y": 1
+                },
+                "start": {
+                    "value": {
+                        "x": 1.8,
+                        "y": 0.4
+                    },
+                    "spline": ""
+                }
+            },
+            "particleDuration": 0.2,
+            "type": "COPY_SPRITE"
+        }, {
+            "time": 0.066,
+            "type": "WAIT"
+        }, {
+            "color": "#008F6F",
+            "noLighter": false,
+            "pAlpha": {
+                "init": 0.6,
+                "start": {
+                    "value": 0,
+                    "spline": ""
+                }
+            },
+            "pScale": {
+                "init": {
+                    "x": 1,
+                    "y": 1
+                },
+                "start": {
+                    "value": {
+                        "x": 0.4,
+                        "y": 1.8
+                    },
+                    "spline": ""
+                }
+            },
+            "particleDuration": 0.2,
+            "type": "COPY_SPRITE"
+        }, {
+            "color": "#008F6F",
+            "noLighter": false,
+            "pAlpha": {
+                "init": 0.6,
+                "start": {
+                    "value": 0,
+                    "spline": ""
+                }
+            },
+            "pScale": {
+                "init": {
+                    "x": 1,
+                    "y": 1
+                },
+                "start": {
+                    "value": {
+                        "x": 1.2,
+                        "y": 1.2
+                    },
+                    "spline": ""
+                }
+            },
+            "particleDuration": 0.2,
+            "type": "COPY_SPRITE"
+        }, {
+            "color": "#008F6F",
+            "noLighter": false,
+            "pAlpha": {
+                "init": 0.6,
+                "start": {
+                    "value": 0,
+                    "spline": ""
+                }
+            },
+            "pScale": {
+                "init": {
+                    "x": 1,
+                    "y": 1
+                },
+                "start": {
+                    "value": {
+                        "x": 1.8,
+                        "y": 0.4
+                    },
+                    "spline": ""
+                }
+            },
+            "particleDuration": 0.2,
+            "type": "COPY_SPRITE"
+        }],
+        "show": [{
+            "radius": 12,
+            "useTargetAngle": false,
+            "numParticles": 12,
+            "duration": 0.3,
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 8
+            },
+            "alongY": false,
+            "anim": "TELEPORT_RIPPLE",
+            "type": "PLAY_ANIM_RANGE"
+        }, {
+            "color": "#00FFCC",
+            "alpha": 0,
+            "duration": 0.3,
+            "keepDuration": 0,
+            "noLighter": false,
+            "type": "FLASH_COLOR"
+        }, {
+            "alpha": 0,
+            "duration": 0,
+            "type": "CHANGE_ALPHA"
+        }, {
+            "scaleX": 0.3,
+            "scaleY": 0.3,
+            "duration": 0,
+            "type": "CHANGE_SCALE"
+        }, {
+            "scaleX": 1,
+            "scaleY": 1,
+            "duration": 0.2,
+            "type": "CHANGE_SCALE"
+        }, {
+            "alpha": 1,
+            "duration": 0.1,
+            "type": "CHANGE_ALPHA"
+        }, {
+            "color": "#008F6F",
+            "noLighter": false,
+            "pAlpha": {
+                "init": 0.5,
+                "start": {
+                    "value": 0,
+                    "spline": ""
+                }
+            },
+            "pScale": {
+                "init": {
+                    "x": 1,
+                    "y": 1
+                },
+                "start": {
+                    "value": {
+                        "x": 1.3,
+                        "y": 1.3
+                    },
+                    "spline": ""
+                }
+            },
+            "particleDuration": 0.2,
+            "type": "COPY_SPRITE"
+        }, {
+            "time": 0.05,
+            "type": "WAIT"
+        }, {
+            "color": "#008F6F",
+            "noLighter": false,
+            "pAlpha": {
+                "init": 0.5,
+                "start": {
+                    "value": 0,
+                    "spline": ""
+                }
+            },
+            "pScale": {
+                "init": {
+                    "x": 1,
+                    "y": 1
+                },
+                "start": {
+                    "value": {
+                        "x": 1.5,
+                        "y": 1.5
+                    },
+                    "spline": ""
+                }
+            },
+            "particleDuration": 0.2,
+            "type": "COPY_SPRITE"
+        }, {
+            "time": 0.05,
+            "type": "WAIT"
+        }, {
+            "color": "#008F6F",
+            "noLighter": false,
+            "pAlpha": {
+                "init": 0.5,
+                "start": {
+                    "value": 0,
+                    "spline": ""
+                }
+            },
+            "pScale": {
+                "init": {
+                    "x": 1,
+                    "y": 1
+                },
+                "start": {
+                    "value": {
+                        "x": 1.8,
+                        "y": 1.8
+                    },
+                    "spline": ""
+                }
+            },
+            "particleDuration": 0.2,
+            "type": "COPY_SPRITE"
+        }, {
+            "time": 0.05,
+            "type": "WAIT"
+        }, {
+            "color": "#008F6F",
+            "noLighter": false,
+            "pAlpha": {
+                "init": 0.5,
+                "start": {
+                    "value": 0,
+                    "spline": ""
+                }
+            },
+            "pScale": {
+                "init": {
+                    "x": 1,
+                    "y": 1
+                },
+                "start": {
+                    "value": {
+                        "x": 1.8,
+                        "y": 1.8
+                    },
+                    "spline": ""
+                }
+            },
+            "particleDuration": 0.2,
+            "type": "COPY_SPRITE"
+        }, {
+            "time": 0.05,
+            "type": "WAIT"
+        }, {
+            "color": "#008F6F",
+            "noLighter": false,
+            "pAlpha": {
+                "init": 0.5,
+                "start": {
+                    "value": 0,
+                    "spline": ""
+                }
+            },
+            "pScale": {
+                "init": {
+                    "x": 1,
+                    "y": 1
+                },
+                "start": {
+                    "value": {
+                        "x": 1.8,
+                        "y": 1.8
+                    },
+                    "spline": ""
+                }
+            },
+            "particleDuration": 0.2,
+            "type": "COPY_SPRITE"
+        }],
+        "showDummy": [{
+            "radius": 12,
+            "useTargetAngle": false,
+            "numParticles": 12,
+            "duration": 0.3,
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 8
+            },
+            "alongY": false,
+            "anim": "TELEPORT_RIPPLE",
+            "type": "PLAY_ANIM_RANGE"
+        }, {
+            "color": "#00FFCC",
+            "alpha": 0,
+            "duration": 0.3,
+            "keepDuration": 0,
+            "noLighter": false,
+            "type": "FLASH_COLOR"
+        }, {
+            "alpha": 0,
+            "duration": 0,
+            "type": "CHANGE_ALPHA"
+        }, {
+            "scaleX": 0.3,
+            "scaleY": 0.3,
+            "duration": 0,
+            "type": "CHANGE_SCALE"
+        }, {
+            "scaleX": 1,
+            "scaleY": 1,
+            "duration": 0.2,
+            "type": "CHANGE_SCALE"
+        }, {
+            "alpha": 0.5,
+            "duration": 0.1,
+            "type": "CHANGE_ALPHA"
+        }, {
+            "color": "#008F6F",
+            "noLighter": false,
+            "pAlpha": {
+                "init": 0.5,
+                "start": {
+                    "value": 0,
+                    "spline": ""
+                }
+            },
+            "pScale": {
+                "init": {
+                    "x": 1,
+                    "y": 1
+                },
+                "start": {
+                    "value": {
+                        "x": 1.3,
+                        "y": 1.3
+                    },
+                    "spline": ""
+                }
+            },
+            "particleDuration": 0.2,
+            "type": "COPY_SPRITE"
+        }, {
+            "time": 0.05,
+            "type": "WAIT"
+        }, {
+            "color": "#008F6F",
+            "noLighter": false,
+            "pAlpha": {
+                "init": 0.5,
+                "start": {
+                    "value": 0,
+                    "spline": ""
+                }
+            },
+            "pScale": {
+                "init": {
+                    "x": 1,
+                    "y": 1
+                },
+                "start": {
+                    "value": {
+                        "x": 1.5,
+                        "y": 1.5
+                    },
+                    "spline": ""
+                }
+            },
+            "particleDuration": 0.2,
+            "type": "COPY_SPRITE"
+        }, {
+            "time": 0.05,
+            "type": "WAIT"
+        }, {
+            "color": "#008F6F",
+            "noLighter": false,
+            "pAlpha": {
+                "init": 0.5,
+                "start": {
+                    "value": 0,
+                    "spline": ""
+                }
+            },
+            "pScale": {
+                "init": {
+                    "x": 1,
+                    "y": 1
+                },
+                "start": {
+                    "value": {
+                        "x": 1.8,
+                        "y": 1.8
+                    },
+                    "spline": ""
+                }
+            },
+            "particleDuration": 0.2,
+            "type": "COPY_SPRITE"
+        }, {
+            "time": 0.05,
+            "type": "WAIT"
+        }, {
+            "color": "#008F6F",
+            "noLighter": false,
+            "pAlpha": {
+                "init": 0.5,
+                "start": {
+                    "value": 0,
+                    "spline": ""
+                }
+            },
+            "pScale": {
+                "init": {
+                    "x": 1,
+                    "y": 1
+                },
+                "start": {
+                    "value": {
+                        "x": 1.8,
+                        "y": 1.8
+                    },
+                    "spline": ""
+                }
+            },
+            "particleDuration": 0.2,
+            "type": "COPY_SPRITE"
+        }, {
+            "time": 0.05,
+            "type": "WAIT"
+        }, {
+            "color": "#008F6F",
+            "noLighter": false,
+            "pAlpha": {
+                "init": 0.5,
+                "start": {
+                    "value": 0,
+                    "spline": ""
+                }
+            },
+            "pScale": {
+                "init": {
+                    "x": 1,
+                    "y": 1
+                },
+                "start": {
+                    "value": {
+                        "x": 1.8,
+                        "y": 1.8
+                    },
+                    "spline": ""
+                }
+            },
+            "particleDuration": 0.2,
+            "type": "COPY_SPRITE"
+        }],
+        "trail": [{
+            "volume": 0.8,
+            "global": false,
+            "loop": false,
+            "variance": 0.15,
+            "sound": "media/sound/puzzle/wave-teleport-2.ogg",
+            "type": "PLAY_SOUND"
+        }, {
+            "radius": 12,
+            "useTargetAngle": false,
+            "numParticles": 12,
+            "duration": 0.3,
+            "alongY": false,
+            "anim": "TELEPORT_RIPPLE",
+            "type": "PLAY_ANIM_RANGE"
+        }, {
+            "duration": 0.2,
+            "numParticles": 20,
+            "flyType": "FLY_ARC",
+            "inverse": true,
+            "offRadiusZScale": 1,
+            "rotateMoveDir": "NONE",
+            "particleDuration": 0.3,
+            "anim": "TELEPORT_DOT1",
+            "offsetRadius": 16,
+            "offsetAngle": 1,
+            "phaseDurations": [0],
+            "type": "SHOOT_HOMING_PARTICLE"
+        }],
+        "appear": [{
+            "volume": 1,
+            "global": false,
+            "loop": false,
+            "speed": 1,
+            "sound": "media/sound/designer/designer-appear.ogg",
+            "type": "PLAY_SOUND"
+        }, {
+            "alpha": 1,
+            "duration": 0,
+            "type": "CHANGE_ALPHA"
+        }, {
+            "color": "white",
+            "alpha": 0,
+            "duration": 0.2,
+            "keepDuration": 0.2,
+            "noLighter": false,
+            "type": "FLASH_COLOR"
+        }, {
+            "size": "XL",
+            "fadeIn": 0,
+            "fadeOut": 0.2,
+            "duration": 0.1,
+            "glow": true,
+            "type": "LIGHT"
+        }, {
+            "scaleX": 0,
+            "scaleY": 0,
+            "duration": 0,
+            "type": "CHANGE_SCALE"
+        }, {
+            "scaleX": 1,
+            "scaleY": 1,
+            "duration": 0.3,
+            "spline": "JUMPY",
+            "type": "CHANGE_SCALE"
+        }, {
+            "numParticles": 12,
+            "duration": 0,
+            "centralAngle": 1,
+            "startDist": 4,
+            "uniformRandom": 0.6,
+            "particleRotate": true,
+            "moveDist": 20,
+            "keySpline": "EASE_OUT",
+            "moveRotate": 0,
+            "inverse": false,
+            "collision": false,
+            "pAlpha": {
+                "init": 1,
+                "end": {
+                    "value": 0,
+                    "time": 0.15,
+                    "spline": ""
+                }
+            },
+            "moveWithTarget": 1,
+            "particleDuration": 0.25,
+            "anim": "TELEPORT_DOT2",
+            "type": "OFFSET_PARTICLE_CIRCLE"
+        }],
+        "disappear": [{
+            "volume": 1,
+            "global": false,
+            "loop": false,
+            "speed": 1,
+            "sound": "media/sound/designer/designer-disappear.ogg",
+            "type": "PLAY_SOUND"
+        }, {
+            "color": "white",
+            "alpha": 0,
+            "fadeIn": 0.2,
+            "fadeOut": 0,
+            "duration": 0.3,
+            "noLighter": false,
+            "type": "FADE_COLOR"
+        }, {
+            "size": "XL",
+            "fadeIn": 0,
+            "fadeOut": 0.2,
+            "duration": 0.1,
+            "glow": true,
+            "type": "LIGHT"
+        }, {
+            "scaleX": 0,
+            "scaleY": 0,
+            "duration": 0.3,
+            "spline": "EASE_IN",
+            "type": "CHANGE_SCALE"
+        }, {
+            "numParticles": 12,
+            "duration": 0,
+            "centralAngle": 1,
+            "startDist": 4,
+            "uniformRandom": 0.6,
+            "particleRotate": true,
+            "moveDist": 20,
+            "keySpline": "EASE_OUT",
+            "moveRotate": 0,
+            "inverse": false,
+            "collision": false,
+            "pAlpha": {
+                "init": 1,
+                "end": {
+                    "value": 0,
+                    "time": 0.15,
+                    "spline": ""
+                }
+            },
+            "particleDuration": 0.25,
+            "anim": "TELEPORT_DOT2",
+            "type": "OFFSET_PARTICLE_CIRCLE"
+        }],
+        "panelFloatUp": [{
+            "volume": 0.6,
+            "global": false,
+            "loop": false,
+            "sound": "media/sound/puzzle/wave-teleport-up.ogg",
+            "type": "PLAY_SOUND"
+        }, {
+            "color": "#008F6F",
+            "alpha": 0,
+            "fadeIn": 1,
+            "fadeOut": 0,
+            "duration": -1,
+            "noLighter": false,
+            "type": "FADE_COLOR"
+        }, {
+            "type": "LOOP_START"
+        }, {
+            "color": "#008F6F",
+            "noLighter": false,
+            "pAlpha": {
+                "init": 0.8,
+                "start": {
+                    "value": 0,
+                    "spline": ""
+                }
+            },
+            "pScale": {
+                "init": {
+                    "x": 1,
+                    "y": 1
+                },
+                "start": {
+                    "value": {
+                        "x": 1.2,
+                        "y": 1.4
+                    },
+                    "time": 0.15,
+                    "spline": ""
+                },
+                "end": {
+                    "value": {
+                        "x": 0,
+                        "y": 0.8
+                    },
+                    "time": 0.15,
+                    "spline": ""
+                }
+            },
+            "particleDuration": 0.3,
+            "type": "COPY_SPRITE"
+        }, {
+            "time": 0.033,
+            "type": "WAIT"
+        }, {
+            "type": "LOOP_END"
+        }],
+        "panelFloatDown": [{
+            "volume": 0.6,
+            "global": false,
+            "loop": false,
+            "sound": "media/sound/puzzle/wave-teleport-down.ogg",
+            "type": "PLAY_SOUND"
+        }, {
+            "color": "#008F6F",
+            "alpha": 0,
+            "fadeIn": 1,
+            "fadeOut": 0,
+            "duration": -1,
+            "noLighter": false,
+            "type": "FADE_COLOR"
+        }, {
+            "type": "LOOP_START"
+        }, {
+            "color": "#008F6F",
+            "noLighter": false,
+            "pAlpha": {
+                "init": 0.8,
+                "start": {
+                    "value": 0,
+                    "spline": ""
+                }
+            },
+            "pScale": {
+                "init": {
+                    "x": 1,
+                    "y": 1
+                },
+                "start": {
+                    "value": {
+                        "x": 1.2,
+                        "y": 1.4
+                    },
+                    "time": 0.15,
+                    "spline": ""
+                },
+                "end": {
+                    "value": {
+                        "x": 0,
+                        "y": 0.8
+                    },
+                    "time": 0.15,
+                    "spline": ""
+                }
+            },
+            "particleDuration": 0.3,
+            "type": "COPY_SPRITE"
+        }, {
+            "time": 0.033,
+            "type": "WAIT"
+        }, {
+            "type": "LOOP_END"
+        }],
+        "panelFloatDownScene": [{
+            "size": "XL",
+            "fadeIn": 0,
+            "fadeOut": 0.3,
+            "duration": -1,
+            "glow": false,
+            "type": "LIGHT"
+        }, {
+            "color": "#008F6F",
+            "alpha": 0,
+            "fadeIn": 0,
+            "fadeOut": 0.5,
+            "duration": -1,
+            "noLighter": false,
+            "type": "FADE_COLOR"
+        }, {
+            "type": "LOOP_START"
+        }, {
+            "color": "#008F6F",
+            "noLighter": false,
+            "pAlpha": {
+                "init": 0.8,
+                "start": {
+                    "value": 0,
+                    "spline": ""
+                }
+            },
+            "pScale": {
+                "init": {
+                    "x": 1,
+                    "y": 1
+                },
+                "start": {
+                    "value": {
+                        "x": 1.2,
+                        "y": 1.4
+                    },
+                    "time": 0.15,
+                    "spline": ""
+                },
+                "end": {
+                    "value": {
+                        "x": 0,
+                        "y": 0.8
+                    },
+                    "time": 0.15,
+                    "spline": ""
+                }
+            },
+            "particleDuration": 0.3,
+            "type": "COPY_SPRITE"
+        }, {
+            "time": 0.033,
+            "type": "WAIT"
+        }, {
+            "type": "LOOP_END"
+        }],
+        "panelFloatUpScene": [{
+            "volume": 0.6,
+            "global": false,
+            "loop": false,
+            "sound": "media/sound/puzzle/wave-teleport-down.ogg",
+            "type": "PLAY_SOUND"
+        }, {
+            "size": "XL",
+            "fadeIn": 0,
+            "fadeOut": 0.3,
+            "duration": -1,
+            "glow": false,
+            "type": "LIGHT"
+        }, {
+            "color": "#008F6F",
+            "alpha": 0,
+            "fadeIn": 0,
+            "fadeOut": 0.5,
+            "duration": -1,
+            "noLighter": false,
+            "type": "FADE_COLOR"
+        }, {
+            "type": "LOOP_START"
+        }, {
+            "color": "#008F6F",
+            "noLighter": false,
+            "pAlpha": {
+                "init": 0.8,
+                "start": {
+                    "value": 0,
+                    "spline": ""
+                }
+            },
+            "pScale": {
+                "init": {
+                    "x": 1,
+                    "y": 1
+                },
+                "start": {
+                    "value": {
+                        "x": 1.2,
+                        "y": 1.4
+                    },
+                    "time": 0.15,
+                    "spline": ""
+                },
+                "end": {
+                    "value": {
+                        "x": 0,
+                        "y": 0.8
+                    },
+                    "time": 0.15,
+                    "spline": ""
+                }
+            },
+            "particleDuration": 0.3,
+            "type": "COPY_SPRITE"
+        }, {
+            "time": 0.033,
+            "type": "WAIT"
+        }, {
+            "type": "LOOP_END"
+        }],
+        "panelGlowUp": [{
+            "numParticles": 12,
+            "duration": 0,
+            "centralAngle": 1,
+            "startDist": 4,
+            "uniformRandom": 0.6,
+            "particleRotate": true,
+            "moveDist": 20,
+            "keySpline": "EASE_OUT",
+            "moveRotate": 0,
+            "inverse": false,
+            "collision": false,
+            "pAlpha": {
+                "init": 1,
+                "end": {
+                    "value": 0,
+                    "time": 0.15,
+                    "spline": ""
+                }
+            },
+            "particleDuration": 0.25,
+            "anim": "TELEPORT_DOT2",
+            "type": "OFFSET_PARTICLE_CIRCLE"
+        }, {
+            "type": "LOOP_START"
+        }, {
+            "numParticles": 3,
+            "duration": 0.2,
+            "centralAngle": 1,
+            "startDist": 8,
+            "random": true,
+            "moveDist": 2,
+            "keySpline": "EASE_IN_OUT",
+            "normalMoveDist": 32,
+            "collision": false,
+            "pAlpha": {
+                "init": 0,
+                "start": {
+                    "value": 1,
+                    "time": 0.1,
+                    "spline": ""
+                },
+                "end": {
+                    "value": 0,
+                    "time": 0.1,
+                    "spline": ""
+                }
+            },
+            "particleDuration": 0.4,
+            "anim": "TELEPORT_DOT2",
+            "type": "OFFSET_PARTICLE_CIRCLE"
+        }, {
+            "time": 0.2,
+            "type": "WAIT"
+        }, {
+            "type": "LOOP_END"
+        }],
+        "panelGlowDown": [{
+            "numParticles": 12,
+            "duration": 0,
+            "centralAngle": 1,
+            "startDist": 4,
+            "uniformRandom": 0.6,
+            "particleRotate": true,
+            "moveDist": 20,
+            "keySpline": "EASE_OUT",
+            "moveRotate": 0,
+            "inverse": false,
+            "collision": false,
+            "pAlpha": {
+                "init": 1,
+                "end": {
+                    "value": 0,
+                    "time": 0.15,
+                    "spline": ""
+                }
+            },
+            "particleDuration": 0.25,
+            "anim": "TELEPORT_DOT2",
+            "type": "OFFSET_PARTICLE_CIRCLE"
+        }, {
+            "type": "LOOP_START"
+        }, {
+            "numParticles": 3,
+            "duration": 0.2,
+            "centralAngle": 1,
+            "startDist": 6,
+            "random": true,
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 32
+            },
+            "moveDist": 4,
+            "keySpline": "EASE_IN_OUT",
+            "inverse": true,
+            "normalMoveDist": -32,
+            "collision": false,
+            "pAlpha": {
+                "init": 0,
+                "start": {
+                    "value": 1,
+                    "time": 0.1,
+                    "spline": ""
+                },
+                "end": {
+                    "value": 0,
+                    "time": 0.1,
+                    "spline": ""
+                }
+            },
+            "particleDuration": 0.4,
+            "anim": "TELEPORT_DOT3",
+            "type": "OFFSET_PARTICLE_CIRCLE"
+        }, {
+            "time": 0.2,
+            "type": "WAIT"
+        }, {
+            "type": "LOOP_END"
+        }]
+    }
+}

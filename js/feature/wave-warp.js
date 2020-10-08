@@ -22,12 +22,13 @@ ig.module("game.feature.puzzle.entities.wave-warp").requires("impact.base.entity
     };
     ig.ENTITY.WaveWarp = ig.AnimatedEntity.extend({
         effects: {
-            sheet: new ig.EffectSheet("puzzle.wave-teleport"),
+            sheet: new ig.EffectSheet("puzzle.wave-warp"),
             handle: null,
             hideHandle: null
         },
-        teleportTimer: 0,
-        teleportTarget: [],
+        warpTimer: 0,
+        warpCooldown: null,
+        teleportTarget: null,
         _wm: new ig.Config({
             spawnable: true,
             attributes: {
@@ -53,7 +54,6 @@ ig.module("game.feature.puzzle.entities.wave-warp").requires("impact.base.entity
             this.coll.zGravityFactor = 9001;
             this.coll.setPadding(4, 4);
             this.entity = g.entity || null;
-            ig.warn(ig.Event.getEntity(this.entity));
             this.initAnimations({
                 shapeType: "Y_FLAT",
                 offset: {
@@ -62,12 +62,12 @@ ig.module("game.feature.puzzle.entities.wave-warp").requires("impact.base.entity
                     z: 8
                 },
                 sheet: {
-                    src: "media/entity/objects/object-effects.png",
+                    src: "media/entity/effects/pastwi/puzzle.png",
                     width: 24,
                     height: 24,
                     xCount: 5,
-                    offX: 128,
-                    offY: 40
+                    offX: 0,
+                    offY: 0
                 },
                 SUB: [{
                     name: "idle",
@@ -114,80 +114,58 @@ ig.module("game.feature.puzzle.entities.wave-warp").requires("impact.base.entity
         onEffectEvent: function(a) {
             if (a.isDone() && this.effects.hideHandle) {
                 this.effects.hideHandle = null;
-                this.teleportTimer ? this.delayedHide = true : this.permaRemove ? this.kill() : this.hide()
+                this.warpTimer ? this.delayedHide = true : this.permaRemove ? this.kill() : this.hide()
             }
         },
         startTeleport: function(a) {
-        this.teleportTarget = a;
-        var w = ig.Event.getEntity(this.entity);
+            this.teleportTarget = a;
+            var w = ig.Event.getEntity(this.entity);
 
             d = new ig.Action("waveWarpAction", [{
                 type: "WAIT",
-                time: -1
+                time: 0
             }]);
             d.eventAction = true;
-                var f = this.teleportTarget,
-                    g = f.getCenter(b);
-                this.effects.sheet.spawnFixed("trail", g.x, g.y, f.coll.pos.z + 12, null, {
-                    target2: w,
-                    target2Align: ig.ENTITY_ALIGN.CENTER
-                });
-                this.effects.sheet.spawnOnTarget("hide", f, {
-                    target2: w,
-                    target2Align: ig.ENTITY_ALIGN.CENTER
-                });
-                if (f instanceof ig.ENTITY.Combatant) {
-                    f.invincibleTimer = -1;
-                    f.setAction(d)
-                }
-                f.onTeleportStart && f.onTeleportStart(this);
-            this.teleportTimer = 0.1
+            var f = this.teleportTarget,
+                g = f.getCenter(b);
+
+            this.effects.sheet.spawnFixed("trail", g.x, g.y, f.coll.pos.z + 12, null, {
+                target2: w,
+                target2Align: ig.ENTITY_ALIGN.CENTER
+            });
+            this.effects.sheet.spawnOnTarget("hide", f, {
+                target2: w,
+                target2Align: ig.ENTITY_ALIGN.CENTER
+            });
+            if (f instanceof ig.ENTITY.Combatant) {
+                f.invincibleTimer = -1;
+                f.setAction(d)
+            }
+            f.onTeleportStart && f.onTeleportStart(this);
+            this.warpTimer = 0.01
         },
         doTeleport: function() {
             d = new ig.Action("waveWarpAction", [{
-                    type: "WAIT",
-                    time: 0
-                }]); 
-                var h = this.teleportTarget;
-                    i = ig.Event.getEntity(this.entity).getCenter(b);
-                if (h instanceof ig.ENTITY.Combatant) h.invincibleTimer = 0;
-                if (h instanceof sc.PartyMemberEntity) h.resetPos();
-                if (h.isBall) {
-                    ig.warn("BALLS");
-                    h.resetTime();
-                    h.resetBounceCount();
-                    h.cleanDirection(0.025);
-                    h.setPos(i.x, i.y, i.z);
-                }
-                else {
-                    for (var j = ig.game.getEntitiesOnTop(h), k = i.x - h.coll.size.x / 2, i = i.y - h.coll.size.y / 2, l = this.coll.pos.z + a, o = j.length; o--;)
-                    {
-                        if (j[o] instanceof ig.ENTITY.WavePushPullBlock) j[o].coll.setGroundEntry(null);
-                        else {
-                            this.effects.sheet.spawnOnTarget("show", j[o]);
-                            var m = j[o].coll;
-                            m.setGroundEntry(null);
-                            m.setPos(m.pos.x + k - h.coll.pos.x, m.pos.y + i - h.coll.pos.y, m.pos.z + l - h.coll.pos.z)
-                        } l = h.getTeleportZOffset ? l + h.getTeleportZOffset() : l + h.coll.float.height;
-                    h.setPos(k, i, l);
-                    a = a + h.coll.size.z
-                    }
-                }
-                if (h.isPlayer) {
-                    ig.camera.isActiveTarget(h.cameraHandle) &&
-                        ig.camera.retarget("FASTER", KEY_SPLINES.EASE_IN_OUT);
-                    d.eventAction = true
-                }
-                this.effects.sheet.spawnOnTarget("show", h);
-                h.setAction && h.setAction(d);
-                this.teleportTarget = null;
+                type: "WAIT",
+                time: 0
+            }]);
+            var h = this.teleportTarget;
+            var i = ig.Event.getEntity(this.entity).getCenter(b);
+            var j = ig.Event.getEntity(this.entity).coll.pos.z;
+            ig.Event.getEntity(this.entity).warpCooldown = h;
+            h.resetTime();
+            h.cleanDirection(0.025);
+            h.setPos(i.x, i.y, j);
+            this.effects.sheet.spawnOnTarget("show", h);
+            h.setAction && h.setAction(d);
+            this.teleportTarget = null;
         },
         update: function() {
-            this.animState.angle = this.animState.angle + ig.system.tick * 1;
-            if (this.teleportTimer) {
-                this.teleportTimer = this.teleportTimer - ig.system.tick;
-                if (this.teleportTimer <= 0) {
-                    this.teleportTimer = 0;
+            this.animState.angle -= ig.system.tick * 1;
+            if (this.warpTimer) {
+                this.warpTimer = this.warpTimer - ig.system.tick;
+                if (this.warpTimer <= 0) {
+                    this.warpTimer = 0;
                     this.doTeleport();
                     if (this.delayedHide) {
                         this.delayedHide = true;
@@ -196,6 +174,12 @@ ig.module("game.feature.puzzle.entities.wave-warp").requires("impact.base.entity
                 }
             }
             this.parent()
+            if (this.warpCooldown) {
+                if (ig.CollTools.getGroundDistance(this.coll, this.warpCooldown.coll) > 64) {
+                    this.warpCooldown = null;
+                }
+            }
+
         },
         hasBlockOnTop: function() {
             for (var a = this.coll, a = ig.game.getEntitiesInRectangle(a.pos.x - 8, a.pos.y - 8, a.pos.z, a.size.x + 16, a.size.y + 16, a.size.z, this), b = a.length; b--;) {
@@ -210,15 +194,16 @@ ig.module("game.feature.puzzle.entities.wave-warp").requires("impact.base.entity
             if (this.hasBlockOnTop()) return false;
             var g = (a.isBall || a instanceof sc.CompressedWaveEntity) && a.getCombatantRoot().isPlayer;
             if ((!a.isBall ||
-                    a.attackInfo.hasHint("CHARGED")) && g && d == sc.ELEMENT.WAVE && !this.teleportTimer && ig.Event.getEntity(this.entity)) {
+                    a.attackInfo.hasHint("CHARGED")) && g && d == sc.ELEMENT.WAVE && !this.warpTimer && ig.Event.getEntity(this.entity) && !this.warpCooldown) {
                 d = a.entityAttached;
                 for (var g = d.length; g--;) {
                     if (d[g].doTeleport) {
                         this.teleportTarget = d[g];
                         d.splice(g, 1)
-                    }} 
-                if (this.teleportTarget == null && a.isBall && !ig.EntityTools.isInScreen(this, 32) || 
-                this.teleportTarget == null && ig.game.playerEntity.currentAction && ig.game.playerEntity.currentAction.eventAction) return false;
+                    }
+                }
+                if (this.teleportTarget == null && a.isBall && !ig.EntityTools.isInScreen(this, 32) ||
+                    this.teleportTarget == null && ig.game.playerEntity.currentAction && ig.game.playerEntity.currentAction.eventAction) return false;
                 sc.combat.showHitEffect(this,
                     b, sc.ATTACK_TYPE.NONE, a.getElement(), false, false, true);
                 this.startTeleport(a);
@@ -227,7 +212,7 @@ ig.module("game.feature.puzzle.entities.wave-warp").requires("impact.base.entity
             return false
         },
         isBallDestroyer: function(a, b, d) {
-         return false;
+            return false;
         }
     })
 });
