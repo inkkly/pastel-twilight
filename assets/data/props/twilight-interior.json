@@ -585,5 +585,263 @@
             "flipX": false,
             "shape": "Y_FLAT"
         }
+    }, {
+        "name": "pride-flag",
+        "size": {
+            "x": 28,
+            "y": 4,
+            "z": 48
+        },
+        "collType": "BLOCK",
+        "anims": {
+            "sheet": {
+                "src": "media/map/twilight-interior.png",
+                "width": 26,
+                "height": 50,
+                "offX": 352,
+                "offY": 432,
+                "xCount": 2
+            },
+            "SUB": [{
+                "name": "trans",
+                "time": 0.1,
+                "frames": [0],
+                "repeat": true
+            }, {
+                "name": "nb",
+                "time": 0.1,
+                "frames": [1],
+                "repeat": true
+            }]
+        }
+    }, {
+        "name": "pillow1",
+        "size": {
+            "x": 16,
+            "y": 8,
+            "z": 2
+        },
+        "terrain": "CARDBOARD",
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/twilight-interior.png",
+            "x": 304,
+            "y": 454,
+            "w": 14,
+            "h": 10,
+            "flipX": false
+        }
+    }, {
+        "name": "pillow1s",
+        "size": {
+            "x": 16,
+            "y": 8,
+            "z": 4
+        },
+        "collType": "BLOCK",
+        "terrain": "CARDBOARD",
+        "fix": {
+            "gfx": "media/map/twilight-interior.png",
+            "x": 320,
+            "y": 452,
+            "w": 14,
+            "h": 12,
+            "flipX": false
+        }
+    }, {
+        "name": "pillow2",
+        "size": {
+            "x": 16,
+            "y": 20,
+            "z": 2
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/twilight-interior.png",
+            "x": 290,
+            "y": 434,
+            "w": 14,
+            "h": 22,
+            "flipX": false
+        }
+    }, {
+        "name": "pillow2h",
+        "size": {
+            "x": 24,
+            "y": 16,
+            "z": 2
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/twilight-interior.png",
+            "x": 322,
+            "y": 464,
+            "w": 22,
+            "h": 14,
+            "flipX": false
+        }
+    }, {
+        "name": "cushion1",
+        "size": {
+            "x": 16,
+            "y": 4,
+            "z": 6
+        },
+        "collType": "BLOCK",
+        "terrain": "CARDBOARD",
+        "fix": {
+            "gfx": "media/map/twilight-interior.png",
+            "x": 288,
+            "y": 470,
+            "w": 16,
+            "h": 10,
+            "flipX": false
+        }
+    }, {
+        "name": "cushion1s",
+        "size": {
+            "x": 16,
+            "y": 4,
+            "z": 12
+        },
+        "collType": "BLOCK",
+        "terrain": "CARDBOARD",
+        "fix": {
+            "gfx": "media/map/twilight-interior.png",
+            "x": 304,
+            "y": 465,
+            "w": 16,
+            "h": 15,
+            "flipX": false
+        }
+    }, {
+        "name": "cushion2",
+        "size": {
+            "x": 16,
+            "y": 8,
+            "z": 4
+        },
+        "collType": "BLOCK",
+        "terrain": "CARDBOARD",
+        "fix": {
+            "gfx": "media/map/twilight-interior.png",
+            "x": 304,
+            "y": 484,
+            "w": 16,
+            "h": 12,
+            "flipX": false
+        }
+    }, {
+        "name": "cushion2s",
+        "size": {
+            "x": 16,
+            "y": 8,
+            "z": 8
+        },
+        "collType": "BLOCK",
+        "terrain": "CARDBOARD",
+        "fix": {
+            "gfx": "media/map/twilight-interior.png",
+            "x": 320,
+            "y": 481,
+            "w": 16,
+            "h": 15,
+            "flipX": false
+        }
+    }, {
+        "name": "cushion3",
+        "size": {
+            "x": 16,
+            "y": 4,
+            "z": 12
+        },
+        "collType": "BLOCK",
+        "terrain": "CARDBOARD",
+        "fix": {
+            "gfx": "media/map/twilight-interior.png",
+            "x": 288,
+            "y": 480,
+            "w": 16,
+            "h": 16,
+            "flipX": false
+        }
+    }, {
+        "name": "blanket1",
+        "size": {
+            "x": 32,
+            "y": 16,
+            "z": 12
+        },
+        "fix": {
+            "gfx": "media/map/twilight-interior.png",
+            "x": 256,
+            "y": 436,
+            "w": 31,
+            "h": 28,
+            "flipX": false
+        }
+    }, {
+        "name": "blanket1f",
+        "size": {
+            "x": 32,
+            "y": 16,
+            "z": 12
+        },
+        "fix": {
+            "gfx": "media/map/twilight-interior.png",
+            "x": 256,
+            "y": 436,
+            "w": 31,
+            "h": 28,
+            "flipX": true
+        }
+    }, {
+        "name": "blanket2",
+        "size": {
+            "x": 32,
+            "y": 20,
+            "z": 4
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/twilight-interior.png",
+            "x": 256,
+            "y": 471,
+            "w": 32,
+            "h": 25,
+            "flipX": false
+        }
+    }, {
+        "name": "blanket2x",
+        "size": {
+            "x": 64,
+            "y": 20,
+            "z": 4
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/twilight-interior.png",
+            "x": 224,
+            "y": 503,
+            "w": 64,
+            "h": 25,
+            "flipX": false
+        }
+    }, {
+        "name": "plushy1",
+        "size": {
+            "x": 16,
+            "y": 8,
+            "z": 12
+        },
+        "collType": "VIRTUAL",
+        "fix": {
+            "gfx": "media/map/twilight-interior.png",
+            "x": 304,
+            "y": 429,
+            "w": 15,
+            "h": 19,
+            "flipX": false
+        }
     }]
 }

@@ -1,5 +1,5 @@
 {
-    "name": "twilight-city/library-2",
+    "name": "twilight-city/interior/library-2",
     "levels": [{
         "height": 0
     }],
@@ -12,7 +12,7 @@
         "cameraInBounds": false,
         "map-sounds": "JUNGLE_CITY_INNER",
         "mapStyle": "twilight-city-inner",
-        "weather": "JUNGLE_CITY_INNER",
+        "weather": "TWILIGHT_CITY_INNER",
         "npcRunners": "",
         "area": "twilight-city"
     },
@@ -32,7 +32,7 @@
                 "z": 0
             },
             "name": "s-2",
-            "map": "twilight-city.library",
+            "map": "twilight-city.interior.library",
             "marker": "s-1",
             "layer": "object1",
             "stairType": "DOWNWARDS_EAST",
@@ -268,7 +268,7 @@
                 }
             }, {
                 "type": "WAIT",
-                "time": 0.1,
+                "time": 0.2,
                 "ignoreSlowDown": false
             }, {
                 "type": "SPAWN_ENEMY",
@@ -291,7 +291,7 @@
                 }
             }, {
                 "type": "WAIT",
-                "time": 0.1,
+                "time": 0.2,
                 "ignoreSlowDown": false
             }, {
                 "type": "SPAWN_ENEMY",
@@ -314,7 +314,7 @@
                 }
             }, {
                 "type": "WAIT",
-                "time": 0.1,
+                "time": 0.2,
                 "ignoreSlowDown": false
             }, {
                 "type": "SPAWN_ENEMY",
@@ -336,10 +336,6 @@
                     "lvl": "0"
                 }
             }, {
-                "type": "WAIT",
-                "time": 0.1,
-                "ignoreSlowDown": false
-            }, {
                 "type": "SPAWN_ENEMY",
                 "enemyInfo": {
                     "group": "",
@@ -360,7 +356,7 @@
                 }
             }, {
                 "type": "WAIT",
-                "time": 0.1,
+                "time": 0.2,
                 "ignoreSlowDown": false
             }, {
                 "type": "SPAWN_ENEMY",
@@ -383,7 +379,7 @@
                 }
             }, {
                 "type": "WAIT",
-                "time": 0.1,
+                "time": 0.2,
                 "ignoreSlowDown": false
             }, {
                 "type": "SPAWN_ENEMY",
@@ -406,7 +402,7 @@
                 }
             }, {
                 "type": "WAIT",
-                "time": 0.1,
+                "time": 0.2,
                 "ignoreSlowDown": false
             }, {
                 "type": "SPAWN_ENEMY",
@@ -429,7 +425,7 @@
                 }
             }, {
                 "type": "WAIT",
-                "time": 0.1,
+                "time": 0.2,
                 "ignoreSlowDown": false
             }, {
                 "type": "SPAWN_ENEMY",
@@ -452,7 +448,7 @@
                 }
             }, {
                 "type": "WAIT",
-                "time": 0.1,
+                "time": 0.2,
                 "ignoreSlowDown": false
             }, {
                 "type": "SPAWN_ENEMY",
@@ -475,7 +471,7 @@
                 }
             }, {
                 "type": "WAIT",
-                "time": 0.1,
+                "time": 0.2,
                 "ignoreSlowDown": false
             }, {
                 "type": "SPAWN_ENEMY",
@@ -498,7 +494,7 @@
                 }
             }, {
                 "type": "WAIT",
-                "time": 0.1,
+                "time": 0.2,
                 "ignoreSlowDown": false
             }, {
                 "type": "SPAWN_ENEMY",
@@ -727,7 +723,7 @@
     }, {
         "type": "ObjectLayerView",
         "x": 64,
-        "y": 329,
+        "y": 328,
         "level": 0,
         "settings": {
             "size": {
@@ -2086,7 +2082,7 @@
         }
     }, {
         "type": "NPC",
-        "x": 71,
+        "x": 72,
         "y": 216,
         "level": {
             "level": 0,
@@ -2177,7 +2173,7 @@
     }, {
         "type": "TouchTrigger",
         "x": 64,
-        "y": 83,
+        "y": 80,
         "level": 0,
         "settings": {
             "mapId": 95,

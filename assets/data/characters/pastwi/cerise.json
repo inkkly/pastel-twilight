@@ -55,11 +55,6 @@
                     "time": 0.15,
                     "repeat": false,
                     "frames": [0]
-                }, {
-                    "name": "sitL",
-                    "time": 0.15,
-                    "repeat": true,
-                    "frames": [0]
                 }]
             }]
         }]
@@ -69,7 +64,7 @@
             "idle": "idle",
             "move": "walk"
         },
-        "sit": {
+        "ground": {
             "idle": "sit"
         }
     },
@@ -77,6 +72,9 @@
     "configs": {
         "normal": {
             "relativeVel": 0.5
+        },
+        "sit": {
+            "walkAnims": "sit"
         }
     },
     "face": {

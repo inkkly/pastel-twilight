@@ -52,7 +52,7 @@
                 "en_US": "Square"
             }
         }, {
-            "path": "twilight-city.library",
+            "path": "twilight-city.interior.library",
             "name": {
                 "en_US": "The Archives"
             }
@@ -150,7 +150,7 @@
             [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
         ],
         "maps": [{
-            "path": "twilight-city.library-2",
+            "path": "twilight-city.interior.library-2",
             "name": {
                 "en_US": "The Archives - Upper Floor"
             }
