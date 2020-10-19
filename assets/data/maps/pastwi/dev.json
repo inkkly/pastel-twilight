@@ -35,7 +35,7 @@
             },
             "name": "dev",
             "dir": "SOUTH",
-            "marker": "DevRoomExit",
+            "marker": "devExit",
             "teleportLabel": "Exit",
             "map": "twilight-city.library",
             "gfxType": "SOLID",

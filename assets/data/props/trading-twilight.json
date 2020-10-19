@@ -1,0 +1,1007 @@
+{
+    "DOCTYPE": "PROP_SHEET",
+    "jsonTEMPLATES": {
+        "itemHologramList": [{
+            "name": "sword",
+            "tileOffset": 0
+        }, {
+            "name": "helmet",
+            "tileOffset": 1
+        }, {
+            "name": "belt",
+            "tileOffset": 2
+        }, {
+            "name": "shoes",
+            "tileOffset": 3
+        }, {
+            "name": "consumable",
+            "tileOffset": 4
+        }, {
+            "name": "trade",
+            "tileOffset": 5
+        }, {
+            "name": "sandwich",
+            "tileOffset": 6
+        }],
+        "itemEmptyList": [{
+            "name": "sword"
+        }, {
+            "name": "helmet"
+        }, {
+            "name": "belt"
+        }, {
+            "name": "shoes"
+        }, {
+            "name": "consumable"
+        }, {
+            "name": "trade"
+        }, {
+            "name": "sandwich"
+        }],
+        "itemPassList": [{
+            "name": "passOn",
+            "tileOffset": 0
+        }, {
+            "name": "passOff",
+            "tileOffset": 1
+        }]
+    },
+    "props": [{
+        "name": "booth",
+        "size": {
+            "x": 40,
+            "y": 8,
+            "z": 24
+        },
+        "collType": "VIRTUAL",
+        "anims": {
+            "namedSheets": {
+                "table": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 40,
+                    "height": 32
+                },
+                "chair": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 16,
+                    "height": 40,
+                    "offY": 32
+                },
+                "ar": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 32,
+                    "height": 16,
+                    "offX": 80,
+                    "offY": 32
+                },
+                "items": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 16,
+                    "height": 16,
+                    "offY": 96
+                }
+            },
+            "frames": [0],
+            "shape": "Y_FLAT",
+            "SUB": [{
+                "sheet": "chair",
+                "size": {
+                    "x": 16,
+                    "y": 24,
+                    "z": 16
+                },
+                "wallY": 1,
+                "offset": {
+                    "x": 6,
+                    "y": -17,
+                    "z": 0
+                },
+                "SUB": {
+                    "jsonINSTANCE": "itemEmptyList"
+                }
+            }, {
+                "sheet": "ar",
+                "offset": {
+                    "x": 3,
+                    "y": 0,
+                    "z": 10
+                },
+                "renderMode": "lighter",
+                "SUB": {
+                    "jsonINSTANCE": "itemEmptyList"
+                }
+            }, {
+                "sheet": "table",
+                "SUB": {
+                    "jsonINSTANCE": "itemEmptyList"
+                }
+            }, {
+                "sheet": "items",
+                "offset": {
+                    "x": -9,
+                    "z": 20
+                },
+                "frames": [0, 0, 0, 0, 0, 0],
+                "framesGfxOffset": [0, -1, 0, -1, 0, 0, 0, 1, 0, 1, 0, 0],
+                "time": 0.2,
+                "repeat": true,
+                "SUB": {
+                    "jsonINSTANCE": "itemHologramList"
+                }
+            }]
+        }
+    }, {
+        "name": "boothLeft",
+        "size": {
+            "x": 16,
+            "y": 32,
+            "z": 24
+        },
+        "collType": "VIRTUAL",
+        "anims": {
+            "namedSheets": {
+                "table": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 16,
+                    "height": 48,
+                    "offX": 16,
+                    "offY": 32
+                },
+                "ar": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 8,
+                    "height": 32,
+                    "offX": 80,
+                    "offY": 56
+                },
+                "items": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 16,
+                    "height": 16,
+                    "offY": 96
+                }
+            },
+            "frames": [0],
+            "shape": "Y_FLAT",
+            "SUB": [{
+                "sheet": "table",
+                "SUB": {
+                    "jsonINSTANCE": "itemEmptyList"
+                }
+            }, {
+                "sheet": "ar",
+                "offset": {
+                    "x": -4,
+                    "y": 0,
+                    "z": 12
+                },
+                "renderMode": "lighter",
+                "SUB": {
+                    "jsonINSTANCE": "itemEmptyList"
+                }
+            }, {
+                "sheet": "items",
+                "offset": {
+                    "x": 1,
+                    "z": 14
+                },
+                "frames": [0, 0, 0, 0, 0, 0],
+                "framesGfxOffset": [0, -1, 0, -1, 0, 0, 0, 1, 0, 1, 0, 0],
+                "time": 0.2,
+                "repeat": true,
+                "SUB": {
+                    "jsonINSTANCE": "itemHologramList"
+                }
+            }]
+        }
+    }, {
+        "name": "boothDown",
+        "size": {
+            "x": 32,
+            "y": 8,
+            "z": 24
+        },
+        "collType": "VIRTUAL",
+        "anims": {
+            "namedSheets": {
+                "table": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 40,
+                    "height": 24,
+                    "offX": 40,
+                    "offY": 64
+                },
+                "ar": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 32,
+                    "height": 8,
+                    "offX": 80,
+                    "offY": 48
+                },
+                "items": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 16,
+                    "height": 16,
+                    "offY": 96
+                }
+            },
+            "frames": [0],
+            "shape": "Y_FLAT",
+            "SUB": [{
+                "sheet": "table",
+                "SUB": {
+                    "jsonINSTANCE": "itemEmptyList"
+                }
+            }, {
+                "sheet": "ar",
+                "offset": {
+                    "x": -2,
+                    "y": 0,
+                    "z": 9
+                },
+                "renderMode": "lighter",
+                "SUB": {
+                    "jsonINSTANCE": "itemEmptyList"
+                }
+            }, {
+                "sheet": "items",
+                "offset": {
+                    "x": 9,
+                    "z": 14
+                },
+                "frames": [0, 0, 0, 0, 0, 0],
+                "framesGfxOffset": [0, -1, 0, -1, 0, 0, 0, 1, 0, 1, 0, 0],
+                "time": 0.2,
+                "repeat": true,
+                "SUB": {
+                    "jsonINSTANCE": "itemHologramList"
+                }
+            }]
+        }
+    }, {
+        "name": "boothRight",
+        "size": {
+            "x": 16,
+            "y": 32,
+            "z": 24
+        },
+        "collType": "VIRTUAL",
+        "anims": {
+            "namedSheets": {
+                "table": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 16,
+                    "height": 48,
+                    "offX": 16,
+                    "offY": 32
+                },
+                "ar": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 8,
+                    "height": 32,
+                    "offX": 80,
+                    "offY": 56
+                },
+                "items": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 16,
+                    "height": 16,
+                    "offY": 96
+                }
+            },
+            "frames": [0],
+            "shape": "Y_FLAT",
+            "SUB": [{
+                "sheet": "table",
+                "flipX": true,
+                "SUB": {
+                    "jsonINSTANCE": "itemEmptyList"
+                }
+            }, {
+                "sheet": "ar",
+                "offset": {
+                    "x": 4,
+                    "y": 0,
+                    "z": 12
+                },
+                "renderMode": "lighter",
+                "flipX": true,
+                "SUB": {
+                    "jsonINSTANCE": "itemEmptyList"
+                }
+            }, {
+                "sheet": "items",
+                "offset": {
+                    "x": 1,
+                    "z": 16
+                },
+                "frames": [0, 0, 0, 0, 0, 0],
+                "framesGfxOffset": [0, -1, 0, -1, 0, 0, 0, 1, 0, 1, 0, 0],
+                "time": 0.2,
+                "repeat": true,
+                "SUB": {
+                    "jsonINSTANCE": "itemHologramList"
+                }
+            }]
+        }
+    }, {
+        "name": "boothWithRoof",
+        "size": {
+            "x": 40,
+            "y": 8,
+            "z": 56
+        },
+        "collType": "VIRTUAL",
+        "anims": {
+            "namedSheets": {
+                "table": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 40,
+                    "height": 64,
+                    "offX": 40
+                },
+                "chair": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 16,
+                    "height": 40,
+                    "offY": 32
+                },
+                "ar": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 32,
+                    "height": 16,
+                    "offX": 80,
+                    "offY": 32
+                },
+                "items": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 16,
+                    "height": 16,
+                    "offY": 96
+                },
+                "arRoof": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 32,
+                    "height": 32,
+                    "offX": 80
+                }
+            },
+            "frames": [0],
+            "shape": "Y_FLAT",
+            "SUB": [{
+                "sheet": "chair",
+                "size": {
+                    "x": 16,
+                    "y": 24,
+                    "z": 16
+                },
+                "wallY": 1,
+                "offset": {
+                    "x": 6,
+                    "y": -17,
+                    "z": 0
+                },
+                "SUB": {
+                    "jsonINSTANCE": "itemEmptyList"
+                }
+            }, {
+                "sheet": "ar",
+                "offset": {
+                    "x": 3,
+                    "y": 0,
+                    "z": 10
+                },
+                "renderMode": "lighter",
+                "SUB": {
+                    "jsonINSTANCE": "itemEmptyList"
+                }
+            }, {
+                "sheet": "table",
+                "SUB": {
+                    "jsonINSTANCE": "itemEmptyList"
+                }
+            }, {
+                "sheet": "items",
+                "offset": {
+                    "x": -9,
+                    "z": 20
+                },
+                "frames": [0, 0, 0, 0, 0, 0],
+                "framesGfxOffset": [0, -1, 0, -1, 0, 0, 0, 1, 0, 1, 0, 0],
+                "time": 0.2,
+                "repeat": true,
+                "SUB": {
+                    "jsonINSTANCE": "itemHologramList"
+                }
+            }, {
+                "sheet": "arRoof",
+                "offset": {
+                    "x": 3,
+                    "y": 0,
+                    "z": 36
+                },
+                "renderMode": "lighter",
+                "SUB": {
+                    "jsonINSTANCE": "itemEmptyList"
+                }
+            }]
+        }
+    }, {
+        "name": "boothNoChair",
+        "size": {
+            "x": 40,
+            "y": 8,
+            "z": 24
+        },
+        "collType": "VIRTUAL",
+        "anims": {
+            "namedSheets": {
+                "table": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 40,
+                    "height": 32
+                },
+                "ar": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 32,
+                    "height": 16,
+                    "offX": 80,
+                    "offY": 32
+                },
+                "items": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 16,
+                    "height": 16,
+                    "offY": 96
+                }
+            },
+            "frames": [0],
+            "shape": "Y_FLAT",
+            "SUB": [{
+                "sheet": "ar",
+                "offset": {
+                    "x": 3,
+                    "y": 0,
+                    "z": 10
+                },
+                "renderMode": "lighter",
+                "SUB": {
+                    "jsonINSTANCE": "itemEmptyList"
+                }
+            }, {
+                "sheet": "table",
+                "SUB": {
+                    "jsonINSTANCE": "itemEmptyList"
+                }
+            }, {
+                "sheet": "items",
+                "offset": {
+                    "x": -9,
+                    "z": 20
+                },
+                "frames": [0, 0, 0, 0, 0, 0],
+                "framesGfxOffset": [0, -1, 0, -1, 0, 0, 0, 1, 0, 1, 0, 0],
+                "time": 0.2,
+                "repeat": true,
+                "SUB": {
+                    "jsonINSTANCE": "itemHologramList"
+                }
+            }]
+        }
+    }, {
+        "name": "boothWithRoofNoChair",
+        "size": {
+            "x": 40,
+            "y": 8,
+            "z": 56
+        },
+        "collType": "VIRTUAL",
+        "anims": {
+            "namedSheets": {
+                "table": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 40,
+                    "height": 64,
+                    "offX": 40
+                },
+                "ar": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 32,
+                    "height": 16,
+                    "offX": 80,
+                    "offY": 32
+                },
+                "items": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 16,
+                    "height": 16,
+                    "offY": 96
+                },
+                "arRoof": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 32,
+                    "height": 32,
+                    "offX": 80
+                }
+            },
+            "frames": [0],
+            "shape": "Y_FLAT",
+            "SUB": [{
+                "sheet": "ar",
+                "offset": {
+                    "x": 3,
+                    "y": 0,
+                    "z": 10
+                },
+                "renderMode": "lighter",
+                "SUB": {
+                    "jsonINSTANCE": "itemEmptyList"
+                }
+            }, {
+                "sheet": "table",
+                "SUB": {
+                    "jsonINSTANCE": "itemEmptyList"
+                }
+            }, {
+                "sheet": "items",
+                "offset": {
+                    "x": -9,
+                    "z": 20
+                },
+                "frames": [0, 0, 0, 0, 0, 0],
+                "framesGfxOffset": [0, -1, 0, -1, 0, 0, 0, 1, 0, 1, 0, 0],
+                "time": 0.2,
+                "repeat": true,
+                "SUB": {
+                    "jsonINSTANCE": "itemHologramList"
+                }
+            }, {
+                "sheet": "arRoof",
+                "offset": {
+                    "x": 3,
+                    "y": 0,
+                    "z": 36
+                },
+                "renderMode": "lighter",
+                "SUB": {
+                    "jsonINSTANCE": "itemEmptyList"
+                }
+            }]
+        }
+    }, {
+        "name": "signLarge",
+        "size": {
+            "x": 32,
+            "y": 8,
+            "z": 32
+        },
+        "collType": "IGNORE",
+        "effects": {
+            "sheet": "ar",
+            "show": "taskSignShow",
+            "hide": "taskSignHide"
+        },
+        "anims": {
+            "namedSheets": {
+                "signs": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 32,
+                    "height": 32,
+                    "offX": 112,
+                    "offY": 0
+                }
+            },
+            "sheet": "signs",
+            "frames": [0, 0, 0, 0, 0, 0],
+            "shape": "Y_FLAT",
+            "renderMode": "lighter",
+            "framesGfxOffset": [0, -1, 0, -1, 0, 0, 0, 1, 0, 1, 0, 0],
+            "time": 0.2,
+            "repeat": true,
+            "SUB": [{
+                "name": "doge",
+                "tileOffset": 0
+            }, {
+                "name": "dogeFlip",
+                "tileOffset": 0,
+                "flipX": true
+            }, {
+                "name": "helmetShoes",
+                "tileOffset": 1
+            }, {
+                "name": "torso",
+                "tileOffset": 2
+            }, {
+                "name": "chokorettokeeki",
+                "tileOffset": 3
+            }]
+        }
+    }, {
+        "name": "signTall",
+        "size": {
+            "x": 16,
+            "y": 8,
+            "z": 32
+        },
+        "collType": "IGNORE",
+        "effects": {
+            "sheet": "ar",
+            "show": "taskSignShow",
+            "hide": "taskSignHide"
+        },
+        "anims": {
+            "namedSheets": {
+                "signs": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 16,
+                    "height": 32,
+                    "offX": 112,
+                    "offY": 64
+                }
+            },
+            "sheet": "signs",
+            "frames": [0, 0, 0, 0, 0, 0],
+            "shape": "Y_FLAT",
+            "framesGfxOffset": [0, -1, 0, -1, 0, 0, 0, 1, 0, 1, 0, 0],
+            "time": 0.2,
+            "repeat": true,
+            "SUB": [{
+                "framesAlpha": [0.5, 0.5, 0.5, 0.5, 0.5, 0.5],
+                "SUB": [{
+                    "name": "iceCream",
+                    "tileOffset": 3
+                }]
+            }, {
+                "renderMode": "lighter",
+                "SUB": [{
+                    "name": "potion",
+                    "tileOffset": 0
+                }, {
+                    "name": "sandwich",
+                    "tileOffset": 1
+                }, {
+                    "name": "sword",
+                    "tileOffset": 2
+                }, {
+                    "name": "iceCream",
+                    "tileOffset": 4
+                }, {
+                    "name": "stats",
+                    "tileOffset": 5
+                }, {
+                    "name": "news",
+                    "tileOffset": 6
+                }, {
+                    "name": "missing",
+                    "tileOffset": 7
+                }, {
+                    "name": "xd",
+                    "tileOffset": 8
+                }]
+            }]
+        }
+    }, {
+        "name": "signHuge",
+        "size": {
+            "x": 24,
+            "y": 8,
+            "z": 40
+        },
+        "collType": "IGNORE",
+        "effects": {
+            "sheet": "ar",
+            "show": "taskSignShow",
+            "hide": "taskSignHide"
+        },
+        "anims": {
+            "namedSheets": {
+                "signs": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 24,
+                    "height": 40,
+                    "offX": 112,
+                    "offY": 128
+                }
+            },
+            "sheet": "signs",
+            "frames": [0, 0, 0, 0, 0, 0],
+            "shape": "Y_FLAT",
+            "framesGfxOffset": [0, -1, 0, -1, 0, 0, 0, 1, 0, 1, 0, 0],
+            "time": 0.2,
+            "repeat": true,
+            "SUB": [{
+                "framesAlpha": [0.5, 0.5, 0.5, 0.5, 0.5, 0.5],
+                "SUB": [{
+                    "name": "derp",
+                    "tileOffset": 0
+                }, {
+                    "name": "attention",
+                    "tileOffset": 0
+                }]
+            }, {
+                "renderMode": "lighter",
+                "SUB": [{
+                    "name": "map",
+                    "tileOffset": 1
+                }, {
+                    "name": "news",
+                    "tileOffset": 2
+                }, {
+                    "name": "enemy",
+                    "tileOffset": 3
+                }, {
+                    "name": "henry",
+                    "tileOffset": 5
+                }, {
+                    "name": "attention",
+                    "tileOffset": 6,
+                    "frames": [0, 1, 0, 1, 0, 1]
+                }, {
+                    "name": "missing",
+                    "tileOffset": 8
+                }]
+            }]
+        }
+    }, {
+        "name": "signClass",
+        "size": {
+            "x": 24,
+            "y": 8,
+            "z": 16
+        },
+        "collType": "IGNORE",
+        "effects": {
+            "sheet": "ar",
+            "show": "taskSignShow",
+            "hide": "taskSignHide"
+        },
+        "anims": {
+            "namedSheets": {
+                "signs": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 24,
+                    "height": 24,
+                    "offX": 112,
+                    "offY": 232
+                }
+            },
+            "sheet": "signs",
+            "frames": [0, 0, 0, 0, 0, 0],
+            "shape": "Y_FLAT",
+            "framesGfxOffset": [0, -1, 0, -1, 0, 0, 0, 1, 0, 1, 0, 0],
+            "time": 0.2,
+            "repeat": true,
+            "SUB": [{
+                "renderMode": "lighter",
+                "SUB": [{
+                    "name": "triblader",
+                    "tileOffset": 0
+                }, {
+                    "name": "quadroguard",
+                    "tileOffset": 1
+                }, {
+                    "name": "pentafist",
+                    "tileOffset": 2
+                }, {
+                    "name": "hexacast",
+                    "tileOffset": 3
+                }, {
+                    "name": "spheromancer",
+                    "tileOffset": 4
+                }]
+            }]
+        }
+    }, {
+        "name": "worldmap",
+        "size": {
+            "x": 64,
+            "y": 8,
+            "z": 48
+        },
+        "collType": "IGNORE",
+        "effects": {
+            "sheet": "ar",
+            "show": "taskSignShow",
+            "hide": "taskSignHide"
+        },
+        "anims": {
+            "namedSheets": {
+                "map": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 64,
+                    "height": 48,
+                    "offX": 0,
+                    "offY": 128
+                },
+                "dot": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 16,
+                    "height": 16,
+                    "offX": 64,
+                    "offY": 128
+                }
+            },
+            "frames": [0, 0, 0, 0, 0, 0],
+            "shape": "Y_FLAT",
+            "framesGfxOffset": [0, -1, 0, -1, 0, 0, 0, 1, 0, 1, 0, 0],
+            "time": 0.2,
+            "repeat": true,
+            "renderMode": "lighter",
+            "SUB": [{
+                "sheet": "map",
+                "tileOffset": 0,
+                "offset": {
+                    "x": 1,
+                    "y": 0,
+                    "z": 0
+                },
+                "SUB": [{
+                    "name": "rhombus-square"
+                }, {
+                    "name": "rookie-harbor"
+                }, {
+                    "name": "bergen"
+                }, {
+                    "name": "baki"
+                }, {
+                    "name": "basin"
+                }, {
+                    "name": "ridge"
+                }]
+            }, {
+                "sheet": "dot",
+                "SUB": [{
+                    "name": "rhombus-square",
+                    "offset": {
+                        "x": 0,
+                        "y": 0,
+                        "z": -1
+                    }
+                }, {
+                    "name": "rookie-harbor",
+                    "offset": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 9
+                    }
+                }, {
+                    "name": "bergen",
+                    "offset": {
+                        "x": -15,
+                        "y": 0,
+                        "z": 20
+                    }
+                }, {
+                    "name": "baki",
+                    "offset": {
+                        "x": -23,
+                        "y": 0,
+                        "z": 13
+                    }
+                }, {
+                    "name": "basin",
+                    "offset": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 24
+                    }
+                }, {
+                    "name": "ridge",
+                    "offset": {
+                        "x": 14,
+                        "y": 0,
+                        "z": 18
+                    }
+                }]
+            }]
+        }
+    }, {
+        "name": "itemHologram",
+        "size": {
+            "x": 16,
+            "y": 8,
+            "z": 16
+        },
+        "collType": "IGNORE",
+        "effects": {
+            "sheet": "ar",
+            "show": "taskSignShow",
+            "hide": "taskSignHide"
+        },
+        "anims": {
+            "namedSheets": {
+                "items": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 16,
+                    "height": 16,
+                    "offY": 96
+                }
+            },
+            "frames": [0],
+            "shape": "Y_FLAT",
+            "SUB": [{
+                "sheet": "items",
+                "offset": {
+                    "x": 0,
+                    "z": 16
+                },
+                "frames": [0, 0, 0, 0, 0, 0],
+                "framesGfxOffset": [0, 1, 0, 1, 0, 0, 0, -1, 0, -1, 0, 0],
+                "time": 0.2,
+                "repeat": true,
+                "SUB": {
+                    "jsonINSTANCE": "itemHologramList"
+                }
+            }]
+        }
+    }, {
+        "name": "itemPasses",
+        "size": {
+            "x": 16,
+            "y": 8,
+            "z": 16
+        },
+        "collType": "IGNORE",
+        "anims": {
+            "namedSheets": {
+                "items": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 16,
+                    "height": 16,
+                    "offY": 176
+                }
+            },
+            "frames": [0],
+            "shape": "Y_FLAT",
+            "SUB": [{
+                "sheet": "items",
+                "offset": {
+                    "x": 0,
+                    "z": 16
+                },
+                "frames": [0, 0, 0, 0, 0, 0],
+                "framesGfxOffset": [0, 1, 0, 1, 0, 0, 0, -1, 0, -1, 0, 0],
+                "time": 0.2,
+                "repeat": true,
+                "SUB": {
+                    "jsonINSTANCE": "itemPassList"
+                }
+            }]
+        }
+    }, {
+        "name": "signDiag",
+        "size": {
+            "x": 32,
+            "y": 8,
+            "z": 32
+        },
+        "collType": "IGNORE",
+        "effects": {
+            "sheet": "ar",
+            "show": "taskSignShow",
+            "hide": "taskSignHide"
+        },
+        "anims": {
+            "namedSheets": {
+                "signs": {
+                    "src": "media/map/trading-twilight.png",
+                    "width": 32,
+                    "height": 32,
+                    "offX": 0,
+                    "offY": 192
+                }
+            },
+            "sheet": "signs",
+            "frames": [0, 0, 0, 0, 0, 0],
+            "shape": "Y_FLAT",
+            "renderMode": "lighter",
+            "framesGfxOffset": [0, -1, 0, -1, 0, 0, 0, 1, 0, 1, 0, 0],
+            "time": 0.2,
+            "repeat": true,
+            "SUB": [{
+                "name": "person",
+                "tileOffset": 0
+            }]
+        }
+    }]
+}
