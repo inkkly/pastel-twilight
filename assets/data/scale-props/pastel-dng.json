@@ -1,0 +1,546 @@
+{
+    "DOCTYPE": "SCALABLE_PROP_SHEET",
+    "entries": {
+        "wireFenceH": {
+            "baseSize": {
+                "x": 16,
+                "y": 8,
+                "z": 48
+            },
+            "renderHeight": 40,
+            "scalableX": true,
+            "scalableY": false,
+            "scalableStep": 8,
+            "collType": "NPFENCE",
+            "gfx": "media/map/pastel-dng.png",
+            "gfxBaseX": 352,
+            "gfxBaseY": 208,
+            "patterns": {
+                "x": 16,
+                "y": 0,
+                "w": 8,
+                "h": 48
+            },
+            "gfxEnds": {
+                "west": {
+                    "WEST_DOWN": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 8,
+                        "h": 48
+                    },
+                    "WEST_END": {
+                        "x": 8,
+                        "y": 0,
+                        "w": 8,
+                        "h": 48
+                    }
+                },
+                "east": {
+                    "EAST_DOWN": {
+                        "x": 32,
+                        "y": 0,
+                        "w": 8,
+                        "h": 48
+                    },
+                    "EAST_END": {
+                        "x": 24,
+                        "y": 0,
+                        "w": 8,
+                        "h": 48
+                    }
+                }
+            }
+        },
+        "wireFenceV": {
+            "baseSize": {
+                "x": 8,
+                "y": 16,
+                "z": 48
+            },
+            "renderHeight": 0,
+            "scalableX": false,
+            "scalableY": true,
+            "scalableStep": 8,
+            "collType": "NPFENCE",
+            "gfx": "media/map/pastel-dng.png",
+            "gfxBaseX": 352,
+            "gfxBaseY": 208,
+            "patterns": {
+                "x": 56,
+                "y": 32,
+                "w": 8,
+                "h": 16
+            },
+            "gfxEnds": {
+                "north": {
+                    "NORTH_END": {
+                        "x": 48,
+                        "y": 0,
+                        "w": 8,
+                        "h": 48,
+                        "zHeight": 40
+                    }
+                },
+                "south": {
+                    "SOUTH_END": {
+                        "x": 40,
+                        "y": 0,
+                        "w": 8,
+                        "h": 48,
+                        "zHeight": 40
+                    }
+                }
+            }
+        },
+        "pipeH": {
+            "baseSize": {
+                "x": 16,
+                "y": 16,
+                "z": 16
+            },
+            "renderHeight": 16,
+            "scalableX": true,
+            "scalableY": false,
+            "scalableStep": 8,
+            "terrain": "METAL_HOLLOW",
+            "collType": "BLOCK",
+            "gfx": "media/map/pastel-dng.png",
+            "gfxBaseX": 0,
+            "gfxBaseY": 336,
+            "patterns": {
+                "x": 48,
+                "y": 0,
+                "w": 16,
+                "h": 32
+            },
+            "gfxEnds": {
+                "west": {
+                    "WEST_END": {
+                        "x": 48,
+                        "y": 32,
+                        "w": 16,
+                        "h": 32,
+                        "zHeight": 16
+                    },
+                    "WEST_GROUND": {
+                        "x": 0,
+                        "y": 80,
+                        "w": 24,
+                        "h": 32,
+                        "zHeight": 16
+                    }
+                },
+                "east": {
+                    "EAST_END": {
+                        "x": 48,
+                        "y": 64,
+                        "w": 16,
+                        "h": 32,
+                        "zHeight": 16
+                    },
+                    "EAST_GROUND": {
+                        "x": 24,
+                        "y": 80,
+                        "w": 24,
+                        "h": 32,
+                        "zHeight": 16
+                    }
+                }
+            },
+            "wallY": 1
+        },
+        "pipeV": {
+            "baseSize": {
+                "x": 24,
+                "y": 16,
+                "z": 16
+            },
+            "renderHeight": 0,
+            "scalableX": false,
+            "scalableY": true,
+            "scalableStep": 8,
+            "terrain": "METAL_HOLLOW",
+            "collType": "BLOCK",
+            "gfx": "media/map/pastel-dng.png",
+            "gfxBaseX": 0,
+            "gfxBaseY": 336,
+            "patterns": {
+                "x": 0,
+                "y": 64,
+                "w": 24,
+                "h": 16
+            },
+            "gfxEnds": {
+                "north": {
+                    "NORTH_EAST": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 24,
+                        "h": 32,
+                        "zHeight": 16
+                    },
+                    "NORTH_WEST": {
+                        "x": 24,
+                        "y": 0,
+                        "w": 24,
+                        "h": 32,
+                        "zHeight": 16
+                    },
+                    "NORTH_END": {
+                        "x": 24,
+                        "y": 64,
+                        "w": 24,
+                        "h": 16,
+                        "zHeight": 16
+                    }
+                },
+                "south": {
+                    "SOUTH_EAST": {
+                        "x": 0,
+                        "y": 32,
+                        "w": 24,
+                        "h": 32,
+                        "zHeight": 8
+                    },
+                    "SOUTH_WEST": {
+                        "x": 24,
+                        "y": 32,
+                        "w": 24,
+                        "h": 32,
+                        "zHeight": 8
+                    }
+                }
+            }
+        },
+        "pipeHFrozen": {
+            "baseSize": {
+                "x": 16,
+                "y": 16,
+                "z": 16
+            },
+            "renderHeight": 16,
+            "scalableX": true,
+            "scalableY": false,
+            "scalableStep": 8,
+            "terrain": "ICE",
+            "collType": "BLOCK",
+            "gfx": "media/map/pastel-dng.png",
+            "gfxBaseX": 64,
+            "gfxBaseY": 336,
+            "patterns": {
+                "x": 48,
+                "y": 0,
+                "w": 16,
+                "h": 32
+            },
+            "gfxEnds": {
+                "west": {
+                    "WEST_END": {
+                        "x": 48,
+                        "y": 32,
+                        "w": 16,
+                        "h": 32,
+                        "zHeight": 16
+                    }
+                },
+                "east": {
+                    "EAST_END": {
+                        "x": 48,
+                        "y": 64,
+                        "w": 16,
+                        "h": 32,
+                        "zHeight": 16
+                    }
+                }
+            },
+            "wallY": 1
+        },
+        "pipeVFrozen": {
+            "baseSize": {
+                "x": 24,
+                "y": 16,
+                "z": 16
+            },
+            "renderHeight": 0,
+            "scalableX": false,
+            "scalableY": true,
+            "scalableStep": 8,
+            "terrain": "ICE",
+            "collType": "BLOCK",
+            "gfx": "media/map/pastel-dng.png",
+            "gfxBaseX": 64,
+            "gfxBaseY": 336,
+            "patterns": {
+                "x": 0,
+                "y": 64,
+                "w": 24,
+                "h": 16
+            },
+            "gfxEnds": {
+                "north": {
+                    "NORTH_EAST": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 24,
+                        "h": 32,
+                        "zHeight": 16
+                    },
+                    "NORTH_WEST": {
+                        "x": 24,
+                        "y": 0,
+                        "w": 24,
+                        "h": 32,
+                        "zHeight": 16
+                    },
+                    "NORTH_END": {
+                        "x": 24,
+                        "y": 64,
+                        "w": 24,
+                        "h": 16,
+                        "zHeight": 16
+                    }
+                },
+                "south": {
+                    "SOUTH_EAST": {
+                        "x": 0,
+                        "y": 32,
+                        "w": 24,
+                        "h": 32,
+                        "zHeight": 8
+                    },
+                    "SOUTH_WEST": {
+                        "x": 24,
+                        "y": 32,
+                        "w": 24,
+                        "h": 32,
+                        "zHeight": 8
+                    },
+                    "SOUTH_END": {
+                        "x": 24,
+                        "y": 80,
+                        "w": 24,
+                        "h": 16,
+                        "zHeight": 16
+                    }
+                }
+            }
+        },
+        "fenceH": {
+            "baseSize": {
+                "x": 16,
+                "y": 8,
+                "z": 32
+            },
+            "renderHeight": 24,
+            "scalableX": true,
+            "scalableY": false,
+            "scalableStep": 16,
+            "collType": "FENCE",
+            "gfx": "media/map/pastel-dng.png",
+            "gfxBaseX": 0,
+            "gfxBaseY": 720,
+            "patterns": {
+                "x": 16,
+                "y": 0,
+                "w": 16,
+                "h": 32
+            },
+            "gfxEnds": {
+                "west": {
+                    "WEST_END": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 16,
+                        "h": 32
+                    },
+                    "WEST_BROKEN": {
+                        "x": 64,
+                        "y": 0,
+                        "w": 16,
+                        "h": 32
+                    }
+                },
+                "east": {
+                    "EAST_END": {
+                        "x": 32,
+                        "y": 0,
+                        "w": 16,
+                        "h": 32
+                    },
+                    "EAST_BROKEN": {
+                        "x": 48,
+                        "y": 0,
+                        "w": 16,
+                        "h": 32
+                    }
+                }
+            }
+        },
+        "fenceV": {
+            "baseSize": {
+                "x": 8,
+                "y": 16,
+                "z": 32
+            },
+            "renderHeight": 0,
+            "scalableX": false,
+            "scalableY": true,
+            "scalableStep": 8,
+            "collType": "FENCE",
+            "gfx": "media/map/pastel-dng.png",
+            "gfxBaseX": 0,
+            "gfxBaseY": 848,
+            "patterns": {
+                "x": 0,
+                "y": 0,
+                "w": 8,
+                "h": 16
+            },
+            "gfxEnds": {
+                "north": {
+                    "NORTH_WEST": {
+                        "x": 24,
+                        "y": 0,
+                        "w": 8,
+                        "h": 32,
+                        "zHeight": 24
+                    },
+                    "NORTH_EAST": {
+                        "x": 32,
+                        "y": 0,
+                        "w": 8,
+                        "h": 32,
+                        "zHeight": 24
+                    },
+                    "NORTH_END": {
+                        "x": 16,
+                        "y": 0,
+                        "w": 8,
+                        "h": 40,
+                        "zHeight": 24
+                    },
+                    "NORTH_MIX": {
+                        "x": 8,
+                        "y": 0,
+                        "w": 8,
+                        "h": 40,
+                        "zHeight": 32
+                    }
+                },
+                "south": {
+                    "SOUTH_END": {
+                        "x": 0,
+                        "y": 16,
+                        "w": 8,
+                        "h": 24,
+                        "zHeight": 8
+                    },
+                    "SOUTH_MIX": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 8,
+                        "h": 8,
+                        "zHeight": 0
+                    },
+                    "SOUTH_WEST": {
+                        "x": 40,
+                        "y": 0,
+                        "w": 8,
+                        "h": 32,
+                        "zHeight": 0
+                    },
+                    "SOUTH_EAST": {
+                        "x": 48,
+                        "y": 0,
+                        "w": 8,
+                        "h": 32,
+                        "zHeight": 0
+                    }
+                }
+            }
+        },
+        "blockLineH": {
+            "baseSize": {
+                "x": 16,
+                "y": 8,
+                "z": 3
+            },
+            "terrain": "METAL",
+            "renderHeight": 3,
+            "scalableX": true,
+            "scalableY": false,
+            "scalableStep": 4,
+            "collType": "BLOCK",
+            "gfx": "media/map/pastel-dng.png",
+            "gfxBaseX": 96,
+            "gfxBaseY": 672,
+            "wallY": 1,
+            "patterns": {
+                "x": 24,
+                "y": 5,
+                "w": 16,
+                "h": 11
+            },
+            "gfxEnds": {
+                "west": {
+                    "WEST_END": {
+                        "x": 8,
+                        "y": 5,
+                        "w": 8,
+                        "h": 11
+                    }
+                },
+                "east": {
+                    "EAST_END": {
+                        "x": 8,
+                        "y": 5,
+                        "w": 8,
+                        "h": 11
+                    }
+                }
+            }
+        },
+        "blockLineV": {
+            "baseSize": {
+                "x": 8,
+                "y": 16,
+                "z": 3
+            },
+            "terrain": "METAL",
+            "renderHeight": 3,
+            "scalableX": false,
+            "scalableY": true,
+            "scalableStep": 4,
+            "collType": "BLOCK",
+            "gfx": "media/map/pastel-dng.png",
+            "gfxBaseX": 96,
+            "gfxBaseY": 672,
+            "wallY": 1,
+            "patterns": {
+                "x": 16,
+                "y": 0,
+                "w": 8,
+                "h": 16
+            },
+            "gfxEnds": {
+                "north": {
+                    "NORTH_END": {
+                        "x": 0,
+                        "y": 5,
+                        "w": 8,
+                        "h": 11
+                    }
+                },
+                "south": {
+                    "SOUTH_END": {
+                        "x": 8,
+                        "y": 5,
+                        "w": 8,
+                        "h": 11
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1443 @@
+{
+    "DOCTYPE": "PROP_SHEET",
+    "props": [{
+        "name": "chair-down",
+        "size": {
+            "x": 12,
+            "y": 12,
+            "z": 20
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 192,
+            "y": 512,
+            "w": 16,
+            "h": 32,
+            "flipX": false,
+            "wallY": 1
+        }
+    }, {
+        "name": "chair-right",
+        "size": {
+            "x": 12,
+            "y": 12,
+            "z": 20
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 208,
+            "y": 512,
+            "w": 16,
+            "h": 32,
+            "flipX": false,
+            "wallY": 1
+        }
+    }, {
+        "name": "chair-left",
+        "size": {
+            "x": 12,
+            "y": 12,
+            "z": 20
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 208,
+            "y": 512,
+            "w": 16,
+            "h": 32,
+            "flipX": true,
+            "wallY": 1
+        }
+    }, {
+        "name": "chair-up",
+        "size": {
+            "x": 12,
+            "y": 12,
+            "z": 20
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 224,
+            "y": 512,
+            "w": 16,
+            "h": 32,
+            "flipX": false
+        }
+    }, {
+        "name": "display1",
+        "size": {
+            "x": 24,
+            "y": 8,
+            "z": 16
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 80,
+            "y": 464,
+            "w": 24,
+            "h": 24,
+            "flipX": false
+        }
+    }, {
+        "name": "display2",
+        "size": {
+            "x": 24,
+            "y": 8,
+            "z": 16
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 104,
+            "y": 464,
+            "w": 24,
+            "h": 24,
+            "flipX": false
+        }
+    }, {
+        "name": "display3",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 16
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 128,
+            "y": 464,
+            "w": 16,
+            "h": 32,
+            "flipX": false
+        }
+    }, {
+        "name": "display4",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 16
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 128,
+            "y": 464,
+            "w": 16,
+            "h": 32,
+            "flipX": true
+        }
+    }, {
+        "name": "display5",
+        "size": {
+            "x": 8,
+            "y": 16,
+            "z": 16
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 152,
+            "y": 464,
+            "w": 8,
+            "h": 32,
+            "flipX": false
+        }
+    }, {
+        "name": "display6",
+        "size": {
+            "x": 8,
+            "y": 16,
+            "z": 16
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 152,
+            "y": 464,
+            "w": 8,
+            "h": 32,
+            "flipX": true
+        }
+    }, {
+        "name": "displayL",
+        "size": {
+            "x": 32,
+            "y": 8,
+            "z": 24
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 80,
+            "y": 432,
+            "w": 32,
+            "h": 32,
+            "flipX": false,
+            "offY": -2
+        }
+    }, {
+        "name": "displayL2",
+        "size": {
+            "x": 48,
+            "y": 8,
+            "z": 24
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 0,
+            "y": 512,
+            "w": 48,
+            "h": 32,
+            "flipX": false,
+            "offY": -1
+        }
+    }, {
+        "name": "smallDisplay3",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 16
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 128,
+            "y": 440,
+            "w": 16,
+            "h": 24,
+            "flipX": false
+        }
+    }, {
+        "name": "smallDisplay4",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 16
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 128,
+            "y": 440,
+            "w": 16,
+            "h": 24,
+            "flipX": true
+        }
+    }, {
+        "name": "keyboardDiag1",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 0
+        },
+        "collType": "NONE",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 112,
+            "y": 448,
+            "w": 16,
+            "h": 16,
+            "flipX": false
+        }
+    }, {
+        "name": "keyboardDiag2",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 0
+        },
+        "collType": "NONE",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 112,
+            "y": 448,
+            "w": 16,
+            "h": 16,
+            "flipX": true
+        }
+    }, {
+        "name": "keyboard1",
+        "size": {
+            "x": 8,
+            "y": 24,
+            "z": 0
+        },
+        "collType": "NONE",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 48,
+            "y": 456,
+            "w": 8,
+            "h": 24,
+            "flipX": false
+        }
+    }, {
+        "name": "keyboard2",
+        "size": {
+            "x": 8,
+            "y": 24,
+            "z": 0
+        },
+        "collType": "NONE",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 48,
+            "y": 456,
+            "w": 8,
+            "h": 24,
+            "flipX": true
+        }
+    }, {
+        "name": "keyboard3",
+        "size": {
+            "x": 24,
+            "y": 8,
+            "z": 0
+        },
+        "collType": "NONE",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 56,
+            "y": 472,
+            "w": 24,
+            "h": 8,
+            "flipX": false
+        }
+    }, {
+        "name": "trashbin",
+        "size": {
+            "x": 10,
+            "y": 10,
+            "z": 8
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 80,
+            "y": 488,
+            "w": 16,
+            "h": 24,
+            "flipX": false
+        }
+    }, {
+        "name": "toolbox",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 8
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 96,
+            "y": 488,
+            "w": 24,
+            "h": 24,
+            "flipX": false
+        }
+    }, {
+        "name": "cargo-box1",
+        "size": {
+            "x": 32,
+            "y": 16,
+            "z": 16
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 80,
+            "y": 512,
+            "w": 32,
+            "h": 32,
+            "flipX": false
+        }
+    }, {
+        "name": "cargo-box2",
+        "size": {
+            "x": 16,
+            "y": 32,
+            "z": 16
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 64,
+            "y": 496,
+            "w": 16,
+            "h": 48,
+            "flipX": false
+        }
+    }, {
+        "name": "ventilator",
+        "size": {
+            "x": 32,
+            "y": 8,
+            "z": 24
+        },
+        "collType": "NONE",
+        "anims": {
+            "sheet": {
+                "src": "media/map/pastel-dng.png",
+                "width": 32,
+                "height": 32,
+                "offX": 352,
+                "offY": 528,
+                "xCount": 3
+            },
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "shapeType": "Y_FLAT",
+            "SUB": [{
+                "name": "running",
+                "time": 0.1,
+                "frames": [0, 1, 2],
+                "repeat": true
+            }, {
+                "name": "stopped",
+                "time": 0.2,
+                "frames": [0],
+                "repeat": true
+            }, {
+                "name": "fast",
+                "time": 0.05,
+                "frames": [0, 1, 2],
+                "repeat": true
+            }]
+        }
+    }, {
+        "name": "elevatorSwitch",
+        "size": {
+            "x": 8,
+            "y": 6,
+            "z": 16
+        },
+        "collType": "NONE",
+        "anims": {
+            "sheet": {
+                "src": "media/map/pastel-dng.png",
+                "width": 8,
+                "height": 16,
+                "offX": 496,
+                "offY": 672,
+                "xCount": 2
+            },
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 8
+            },
+            "shapeType": "Y_FLAT",
+            "wallY": 1,
+            "SUB": [{
+                "name": "off",
+                "time": 0.1,
+                "frames": [0],
+                "repeat": false
+            }, {
+                "name": "on",
+                "time": 0.1,
+                "frames": [1],
+                "repeat": false
+            }]
+        }
+    }, {
+        "name": "pillarH32",
+        "size": {
+            "x": 16,
+            "y": 4,
+            "z": 32
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 496,
+            "y": 360,
+            "w": 16,
+            "h": 40,
+            "flipX": false,
+            "wallY": 1
+        }
+    }, {
+        "name": "pillarH64",
+        "size": {
+            "x": 16,
+            "y": 4,
+            "z": 64
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 464,
+            "y": 328,
+            "w": 16,
+            "h": 72,
+            "flipX": false,
+            "wallY": 1
+        }
+    }, {
+        "name": "pillarV32",
+        "size": {
+            "x": 8,
+            "y": 16,
+            "z": 32
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 448,
+            "y": 360,
+            "w": 8,
+            "h": 40,
+            "flipX": false,
+            "wallY": 1
+        }
+    }, {
+        "name": "pillarV64",
+        "size": {
+            "x": 8,
+            "y": 16,
+            "z": 64
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 456,
+            "y": 328,
+            "w": 8,
+            "h": 72,
+            "flipX": false,
+            "wallY": 1
+        }
+    }, {
+        "name": "crate1",
+        "size": {
+            "x": 32,
+            "y": 16,
+            "z": 16
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 144,
+            "y": 336,
+            "w": 32,
+            "h": 32,
+            "flipX": false
+        }
+    }, {
+        "name": "crate2",
+        "size": {
+            "x": 16,
+            "y": 32,
+            "z": 16
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 128,
+            "y": 272,
+            "w": 16,
+            "h": 48,
+            "flipX": false
+        }
+    }, {
+        "name": "crateLarge",
+        "size": {
+            "x": 32,
+            "y": 32,
+            "z": 32
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 144,
+            "y": 272,
+            "w": 32,
+            "h": 64,
+            "flipX": false
+        }
+    }, {
+        "name": "crateLarge2",
+        "size": {
+            "x": 32,
+            "y": 32,
+            "z": 32
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 240,
+            "y": 288,
+            "w": 32,
+            "h": 64,
+            "flipX": false
+        }
+    }, {
+        "name": "plant1",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 16
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 0,
+            "y": 896,
+            "w": 32,
+            "h": 32,
+            "flipX": false
+        }
+    }, {
+        "name": "plant2",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 16
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 0,
+            "y": 928,
+            "w": 32,
+            "h": 32,
+            "flipX": false
+        }
+    }, {
+        "name": "plant3",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 32
+        },
+        "collType": "VIRTUAL",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 32,
+            "y": 912,
+            "w": 16,
+            "h": 48,
+            "flipX": false
+        }
+    }, {
+        "name": "plant4",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 16
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 48,
+            "y": 912,
+            "w": 32,
+            "h": 32,
+            "flipX": false,
+            "wallY": 1,
+            "offX": 10,
+            "offY": 16
+        }
+    }, {
+        "name": "plant4f",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 16
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 48,
+            "y": 912,
+            "w": 32,
+            "h": 32,
+            "flipX": true,
+            "wallY": 1,
+            "offX": -10,
+            "offY": 16
+        }
+    }, {
+        "name": "plant5",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 32
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 0,
+            "y": 960,
+            "w": 16,
+            "h": 48,
+            "flipX": false
+        }
+    }, {
+        "name": "plant6",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 16
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 16,
+            "y": 960,
+            "w": 32,
+            "h": 32,
+            "flipX": false
+        }
+    }, {
+        "name": "plant7",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 16
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 16,
+            "y": 992,
+            "w": 32,
+            "h": 32,
+            "flipX": false
+        }
+    }, {
+        "name": "plant8",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 8
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 48,
+            "y": 1008,
+            "w": 56,
+            "h": 16,
+            "flipX": false,
+            "wallY": 1,
+            "offX": -20,
+            "offY": 2
+        }
+    }, {
+        "name": "plant8f",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 8
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 48,
+            "y": 1008,
+            "w": 56,
+            "h": 16,
+            "flipX": true,
+            "wallY": 1,
+            "offX": 20,
+            "offY": 2
+        }
+    }, {
+        "name": "plant9",
+        "size": {
+            "x": 8,
+            "y": 8,
+            "z": 8
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 0,
+            "y": 1008,
+            "w": 16,
+            "h": 16,
+            "flipX": false
+        }
+    }, {
+        "name": "plant10",
+        "size": {
+            "x": 8,
+            "y": 8,
+            "z": 8
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 48,
+            "y": 952,
+            "w": 16,
+            "h": 24,
+            "flipX": false
+        }
+    }, {
+        "name": "plantFresh1",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 32
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 160,
+            "y": 384,
+            "w": 16,
+            "h": 48,
+            "flipX": false
+        }
+    }, {
+        "name": "plantFresh1f",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 32
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 160,
+            "y": 384,
+            "w": 16,
+            "h": 48,
+            "flipX": true
+        }
+    }, {
+        "name": "plantFresh2",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 16
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 144,
+            "y": 432,
+            "w": 32,
+            "h": 32,
+            "flipX": false
+        }
+    }, {
+        "name": "plantFresh3",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 32
+        },
+        "collType": "FENCE",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 160,
+            "y": 464,
+            "w": 16,
+            "h": 48,
+            "flipX": false
+        }
+    }, {
+        "name": "pipeConnectH",
+        "terrain": "METAL",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 16
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 32,
+            "y": 480,
+            "w": 16,
+            "h": 32,
+            "offY": 0
+        }
+    }, {
+        "name": "pipeConnectV",
+        "terrain": "METAL",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 16
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 0,
+            "y": 448,
+            "w": 16,
+            "h": 32,
+            "offY": 0
+        }
+    }, {
+        "name": "pipeConnectV2",
+        "terrain": "METAL",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 16
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 16,
+            "y": 448,
+            "w": 16,
+            "h": 32,
+            "offY": 0
+        }
+    }, {
+        "name": "pipeStand16",
+        "terrain": "METAL",
+        "size": {
+            "x": 16,
+            "y": 8,
+            "z": 16
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 16,
+            "y": 480,
+            "w": 16,
+            "h": 16,
+            "offY": 0
+        }
+    }, {
+        "name": "pipeStand16coals",
+        "terrain": "METAL",
+        "size": {
+            "x": 16,
+            "y": 8,
+            "z": 16
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 16,
+            "y": 496,
+            "w": 16,
+            "h": 16,
+            "offY": 0
+        }
+    }, {
+        "name": "pipeStand32",
+        "terrain": "METAL",
+        "size": {
+            "x": 16,
+            "y": 8,
+            "z": 32
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 0,
+            "y": 480,
+            "w": 16,
+            "h": 32,
+            "offY": 0
+        }
+    }, {
+        "name": "slopeNWbottom",
+        "terrain": "METAL",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 32
+        },
+        "collType": "FENCE",
+        "shapeType": "SLOPE_NW",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 0,
+            "y": 752,
+            "w": 16,
+            "h": 48,
+            "offY": 8
+        }
+    }, {
+        "name": "slopeNWmid",
+        "terrain": "METAL",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 32
+        },
+        "collType": "FENCE",
+        "shapeType": "SLOPE_NW",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 16,
+            "y": 752,
+            "w": 16,
+            "h": 48,
+            "offY": 8
+        }
+    }, {
+        "name": "slopeNWtop",
+        "terrain": "METAL",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 32
+        },
+        "collType": "FENCE",
+        "shapeType": "SLOPE_NW",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 32,
+            "y": 752,
+            "w": 16,
+            "h": 48,
+            "offY": 8
+        }
+    }, {
+        "name": "slopeNEbottom",
+        "terrain": "METAL",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 32
+        },
+        "collType": "FENCE",
+        "shapeType": "SLOPE_NE",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 0,
+            "y": 800,
+            "w": 16,
+            "h": 48,
+            "offY": 8
+        }
+    }, {
+        "name": "slopeNEmid",
+        "terrain": "METAL",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 32
+        },
+        "collType": "FENCE",
+        "shapeType": "SLOPE_NE",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 16,
+            "y": 800,
+            "w": 16,
+            "h": 48,
+            "offY": 8
+        }
+    }, {
+        "name": "slopeNEtop",
+        "terrain": "METAL",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 32
+        },
+        "collType": "FENCE",
+        "shapeType": "SLOPE_NE",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 32,
+            "y": 800,
+            "w": 16,
+            "h": 48,
+            "offY": 8
+        }
+    }, {
+        "name": "slopeSWbottom",
+        "terrain": "METAL",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 32
+        },
+        "collType": "FENCE",
+        "shapeType": "SLOPE_SW",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 0,
+            "y": 800,
+            "w": 16,
+            "h": 48,
+            "offY": 0,
+            "wallY": 1
+        }
+    }, {
+        "name": "slopeSWmid",
+        "terrain": "METAL",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 32
+        },
+        "collType": "FENCE",
+        "shapeType": "SLOPE_SW",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 16,
+            "y": 800,
+            "w": 16,
+            "h": 48,
+            "offY": 0,
+            "wallY": 1
+        }
+    }, {
+        "name": "slopeSWtop",
+        "terrain": "METAL",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 32
+        },
+        "collType": "FENCE",
+        "shapeType": "SLOPE_SW",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 32,
+            "y": 800,
+            "w": 16,
+            "h": 48,
+            "offY": 0,
+            "wallY": 1
+        }
+    }, {
+        "name": "slopeSEbottom",
+        "terrain": "METAL",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 32
+        },
+        "collType": "FENCE",
+        "shapeType": "SLOPE_SE",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 0,
+            "y": 752,
+            "w": 16,
+            "h": 48,
+            "offY": 0,
+            "wallY": 1
+        }
+    }, {
+        "name": "slopeSEmid",
+        "terrain": "METAL",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 32
+        },
+        "collType": "FENCE",
+        "shapeType": "SLOPE_SE",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 16,
+            "y": 752,
+            "w": 16,
+            "h": 48,
+            "offY": 0,
+            "wallY": 1
+        }
+    }, {
+        "name": "slopeSEtop",
+        "terrain": "METAL",
+        "size": {
+            "x": 16,
+            "y": 16,
+            "z": 32
+        },
+        "collType": "FENCE",
+        "shapeType": "SLOPE_SE",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 32,
+            "y": 752,
+            "w": 16,
+            "h": 48,
+            "offY": 0,
+            "wallY": 1
+        }
+    }, {
+        "name": "wireFenceNW",
+        "terrain": "METAL",
+        "size": {
+            "x": 24,
+            "y": 24,
+            "z": 48
+        },
+        "collType": "NPFENCE",
+        "shapeType": "SLOPE_NW",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 136,
+            "y": 816,
+            "w": 24,
+            "h": 64,
+            "offY": 0,
+            "flipX": false
+        }
+    }, {
+        "name": "wireFenceNE",
+        "terrain": "METAL",
+        "size": {
+            "x": 24,
+            "y": 24,
+            "z": 48
+        },
+        "collType": "NPFENCE",
+        "shapeType": "SLOPE_NW",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 112,
+            "y": 816,
+            "w": 24,
+            "h": 64,
+            "offY": 0,
+            "flipX": false
+        }
+    }, {
+        "name": "groundProjector",
+        "size": {
+            "x": 24,
+            "y": 24,
+            "z": 2
+        },
+        "collType": "BLOCK",
+        "fix": {
+            "gfx": "media/map/pastel-dng.png",
+            "x": 80,
+            "y": 752,
+            "w": 32,
+            "h": 30,
+            "flipX": false,
+            "shape": "Z_FLAT"
+        }
+    }, {
+        "name": "dTextSmall",
+        "size": {
+            "x": 16,
+            "y": 4,
+            "z": 12
+        },
+        "collType": "NONE",
+        "anims": {
+            "sheet": {
+                "src": "media/map/pastel-dng.png",
+                "width": 16,
+                "height": 16,
+                "offX": 304,
+                "offY": 368,
+                "xCount": 5
+            },
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "shapeType": "Y_FLAT",
+            "wallY": 0,
+            "renderMode": "lighter",
+            "SUB": [{
+                "name": "text",
+                "time": 0.1,
+                "frames": [0],
+                "repeat": false
+            }, {
+                "name": "blinkText",
+                "time": 0.2,
+                "frames": [1, 2],
+                "repeat": true
+            }, {
+                "name": "blinkFigure",
+                "time": 0.2,
+                "frames": [3, 4],
+                "repeat": true
+            }]
+        }
+    }, {
+        "name": "dTextMedium",
+        "size": {
+            "x": 24,
+            "y": 4,
+            "z": 12
+        },
+        "collType": "NONE",
+        "anims": {
+            "sheet": {
+                "src": "media/map/pastel-dng.png",
+                "width": 24,
+                "height": 16,
+                "offX": 304,
+                "offY": 384,
+                "xCount": 1
+            },
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "shapeType": "Y_FLAT",
+            "wallY": 0,
+            "renderMode": "lighter",
+            "SUB": [{
+                "name": "alert",
+                "time": 0.2,
+                "frames": [0, 1],
+                "repeat": true
+            }, {
+                "name": "confirmed",
+                "time": 0.1,
+                "frames": [2],
+                "repeat": false
+            }, {
+                "name": "wtfFrece",
+                "time": 0.2,
+                "frames": [3],
+                "repeat": false
+            }, {
+                "name": "text",
+                "time": 0.2,
+                "frames": [4],
+                "repeat": false
+            }]
+        }
+    }, {
+        "name": "dTextLarge",
+        "size": {
+            "x": 24,
+            "y": 4,
+            "z": 12
+        },
+        "collType": "NONE",
+        "anims": {
+            "sheet": {
+                "src": "media/map/pastel-dng.png",
+                "width": 24,
+                "height": 16,
+                "offX": 328,
+                "offY": 384,
+                "xCount": 1
+            },
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "shapeType": "Y_FLAT",
+            "wallY": 0,
+            "renderMode": "lighter",
+            "SUB": [{
+                "name": "text1",
+                "time": 0.2,
+                "frames": [0],
+                "repeat": false
+            }, {
+                "name": "text2",
+                "time": 0.1,
+                "frames": [1],
+                "repeat": false
+            }, {
+                "name": "text3",
+                "time": 0.2,
+                "frames": [2],
+                "repeat": false
+            }]
+        }
+    }, {
+        "name": "dTextScroll",
+        "size": {
+            "x": 8,
+            "y": 4,
+            "z": 12
+        },
+        "collType": "NONE",
+        "anims": {
+            "sheet": {
+                "src": "media/map/pastel-dng.png",
+                "width": 8,
+                "height": 16,
+                "offX": 352,
+                "offY": 384,
+                "xCount": 4
+            },
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "shapeType": "Y_FLAT",
+            "wallY": 0,
+            "renderMode": "lighter",
+            "SUB": [{
+                "name": "still",
+                "time": 0.1,
+                "frames": [0],
+                "repeat": false
+            }, {
+                "name": "scrollDown",
+                "time": 0.1,
+                "frames": [0, 1, 2, 3],
+                "repeat": true
+            }, {
+                "name": "scrollUp",
+                "time": 0.1,
+                "frames": [0, 3, 2, 1],
+                "repeat": true
+            }]
+        }
+    }, {
+        "name": "dTextDiag",
+        "size": {
+            "x": 8,
+            "y": 8,
+            "z": 8
+        },
+        "collType": "NONE",
+        "anims": {
+            "sheet": {
+                "src": "media/map/pastel-dng.png",
+                "width": 8,
+                "height": 16,
+                "offX": 288,
+                "offY": 464,
+                "xCount": 2
+            },
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "shapeType": "Y_FLAT",
+            "wallY": 0,
+            "renderMode": "lighter",
+            "SUB": [{
+                "name": "blinkText",
+                "time": 0.2,
+                "frames": [0, 1],
+                "repeat": true
+            }, {
+                "name": "blinkTextFlip",
+                "time": 0.2,
+                "frames": [0, 1],
+                "repeat": true,
+                "flipX": true
+            }]
+        }
+    }]
+}

@@ -1,4 +1,4 @@
-ig.module("impact.feature.weather.pastwi-weather").requires("impact.feature.weather.weather").defines(function () {
+ig.module("impact.feature.weather.pastwi-weather").requires("impact.feature.weather.weather").defines(function() {
 
     ig.WEATHER_TYPES.TWILIGHT_CITY_INNER = {
         lightMapDarkness: 0.6,
