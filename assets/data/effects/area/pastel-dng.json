@@ -1,0 +1,663 @@
+{
+    "DOCTYPE": "EFFECT",
+    "ANIMS": {
+        "namedSheets": {
+            "blockDebris": {
+                "src": "media/entity/style/pastel-dng-destruct.png",
+                "xCount": 2,
+                "offX": 64,
+                "offY": 128,
+                "width": 16,
+                "height": 16
+            }
+        },
+        "SUB": [{
+            "name": "BLOCK_DEBRIS_1",
+            "sheet": "blockDebris",
+            "centerPivot": false,
+            "time": 0.025,
+            "repeat": true,
+            "frames": [0]
+        }, {
+            "name": "BLOCK_DEBRIS_2",
+            "sheet": "blockDebris",
+            "centerPivot": false,
+            "time": 0.025,
+            "repeat": true,
+            "frames": [1]
+        }, {
+            "name": "BLOCK_DEBRIS_3",
+            "sheet": "blockDebris",
+            "centerPivot": false,
+            "time": 0.025,
+            "repeat": true,
+            "frames": [2]
+        }, {
+            "name": "DUST_SMALL",
+            "sheet": {
+                "src": "media/entity/effects/dust.png",
+                "width": 16,
+                "height": 16,
+                "offY": 16
+            },
+            "time": 0.06,
+            "repeat": false,
+            "frames": [0, 1, 2, 3, 4, 5]
+        }, {
+            "name": "EGG_SHELL_1",
+            "sheet": {
+                "src": "media/map/cold-dng.png",
+                "offX": 144,
+                "offY": 544,
+                "width": 16,
+                "height": 16
+            },
+            "centerPivot": false,
+            "time": 0.025,
+            "repeat": true,
+            "frames": [0]
+        }, {
+            "name": "EGG_SHELL_2",
+            "sheet": {
+                "src": "media/map/cold-dng.png",
+                "offX": 144,
+                "offY": 544,
+                "width": 16,
+                "height": 16
+            },
+            "centerPivot": false,
+            "time": 0.025,
+            "repeat": true,
+            "frames": [1]
+        }, {
+            "name": "NOTE_1",
+            "sheet": {
+                "src": "media/map/cold-dng.png",
+                "offX": 128,
+                "offY": 760,
+                "width": 8,
+                "height": 8
+            },
+            "centerPivot": false,
+            "time": 0.025,
+            "repeat": true,
+            "frames": [0]
+        }, {
+            "name": "NOTE_2",
+            "sheet": {
+                "src": "media/map/cold-dng.png",
+                "offX": 128,
+                "offY": 760,
+                "width": 8,
+                "height": 8
+            },
+            "centerPivot": false,
+            "time": 0.025,
+            "repeat": true,
+            "frames": [1]
+        }]
+    },
+    "EFFECTS": {
+        "bombBlockDebris": [{
+            "numParticles": 2,
+            "duration": 0,
+            "centralAngle": 1,
+            "startDist": 2,
+            "uniformRandom": 0.6,
+            "particleRotate": true,
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "minSpeed": 10,
+            "maxSpeed": 40,
+            "minZSpeed": 180,
+            "maxZSpeed": 250,
+            "zBounciness": 0.5,
+            "minZVel": 80,
+            "collision": false,
+            "pAlpha": {
+                "init": 0.8,
+                "end": {
+                    "value": 0,
+                    "time": 0.5,
+                    "spline": ""
+                }
+            },
+            "pRotate": {
+                "init": -0.5,
+                "start": {
+                    "value": 0,
+                    "time": 1,
+                    "spline": ""
+                }
+            },
+            "particleDuration": 1.5,
+            "anim": "BLOCK_DEBRIS_1",
+            "type": "DEBRIS_CIRCLE"
+        }, {
+            "numParticles": 4,
+            "duration": 0,
+            "centralAngle": 1,
+            "startDist": 2,
+            "uniformRandom": 0.6,
+            "particleRotate": true,
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "minSpeed": 10,
+            "maxSpeed": 40,
+            "minZSpeed": 180,
+            "maxZSpeed": 250,
+            "zBounciness": 0.5,
+            "minZVel": 80,
+            "collision": false,
+            "pAlpha": {
+                "init": 0.8,
+                "end": {
+                    "value": 0,
+                    "time": 0.5,
+                    "spline": ""
+                }
+            },
+            "pRotate": {
+                "init": -0.5,
+                "start": {
+                    "value": 0,
+                    "time": 1,
+                    "spline": ""
+                }
+            },
+            "particleDuration": 1.5,
+            "anim": "BLOCK_DEBRIS_2",
+            "type": "DEBRIS_CIRCLE"
+        }, {
+            "numParticles": 4,
+            "duration": 0,
+            "centralAngle": 1,
+            "startDist": 2,
+            "uniformRandom": 0.6,
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "minSpeed": 10,
+            "maxSpeed": 40,
+            "minZSpeed": 180,
+            "maxZSpeed": 250,
+            "zBounciness": 0.5,
+            "minZVel": 80,
+            "collision": false,
+            "pAlpha": {
+                "init": 0.8,
+                "end": {
+                    "value": 0,
+                    "time": 0.5,
+                    "spline": ""
+                }
+            },
+            "pRotate": {
+                "init": -0.5,
+                "start": {
+                    "value": 0,
+                    "time": 1,
+                    "spline": ""
+                }
+            },
+            "particleDuration": 1.5,
+            "anim": "BLOCK_DEBRIS_3",
+            "type": "DEBRIS_CIRCLE"
+        }],
+        "bombBlockDebrisWall": [{
+            "numParticles": 2,
+            "duration": 0,
+            "centralAngle": 0.3,
+            "startDist": 2,
+            "uniformRandom": 0.6,
+            "particleRotate": true,
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "minSpeed": 30,
+            "maxSpeed": 70,
+            "minZSpeed": 150,
+            "maxZSpeed": 180,
+            "zBounciness": 0.5,
+            "minZVel": 80,
+            "collision": false,
+            "pAlpha": {
+                "init": 0.8,
+                "end": {
+                    "value": 0,
+                    "time": 0.5,
+                    "spline": ""
+                }
+            },
+            "pRotate": {
+                "init": -0.5,
+                "start": {
+                    "value": 0,
+                    "time": 1,
+                    "spline": ""
+                }
+            },
+            "particleDuration": 1.5,
+            "anim": "BLOCK_DEBRIS_1",
+            "type": "DEBRIS_CIRCLE"
+        }, {
+            "numParticles": 3,
+            "duration": 0,
+            "centralAngle": 0.3,
+            "startDist": 2,
+            "uniformRandom": 0.6,
+            "particleRotate": true,
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "minSpeed": 30,
+            "maxSpeed": 70,
+            "minZSpeed": 150,
+            "maxZSpeed": 180,
+            "zBounciness": 0.5,
+            "minZVel": 80,
+            "collision": false,
+            "pAlpha": {
+                "init": 0.8,
+                "end": {
+                    "value": 0,
+                    "time": 0.5,
+                    "spline": ""
+                }
+            },
+            "pRotate": {
+                "init": -0.5,
+                "start": {
+                    "value": 0,
+                    "time": 1,
+                    "spline": ""
+                }
+            },
+            "particleDuration": 1.5,
+            "anim": "BLOCK_DEBRIS_2",
+            "type": "DEBRIS_CIRCLE"
+        }, {
+            "numParticles": 3,
+            "duration": 0,
+            "centralAngle": 0.3,
+            "startDist": 2,
+            "uniformRandom": 0.6,
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "minSpeed": 30,
+            "maxSpeed": 70,
+            "minZSpeed": 150,
+            "maxZSpeed": 180,
+            "zBounciness": 0.5,
+            "minZVel": 80,
+            "collision": false,
+            "pAlpha": {
+                "init": 0.8,
+                "end": {
+                    "value": 0,
+                    "time": 0.5,
+                    "spline": ""
+                }
+            },
+            "pRotate": {
+                "init": -0.5,
+                "start": {
+                    "value": 0,
+                    "time": 1,
+                    "spline": ""
+                }
+            },
+            "particleDuration": 1.5,
+            "anim": "BLOCK_DEBRIS_3",
+            "type": "DEBRIS_CIRCLE"
+        }],
+        "signBlink": [{
+            "color": "white",
+            "alpha": 1,
+            "fadeIn": 0.1,
+            "fadeOut": 0.5,
+            "duration": -1,
+            "type": "FADE_COLOR"
+        }, {
+            "type": "LOOP_START"
+        }, {
+            "time": 0.1,
+            "type": "WAIT"
+        }, {
+            "type": "LOOP_END"
+        }],
+        "blockDebrisShort": [{
+            "volume": 0.8,
+            "global": false,
+            "loop": false,
+            "variance": 0.1,
+            "sound": "media/sound/battle/rock-debris1.ogg",
+            "type": "PLAY_SOUND"
+        }, {
+            "volume": 0.7,
+            "global": false,
+            "loop": false,
+            "variance": 0.1,
+            "sound": "media/sound/battle/rock-burst1.ogg",
+            "type": "PLAY_SOUND"
+        }, {
+            "alpha": 0,
+            "duration": 0.05,
+            "type": "CHANGE_ALPHA"
+        }, {
+            "numParticles": 2,
+            "duration": 0,
+            "centralAngle": 1,
+            "startDist": 2,
+            "uniformRandom": 0.6,
+            "particleRotate": true,
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "minSpeed": 10,
+            "maxSpeed": 40,
+            "minZSpeed": 180,
+            "maxZSpeed": 250,
+            "zBounciness": 0.5,
+            "minZVel": 80,
+            "collision": false,
+            "pAlpha": {
+                "init": 0.8,
+                "end": {
+                    "value": 0,
+                    "time": 0.2,
+                    "spline": ""
+                }
+            },
+            "pRotate": {
+                "init": -0.5,
+                "start": {
+                    "value": 0,
+                    "time": 1,
+                    "spline": ""
+                }
+            },
+            "particleDuration": 0.8,
+            "anim": "BLOCK_DEBRIS_1",
+            "type": "DEBRIS_CIRCLE"
+        }, {
+            "numParticles": 4,
+            "duration": 0,
+            "centralAngle": 1,
+            "startDist": 2,
+            "uniformRandom": 0.6,
+            "particleRotate": true,
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "minSpeed": 10,
+            "maxSpeed": 40,
+            "minZSpeed": 180,
+            "maxZSpeed": 250,
+            "zBounciness": 0.5,
+            "minZVel": 80,
+            "collision": false,
+            "pAlpha": {
+                "init": 0.8,
+                "end": {
+                    "value": 0,
+                    "time": 0.2,
+                    "spline": ""
+                }
+            },
+            "pRotate": {
+                "init": -0.5,
+                "start": {
+                    "value": 0,
+                    "time": 1,
+                    "spline": ""
+                }
+            },
+            "particleDuration": 0.8,
+            "anim": "BLOCK_DEBRIS_2",
+            "type": "DEBRIS_CIRCLE"
+        }, {
+            "numParticles": 4,
+            "duration": 0,
+            "centralAngle": 1,
+            "startDist": 2,
+            "uniformRandom": 0.6,
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "minSpeed": 10,
+            "maxSpeed": 40,
+            "minZSpeed": 180,
+            "maxZSpeed": 250,
+            "zBounciness": 0.5,
+            "minZVel": 80,
+            "collision": false,
+            "pAlpha": {
+                "init": 0.8,
+                "end": {
+                    "value": 0,
+                    "time": 0.2,
+                    "spline": ""
+                }
+            },
+            "pRotate": {
+                "init": -0.5,
+                "start": {
+                    "value": 0,
+                    "time": 1,
+                    "spline": ""
+                }
+            },
+            "particleDuration": 0.8,
+            "anim": "BLOCK_DEBRIS_3",
+            "type": "DEBRIS_CIRCLE"
+        }],
+        "masterDoorOpen": [{
+            "volume": 1,
+            "global": false,
+            "loop": false,
+            "sound": "media/sound/environment/metal-door-pre.ogg",
+            "type": "PLAY_SOUND"
+        }, {
+            "color": "white",
+            "alpha": 0.5,
+            "fadeIn": 0.2,
+            "fadeOut": 0.2,
+            "duration": 0.1,
+            "noLighter": false,
+            "type": "FADE_COLOR"
+        }, {
+            "boxSide": "SOUTH",
+            "padding": {
+                "x": 0,
+                "y": 0
+            },
+            "collision": false,
+            "numParticles": 3,
+            "minSpeed": 20,
+            "maxSpeed": 90,
+            "moveZ": 4,
+            "moveZVariance": 2,
+            "anim": "DUST_SMALL",
+            "type": "PARTICLE_BOX"
+        }, {
+            "time": 0.2,
+            "type": "WAIT"
+        }, {
+            "boxSide": "SOUTH",
+            "padding": {
+                "x": 0,
+                "y": 0
+            },
+            "collision": false,
+            "numParticles": 2,
+            "random": 1,
+            "minSpeed": 20,
+            "maxSpeed": 90,
+            "moveZ": 4,
+            "moveZVariance": 2,
+            "anim": "DUST_SMALL",
+            "type": "PARTICLE_BOX"
+        }, {
+            "time": 0.1,
+            "type": "WAIT"
+        }, {
+            "boxSide": "SOUTH",
+            "padding": {
+                "x": 0,
+                "y": 0
+            },
+            "collision": false,
+            "numParticles": 2,
+            "random": 1,
+            "minSpeed": 20,
+            "maxSpeed": 90,
+            "moveZ": 4,
+            "moveZVariance": 2,
+            "anim": "DUST_SMALL",
+            "type": "PARTICLE_BOX"
+        }, {
+            "time": 0.1,
+            "type": "WAIT"
+        }, {
+            "boxSide": "SOUTH",
+            "padding": {
+                "x": 0,
+                "y": 0
+            },
+            "collision": false,
+            "numParticles": 2,
+            "random": 1,
+            "minSpeed": 20,
+            "maxSpeed": 90,
+            "moveZ": 4,
+            "moveZVariance": 2,
+            "anim": "DUST_SMALL",
+            "type": "PARTICLE_BOX"
+        }, {
+            "volume": 0.7,
+            "global": false,
+            "loop": false,
+            "sound": "media/sound/environment/metal-door.ogg",
+            "type": "PLAY_SOUND"
+        }],
+        "eggs": [{
+            "volume": 0.5,
+            "global": false,
+            "loop": false,
+            "variance": 0.1,
+            "speed": 2,
+            "sound": "media/sound/battle/enemies/mine/ground-ice-crystal.ogg",
+            "type": "PLAY_SOUND"
+        }, {
+            "volume": 0.6,
+            "global": false,
+            "loop": false,
+            "variance": 0.2,
+            "sound": "media/sound/environment/plant-hit.ogg",
+            "type": "PLAY_SOUND"
+        }, {
+            "volume": 1,
+            "global": false,
+            "loop": false,
+            "variance": 0.2,
+            "sound": "media/sound/environment/eggpot-destructible.ogg",
+            "type": "PLAY_SOUND"
+        }, {
+            "numParticles": 2,
+            "duration": 0,
+            "centralAngle": 1,
+            "startDist": 2,
+            "uniformRandom": 0.6,
+            "particleRotate": true,
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "minSpeed": 10,
+            "maxSpeed": 40,
+            "minZSpeed": 180,
+            "maxZSpeed": 250,
+            "zBounciness": 0.8,
+            "minZVel": 80,
+            "collision": false,
+            "pAlpha": {
+                "init": 0.8,
+                "end": {
+                    "value": 0,
+                    "time": 0.2,
+                    "spline": ""
+                }
+            },
+            "pRotate": {
+                "init": -4,
+                "start": {
+                    "value": 0,
+                    "spline": ""
+                }
+            },
+            "particleDuration": 1.2,
+            "anim": "EGG_SHELL_1",
+            "type": "DEBRIS_CIRCLE"
+        }, {
+            "numParticles": 4,
+            "duration": 0,
+            "centralAngle": 1,
+            "startDist": 2,
+            "uniformRandom": 0.6,
+            "particleRotate": true,
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "minSpeed": 10,
+            "maxSpeed": 40,
+            "minZSpeed": 180,
+            "maxZSpeed": 250,
+            "zBounciness": 0.8,
+            "minZVel": 80,
+            "collision": false,
+            "pAlpha": {
+                "init": 0.8,
+                "end": {
+                    "value": 0,
+                    "time": 0.2,
+                    "spline": ""
+                }
+            },
+            "pRotate": {
+                "init": -5,
+                "start": {
+                    "value": 0,
+                    "spline": ""
+                }
+            },
+            "particleDuration": 1.2,
+            "anim": "EGG_SHELL_2",
+            "type": "DEBRIS_CIRCLE"
+        }]
+    }
+}
