@@ -51,7 +51,10 @@
         "type": "Prop",
         "x": 192,
         "y": 224,
-        "level": 2,
+        "level": {
+            "level": 2,
+            "offset": 4
+        },
         "settings": {
             "mapId": 3,
             "propType": {
@@ -83,7 +86,10 @@
         "type": "Prop",
         "x": 128,
         "y": 224,
-        "level": 2,
+        "level": {
+            "level": 2,
+            "offset": 4
+        },
         "settings": {
             "mapId": 5,
             "propType": {
@@ -418,7 +424,7 @@
     }, {
         "type": "ObjectLayerView",
         "x": 32,
-        "y": 248,
+        "y": 216,
         "level": 2,
         "settings": {
             "mapId": 29,
@@ -518,7 +524,10 @@
         "type": "Prop",
         "x": 48,
         "y": 304,
-        "level": 2,
+        "level": {
+            "level": 2,
+            "offset": 4
+        },
         "settings": {
             "mapId": 37,
             "propType": {
@@ -1695,7 +1704,10 @@
         "type": "Prop",
         "x": 688,
         "y": 224,
-        "level": 2,
+        "level": {
+            "level": 2,
+            "offset": 4
+        },
         "settings": {
             "mapId": 164,
             "propType": {
@@ -1746,7 +1758,10 @@
         "type": "Prop",
         "x": 624,
         "y": 224,
-        "level": 2,
+        "level": {
+            "level": 2,
+            "offset": 4
+        },
         "settings": {
             "mapId": 169,
             "propType": {

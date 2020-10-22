@@ -46,10 +46,10 @@
             }]
         }, {
             "sheet": "sit",
-            "dirs": "2",
-            "flipX": [0, 1],
+            "dirs": "4",
+            "flipX": [0, 1, 0, 1],
             "SUB": [{
-                "tileOffsets": [0, 0],
+                "tileOffsets": [0, 0, 0, 0],
                 "SUB": [{
                     "name": "sit",
                     "time": 0.15,
@@ -73,8 +73,8 @@
         "normal": {
             "relativeVel": 0.5
         },
-        "sit": {
-            "walkAnims": "sit"
+        "ground": {
+            "walkAnims": "ground"
         }
     },
     "face": {
